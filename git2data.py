@@ -11,12 +11,15 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import math
+import os
 import re
 import networkx as nx
 
 class git2data(object):
     
     def __init__(self,access_token,repo_owner,source_type,git_url,api_base_url,repo_name):
+        self.repo_name = repo_name
+        self.data_path = os.getcwd() + '\\data\\'
         self.git_client = api_access.git_api_access(access_token,repo_owner,source_type,git_url,api_base_url,repo_name)
         self.git_repo = git2repo.git2repo(git_url,repo_name)
         self.repo = self.git_repo.clone_repo()
@@ -24,6 +27,7 @@ class git2data(object):
     def get_api_data(self):
         self.git_issues = self.git_client.get_issues(url_type = 'issues',url_details = '')
         self.git_issue_events = self.git_client.get_events(url_type = 'issues',url_details = 'events')
+        self.git_issue_comments = self.git_client.get_comments(url_type = 'issues',url_details = 'comments')
             
     def get_commit_data(self):
         self.git_commits = self.git_repo.get_commits()
@@ -31,7 +35,7 @@ class git2data(object):
     def get_committed_files(self):
         self.git_committed_files = self.git_repo.get_committed_files()
         return self.git_committed_files
-        
+    
         
     def create_link(self):
         issue_df = pd.DataFrame(self.git_issues, columns = ['Issue_number','user_logon','author_type','Desc','title'])
@@ -76,4 +80,16 @@ class git2data(object):
             if len(j) != 1:
                 continue
             commit_df.at[j[0],'issues'] = issues.values
-        return issue_df,commit_df
+        issue_comments_df = pd.DataFrame(self.git_issue_comments, columns = ['Issue_id','user_logon','commenter_type'])
+        committed_files_df = pd.DataFrame(self.git_committed_files, columns = ['commit_id','file_id','file_mode','file_path'])
+        return issue_df,commit_df,committed_files_df,issue_comments_df
+    
+    def create_data(self):
+        self.get_api_data()
+        self.get_commit_data()
+        self.get_committed_files()
+        issue_data,commit_data,committed_file_data,issue_comment_data = self.create_link()
+        issue_data.to_pickle(self.data_path + self.repo_name + '_issue.pkl')
+        commit_data.to_pickle(self.data_path + self.repo_name + 's_commit.pkl')
+        committed_file_data.to_pickle(self.data_path + self.repo_name + '_committed_file.pkl')
+        issue_comment_data.to_pickle(self.data_path + self.repo_name + '_issue_comment.pkl')

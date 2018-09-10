@@ -17,6 +17,7 @@ class git_api_access(object):
     
     def __init__(self,token,repo_owner,source_type,git_url,api_base_url,repo_name):
         self.access_token = token
+        print(self.access_token)
         self.repo_owner = repo_owner
         self.source_type = source_type
         self.git_url = git_url
@@ -53,6 +54,7 @@ class git_api_access(object):
         while len(x) >= 100:
             paged_url = self.advanced_url + '?page=' + str(page_number) + '&per_page=100'
             page_number += 1
+            print(paged_url)
             res = self.client.get(paged_url)
             x = json.loads(res.content)
             for i in range(len(x)):
@@ -72,6 +74,7 @@ class git_api_access(object):
         while len(x) >= 100:
             paged_url = self.advanced_url + '?state=' + 'all' + '&page=' + str(page_number) + '&per_page=100'
             page_number += 1
+            print(paged_url)
             res = self.client.get(paged_url)
             x = json.loads(res.content)
             for i in range(len(x)):
@@ -93,6 +96,7 @@ class git_api_access(object):
         while len(x) >= 100:
             paged_url = self.advanced_url + '?page=' + str(page_number) + '&per_page=100'
             page_number += 1
+            print(paged_url)
             res = self.client.get(paged_url)
             x = json.loads(res.content)
             for i in range(len(x)):
@@ -101,4 +105,5 @@ class git_api_access(object):
                 commit_number = x[i]['commit_id']
                 event_details.append([event_type,issue_number,commit_number])
         return event_details
+    
     
