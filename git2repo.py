@@ -53,7 +53,10 @@ class git2repo(object):
     def get_committed_files(self):
         committed_files = []
         commits = self.get_commit_objects()
+        print(len(commits))
         for i in range(len(commits)):
+            if len(commits[i].parents) == 0:  # need to handle this case where commit doesnot have a parent
+                continue
             t0 = commits[i]
             if i != 0:
                 t1 = commits[i].parents[0]

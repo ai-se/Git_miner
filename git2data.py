@@ -28,6 +28,7 @@ class git2data(object):
         self.git_issues = self.git_client.get_issues(url_type = 'issues',url_details = '')
         self.git_issue_events = self.git_client.get_events(url_type = 'issues',url_details = 'events')
         self.git_issue_comments = self.git_client.get_comments(url_type = 'issues',url_details = 'comments')
+        self.user_map = self.git_client.get_users()
             
     def get_commit_data(self):
         self.git_commits = self.git_repo.get_commits()
@@ -82,14 +83,16 @@ class git2data(object):
             commit_df.at[j[0],'issues'] = issues.values
         issue_comments_df = pd.DataFrame(self.git_issue_comments, columns = ['Issue_id','user_logon','commenter_type'])
         committed_files_df = pd.DataFrame(self.git_committed_files, columns = ['commit_id','file_id','file_mode','file_path'])
-        return issue_df,commit_df,committed_files_df,issue_comments_df
+        user_df = pd.DataFrame(self.user_map, columns = ['user_name','user_logon'])
+        return issue_df,commit_df,committed_files_df,issue_comments_df,user_df
     
     def create_data(self):
         self.get_api_data()
         self.get_commit_data()
         self.get_committed_files()
-        issue_data,commit_data,committed_file_data,issue_comment_data = self.create_link()
+        issue_data,commit_data,committed_file_data,issue_comment_data,user_data = self.create_link()
         issue_data.to_pickle(self.data_path + self.repo_name + '_issue.pkl')
         commit_data.to_pickle(self.data_path + self.repo_name + 's_commit.pkl')
         committed_file_data.to_pickle(self.data_path + self.repo_name + '_committed_file.pkl')
         issue_comment_data.to_pickle(self.data_path + self.repo_name + '_issue_comment.pkl')
+        user_data.to_pickle(self.data_path + self.repo_name + '_user.pkl')

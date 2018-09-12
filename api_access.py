@@ -62,8 +62,25 @@ class git_api_access(object):
                 user_logon = x[i]['user']['login']
                 author_association = x[i]['author_association']
                 comments_details.append([issue_number,user_logon,author_association])
+                self.set_uniq_users(comments_details)
         return comments_details
     
+    
+    def set_uniq_users(self,comment_details):
+        comment_df = pd.DataFrame(comment_details, columns = ['issue_number','user_logon','author_association'])
+        self.uniq_users = comment_df.user_logon.unique()
+    
+    def get_users(self):
+        url = self.api_base_url + '/users'
+        user_mapping = []
+        for user in self.uniq_users:
+            paged_url = url + '/' + user
+            res = self.client.get(paged_url)
+            x = json.loads(res.content)
+            user_name = x['name']
+            user_logon = x['login']
+            user_mapping.append([user_name,user_logon])  
+        return user_mapping
     
     def get_issues(self,url_type,url_details = ''):
         self.create_base_url(url_type)
