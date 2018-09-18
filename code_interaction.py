@@ -95,5 +95,6 @@ class create_code_interaction_graph(object):
             if user_id not in degree.keys():
                 continue
             user_degree[user_name] = degree[user_id]
+        self.repo_obj.repo_remove()
         return user_degree
     

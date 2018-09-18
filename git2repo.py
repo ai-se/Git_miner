@@ -72,6 +72,8 @@ class git2repo(object):
         for i in range(len(commits)):
             t0 = self.repo.get(commits[i])
             files = {}
+            if len(t0.parents) == 0:  # need to handle this case where commit doesnot have a parent
+                continue
             if i != 0:
                 t1 = t0.parents[0]
             else:

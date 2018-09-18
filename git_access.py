@@ -8,9 +8,21 @@ Created on Wed Aug 22 10:14:40 2018
 import base64
 import requests
 import time
-
+import logging
+from requests.exceptions import HTTPError
+from requests.exceptions import ConnectionError
+from requests.utils import parse_header_links
+import json
+import time
+import urllib
+#import urlparser
+#import logger
+'''
+TODO
+handle http error 500, 502. and look for rate limit time remaining issue.
+'''
 requests.packages.urllib3.disable_warnings()
-
+logger = logging.getLogger('git_downloader')
 
 class RestClient(object):
     CONTENT_XML = "text/xml"
@@ -50,15 +62,6 @@ class RestClient(object):
                 logger.warning("Retrying GET request: time %d...", retry_count)
                 
                 
-
-from requests.exceptions import HTTPError
-from requests.exceptions import ConnectionError
-from requests.utils import parse_header_links
-import json
-import time
-import urllib
-#import urlparser
-#import logger
 
 class GitHubClient(RestClient):
     USERS_URI_FORMAT = "{}/users"
@@ -118,7 +121,7 @@ class GitHubClient(RestClient):
                 if "API rate limit exceeded" in message:
                     logger.warning('API rate limit exceeded for uri: {}'.format(uri))
                     if self.wait:
-                        rate_limit_reset_time = long(response.headers.get('X-RateLimit-Reset'))
+                        rate_limit_reset_time = int(response.headers.get('X-RateLimit-Reset'))
                         self._wait_for_api_rate_limit_reset_time(uri, rate_limit_reset_time)
                         return self.get(uri, headers, timeout, **kwargs)
                     else:
@@ -126,7 +129,7 @@ class GitHubClient(RestClient):
                 elif "Abuse detection mechanism" in message:
                     logger.warning('Abuse detection mechanism triggered for uri: {}'.format(uri))
                     if self.wait:
-                        rate_limit_reset_time = long(response.headers.get('Retry-After'))
+                        rate_limit_reset_time = int(response.headers.get('Retry-After'))
                         self._wait_for_api_rate_limit_reset_time(uri, rate_limit_reset_time)
                         return self.get(uri, headers, timeout, **kwargs)
                     else:
@@ -137,20 +140,22 @@ class GitHubClient(RestClient):
     
     def _check_api_limit(self, uri, response):
         if 'X-RateLimit_Remaining' in response.headers:
-            remaining_limit = long(response.headers['X-RateLimit_Remaining'])
+            remaining_limit = int(response.headers['X-RateLimit_Remaining'])
             if remaining_limit < 500:
                 if "account was suspended " in response.content:
                     raise Exception("GitHub account was suspended. Please try another tokens")
                 
                 if self.wait:
-                    rate_limit_reset_time = long(response.headers.get('X-RateLimit-Reset'))
+                    rate_limit_reset_time = int(response.headers.get('X-RateLimit-Reset'))
                     self._wait_for_api_rate_limit_reset_time(uri, rate_limit_reset_time)
                     return True
         return False
     
     def _wait_for_api_rate_limit_reset_time(self, uri, rate_limit_reset_time):
         now = time.mktime(time.localtime())
+        print(now)
         sleep_time = rate_limit_reset_time - now + 1
+        print(rate_limit_reset_time,sleep_time)
         rate_limit_reset_strftime = time.strftime("%d %b %Y %H:%M:%S", time.localtime(rate_limit_reset_time))
         logger.warning("API rate limit exceeded for uri: {}. Waiting for %d mins %d seconds. Restarting at %s ...".format(uri), 
                        sleep_time / 60, sleep_time % 60, rate_limit_reset_strftime)

@@ -51,7 +51,7 @@ class git_api_access(object):
         x = [0]*100
         page_number = 1
         comments_details = []
-        while len(x) >= 100:
+        while len(x) >= 100 and page_number<=400:
             paged_url = self.advanced_url + '?page=' + str(page_number) + '&per_page=100'
             page_number += 1
             print(paged_url)
@@ -88,7 +88,7 @@ class git_api_access(object):
         x = [0]*100
         page_number = 1
         issue_details = []
-        while len(x) >= 100:
+        while len(x) >= 100 and page_number<=400:
             paged_url = self.advanced_url + '?state=' + 'all' + '&page=' + str(page_number) + '&per_page=100'
             page_number += 1
             print(paged_url)
@@ -110,17 +110,21 @@ class git_api_access(object):
         x = [0]*100
         page_number = 1
         event_details = []
-        while len(x) >= 100:
+        while len(x) >= 100 and page_number<=400:
             paged_url = self.advanced_url + '?page=' + str(page_number) + '&per_page=100'
             page_number += 1
             print(paged_url)
             res = self.client.get(paged_url)
             x = json.loads(res.content)
             for i in range(len(x)):
-                event_type = x[i]['event']
-                issue_number = x[i]['issue']['number']
-                commit_number = x[i]['commit_id']
-                event_details.append([event_type,issue_number,commit_number])
+                try:
+                    event_type = x[i]['event']
+                    issue_number = x[i]['issue']['number']
+                    commit_number = x[i]['commit_id']
+                    event_details.append([event_type,issue_number,commit_number])
+                except:
+                    print('Some Issue in issues')
+                    continue
         return event_details
     
     

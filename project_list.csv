@@ -1,4 +1,2 @@
 repo_name,repo_owner,git_url,api_base_url,source_type,access_token
-mocha,mochajs,git://github.com/mochajs/mocha.git,http://api.github.com,github_repo,131753b03a46335ae3ce75e349447dc0418d4717
-mapdb,jankotek,git://github.com/jankotek/mapdb.git,http://api.github.com,github_repo,131753b03a46335ae3ce75e349447dc0418d4717
-SlackTextViewController,slackhq,git://github.com/slackhq/SlackTextViewController.git,http://api.github.com,github_repo,131753b03a46335ae3ce75e349447dc0418d4717
+kubernetes,kubernetes,https://github.com/kubernetes/kubernetes.git,http://api.github.com,github_repo,302cd3c66d3e3242252df437ccdf02fb3abd16dd
