@@ -14,6 +14,28 @@ from os import listdir
 from os.path import isfile, join
 from datetime import datetime
 
+class get_all_branches(object):
+    
+    def __init__(self,repo_url,repo_name):
+        self.repo_url = repo_url
+        self.repo_name = repo_name
+        self.repo_path = os.getcwd() + '\\temp_repo\\' + repo_name
+        self.clone_repo()
+        
+        
+    def clone_repo(self):
+        git_path = pygit2.discover_repository(self.repo_path)
+        if git_path is not None:
+            self.repo = pygit2.Repository(git_path)
+            return self.repo
+        if not os.path.exists(self.repo_path):
+            os.makedirs(self.repo_path)
+        self.repo = clone_repository(self.repo_url, self.repo_path)
+        return self.repo
+    
+    
+    def get_branches(self):
+        return list(self.repo.branches)
 
 class git2repo(object):
     
@@ -31,26 +53,71 @@ class git2repo(object):
             os.makedirs(self.repo_path)
         self.repo = clone_repository(self.repo_url, self.repo_path)
         return self.repo
+
+    def clone_branch(self,branch):
+        git_path = pygit2.discover_repository(self.repo_path)
+        if git_path is not None:
+            self.repo = pygit2.Repository(git_path)
+            return self.repo
+        if not os.path.exists(self.repo_path):
+            os.makedirs(self.repo_path)
+        self.repo = clone_repository(self.repo_url, self.repo_path,checkout_branch = branch)
+        return self.repo
     
     def get_branches(self):
-        return self.repo.branches
-    
+        gb = get_all_branches(self.repo_url,self.repo_name)
+        gb.clone_repo()
+        return gb.get_branches()[1:]
     
     def repo_remove(self):
         self.repo.free()
         deldir = self.repo_path + '\\.git\\objects\\pack'
         delFiles = [f for f in listdir(deldir) if isfile(join(deldir, f))]
+        print(delFiles)
         for i in delFiles:
             file_name = deldir + '\\' + i
             os.chmod(file_name, 0o777)
         if os.path.exists(self.repo_path):
             shutil.rmtree(self.repo_path,ignore_errors=True)
             
+    def branch_remove(self,repo):
+        repo.free()
+        deldir = self.repo_path + '\\.git\\objects\\pack'
+        delFiles = [f for f in listdir(deldir) if isfile(join(deldir, f))]
+        print(delFiles)
+        for i in delFiles:
+            file_name = deldir + '\\' + i
+            os.chmod(file_name, 0o777)
+        if os.path.exists(self.repo_path):
+            shutil.rmtree(self.repo_path,ignore_errors=True)
+     
+        
+    def get_current_commit_objects(self):
+        commits = []
+        branches = self.get_branches()
+        self.repo_remove()
+        for branch in branches:
+            print(branch)
+            branch= branch.split("/")[1]
+            print(branch)
+            repo = self.clone_branch(branch)
+            for commit in repo.walk(repo.head.target, GIT_SORT_TOPOLOGICAL | GIT_SORT_REVERSE):
+                commits.append(commit)
+        self.clone_repo()
+        return commits
         
     def get_commit_objects(self):
         commits = []
-        for commit in self.repo.walk(self.repo.head.target, GIT_SORT_TOPOLOGICAL | GIT_SORT_REVERSE):
-            commits.append(commit)
+        branches = self.get_branches()
+        self.repo_remove()
+        for branch in branches:
+            print(branch)
+            branch= branch.split("/")[1]
+            repo = self.clone_branch(branch)
+            for commit in repo.walk(repo.head.target, GIT_SORT_TOPOLOGICAL | GIT_SORT_REVERSE):
+                commits.append(commit)
+            self.branch_remove(repo)
+        self.clone_repo()
         return commits
     
     def get_committed_files(self):

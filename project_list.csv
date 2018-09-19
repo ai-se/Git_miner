@@ -1,2 +1,2 @@
 repo_name,repo_owner,git_url,api_base_url,source_type,access_token
-kubernetes,kubernetes,https://github.com/kubernetes/kubernetes.git,http://api.github.com,github_repo,d5b47a6d2b9e548f43a9c9870f8d84df30ed48df
+rspec-rails,rspec,https://github.com/rspec/rspec-rails.git,http://api.github.com,github_repo,c002b1a3fc3600273706999403281cf49f42a1c2
