@@ -1,2 +1,2 @@
 repo_name,repo_owner,git_url,api_base_url,source_type,access_token
-kubernetes,kubernetes,https://github.com/kubernetes/kubernetes.git,http://api.github.com,github_repo,302cd3c66d3e3242252df437ccdf02fb3abd16dd
+kubernetes,kubernetes,https://github.com/kubernetes/kubernetes.git,http://api.github.com,github_repo,d5b47a6d2b9e548f43a9c9870f8d84df30ed48df

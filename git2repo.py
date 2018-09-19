@@ -32,6 +32,9 @@ class git2repo(object):
         self.repo = clone_repository(self.repo_url, self.repo_path)
         return self.repo
     
+    def get_branches(self):
+        return self.repo.branches
+    
     
     def repo_remove(self):
         self.repo.free()

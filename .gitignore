@@ -109,3 +109,6 @@ venv.bak/
 #pkl
 *.pkl
 /*.pkl
+
+#temp
+temp_repo/
