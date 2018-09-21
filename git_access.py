@@ -22,6 +22,7 @@ TODO
 handle http error 500, 502. and look for rate limit time remaining issue.
 '''
 requests.packages.urllib3.disable_warnings()
+logging.basicConfig(filename='log/git_downloader.log',level=logging.DEBUG)
 logger = logging.getLogger('git_downloader')
 
 class RestClient(object):
@@ -86,6 +87,7 @@ class GitHubClient(RestClient):
         self.source = source
         self.access_token = source.get('access_token')
         self.wait = wait
+        self.server_error_retry_count = 5
         if self.access_token is not None:
             self.add_token_auth_header(self.access_token)
         
@@ -102,17 +104,26 @@ class GitHubClient(RestClient):
         status_code = response.status_code
         
         if status_code == 401:
+            logger.error('HTTP ERROR 401: Unauthorized token: %s', format(self.access_token))
             raise Exception('HTTP ERROR 401: Unauthorized token')
         
         if self._check_api_limit(uri, response):
             return self.get(uri, headers, timeout, **kwargs)
         
         if status_code != 200:
+            if status_code == 500:
+                try:
+                    logger.warning('Internal Server Error for url', uri)
+                    time.sleep(500)
+                    self.server_error_retry_count -= 1
+                    return self.get(uri, headers, timeout, **kwargs)
+                except Exception as e:
+                    logger.error(e.message)
+                    response.raise_for_status()
             if status_code == 403:
                 try:
                     error = json.loads(response.content)
-                except Exception as e:
-                    
+                except Exception as e:                    
                     if self._check_api_limit(uri, response):
                         return self.get(uri, headers, timeout, **kwargs)
                     logger.error(e.message)
@@ -153,9 +164,7 @@ class GitHubClient(RestClient):
     
     def _wait_for_api_rate_limit_reset_time(self, uri, rate_limit_reset_time):
         now = time.mktime(time.localtime())
-        print(now)
         sleep_time = rate_limit_reset_time - now + 1
-        print(rate_limit_reset_time,sleep_time)
         rate_limit_reset_strftime = time.strftime("%d %b %Y %H:%M:%S", time.localtime(rate_limit_reset_time))
         logger.warning("API rate limit exceeded for uri: {}. Waiting for %d mins %d seconds. Restarting at %s ...".format(uri), 
                        sleep_time / 60, sleep_time % 60, rate_limit_reset_strftime)

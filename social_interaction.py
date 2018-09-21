@@ -23,9 +23,9 @@ class create_social_inteaction_graph(object):
         self.read_data()
         
     def read_data(self):
-        self.comments_details_df = pd.read_pickle(os.getcwd() + '\\data\\' + self.project_name+ '_issue_comment.pkl')
-        self.issue_details_df = pd.read_pickle(os.getcwd() + '\\data\\' + self.project_name+ '_issue.pkl')
-        self.user_map = pd.read_pickle(os.getcwd() + '\\data\\' + self.project_name+ '_user.pkl')
+        self.comments_details_df = pd.read_pickle(os.getcwd() + '/data/' + self.project_name+ '_issue_comment.pkl')
+        self.issue_details_df = pd.read_pickle(os.getcwd() + '/data/' + self.project_name+ '_issue.pkl')
+        self.user_map = pd.read_pickle(os.getcwd() + '/data/' + self.project_name+ '_user.pkl')
         self.comments_details_df.drop(['commenter_type'], inplace=True, axis = 1)
         self.issue_details_df.drop(['author_type','Desc','title','commits'], inplace=True, axis = 1)
         self.comm_details_df = pd.concat([self.comments_details_df,self.issue_details_df])

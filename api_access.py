@@ -17,7 +17,7 @@ class git_api_access(object):
     
     def __init__(self,token,repo_owner,source_type,git_url,api_base_url,repo_name):
         self.access_token = token
-        print(self.access_token)
+        #print(self.access_token)
         self.repo_owner = repo_owner
         self.source_type = source_type
         self.git_url = git_url

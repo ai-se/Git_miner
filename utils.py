@@ -29,4 +29,4 @@ class utils(object):
         edges = zip(rows.tolist(), cols.tolist())
         gr = nx.Graph()
         gr.add_edges_from(edges)
-        return gr.degree(gr.nodes()),gr
+        return dict(gr.degree(gr.nodes())),gr

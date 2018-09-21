@@ -19,7 +19,7 @@ class get_all_branches(object):
     def __init__(self,repo_url,repo_name):
         self.repo_url = repo_url
         self.repo_name = repo_name
-        self.repo_path = os.getcwd() + '\\temp_repo\\' + repo_name
+        self.repo_path = os.getcwd() + '/temp_repo/' + repo_name
         self.clone_repo()
         
         
@@ -42,7 +42,7 @@ class git2repo(object):
     def __init__(self,repo_url,repo_name):
         self.repo_url = repo_url
         self.repo_name = repo_name
-        self.repo_path = os.getcwd() + '\\temp_repo\\' + repo_name
+        self.repo_path = os.getcwd() + '/temp_repo/' + repo_name
         
     def clone_repo(self):
         git_path = pygit2.discover_repository(self.repo_path)
@@ -71,22 +71,20 @@ class git2repo(object):
     
     def repo_remove(self):
         self.repo.free()
-        deldir = self.repo_path + '\\.git\\objects\\pack'
+        deldir = self.repo_path + '/.git/objects/pack'
         delFiles = [f for f in listdir(deldir) if isfile(join(deldir, f))]
-        print(delFiles)
         for i in delFiles:
-            file_name = deldir + '\\' + i
+            file_name = deldir + '/' + i
             os.chmod(file_name, 0o777)
         if os.path.exists(self.repo_path):
             shutil.rmtree(self.repo_path,ignore_errors=True)
             
     def branch_remove(self,repo):
         repo.free()
-        deldir = self.repo_path + '\\.git\\objects\\pack'
+        deldir = self.repo_path + '/.git/objects/pack'
         delFiles = [f for f in listdir(deldir) if isfile(join(deldir, f))]
-        print(delFiles)
         for i in delFiles:
-            file_name = deldir + '\\' + i
+            file_name = deldir + '/' + i
             os.chmod(file_name, 0o777)
         if os.path.exists(self.repo_path):
             shutil.rmtree(self.repo_path,ignore_errors=True)
@@ -94,16 +92,8 @@ class git2repo(object):
         
     def get_current_commit_objects(self):
         commits = []
-        branches = self.get_branches()
-        self.repo_remove()
-        for branch in branches:
-            print(branch)
-            branch= branch.split("/")[1]
-            print(branch)
-            repo = self.clone_branch(branch)
-            for commit in repo.walk(repo.head.target, GIT_SORT_TOPOLOGICAL | GIT_SORT_REVERSE):
-                commits.append(commit)
-        self.clone_repo()
+        for commit in self.repo.walk(self.repo.head.target, GIT_SORT_TOPOLOGICAL | GIT_SORT_REVERSE):
+            commits.append(commit)
         return commits
         
     def get_commit_objects(self):
@@ -111,8 +101,7 @@ class git2repo(object):
         branches = self.get_branches()
         self.repo_remove()
         for branch in branches:
-            print(branch)
-            branch= branch.split("/")[1]
+            branch= branch.split("/",1)[1]
             repo = self.clone_branch(branch)
             for commit in repo.walk(repo.head.target, GIT_SORT_TOPOLOGICAL | GIT_SORT_REVERSE):
                 commits.append(commit)
