@@ -111,5 +111,7 @@ venv.bak/
 *.pkl
 /*.pkl
 
+#excel
+
 #temp
 temp_repo/

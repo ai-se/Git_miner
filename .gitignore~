@@ -105,7 +105,11 @@ venv.bak/
 
 # csvs
 *.csv
+/*.csv
 
 #pkl
 *.pkl
 /*.pkl
+
+#temp
+temp_repo/
