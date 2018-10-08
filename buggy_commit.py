@@ -20,7 +20,7 @@ class buggy_commit_maker(object):
     
     def __init__(self,project_name,repo_url,repo_name):
         self.project_name = project_name
-        self.data_path = os.getcwd() + '/data/'
+        self.data_path = os.getcwd() + '\\data\\'
         self.commit = self.read_files('commit')
         self.committed_files = self.read_files('committed_file')
         self.initilize_repo(repo_url,repo_name)

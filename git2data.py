@@ -31,9 +31,11 @@ class git2data(object):
         self.user_map = self.git_client.get_users()
             
     def get_commit_data(self):
+        print("Inside get_commit_data in git2data")
         self.git_commits = self.git_repo.get_commits()
         
     def get_committed_files(self):
+        print("Inside get_commit_data in git2data")
         self.git_committed_files = self.git_repo.get_committed_files()
         return self.git_committed_files
     
@@ -87,9 +89,13 @@ class git2data(object):
         return issue_df,commit_df,committed_files_df,issue_comments_df,user_df
     
     def create_data(self):
+        print("1")
         self.get_api_data()
+        print("2")
         self.get_commit_data()
+        print("3")
         self.get_committed_files()
+        print("4")
         issue_data,commit_data,committed_file_data,issue_comment_data,user_data = self.create_link()
         issue_data.to_pickle(self.data_path + self.repo_name + '_issue.pkl')
         commit_data.to_pickle(self.data_path + self.repo_name + '_commit.pkl')
@@ -97,3 +103,4 @@ class git2data(object):
         issue_comment_data.to_pickle(self.data_path + self.repo_name + '_issue_comment.pkl')
         user_data.to_pickle(self.data_path + self.repo_name + '_user.pkl')
         self.git_repo.repo_remove()
+        print(self.repo_name,"Repo Done")

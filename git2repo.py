@@ -19,7 +19,8 @@ class get_all_branches(object):
     def __init__(self,repo_url,repo_name):
         self.repo_url = repo_url
         self.repo_name = repo_name
-        self.repo_path = os.getcwd() + '/temp_repo/' + repo_name
+        self.commit = []
+        self.repo_path = os.getcwd() + '\\temp_repo\\' + repo_name
         self.clone_repo()
         
         
@@ -42,7 +43,7 @@ class git2repo(object):
     def __init__(self,repo_url,repo_name):
         self.repo_url = repo_url
         self.repo_name = repo_name
-        self.repo_path = os.getcwd() + '/temp_repo/' + repo_name
+        self.repo_path = os.getcwd() + '\\temp_repo\\' + repo_name
         
     def clone_repo(self):
         git_path = pygit2.discover_repository(self.repo_path)
@@ -71,20 +72,20 @@ class git2repo(object):
     
     def repo_remove(self):
         self.repo.free()
-        deldir = self.repo_path + '/.git/objects/pack'
+        deldir = self.repo_path + '\\.git\\objects\\pack'
         delFiles = [f for f in listdir(deldir) if isfile(join(deldir, f))]
         for i in delFiles:
-            file_name = deldir + '/' + i
+            file_name = deldir + '\\' + i
             os.chmod(file_name, 0o777)
         if os.path.exists(self.repo_path):
             shutil.rmtree(self.repo_path,ignore_errors=True)
             
     def branch_remove(self,repo):
         repo.free()
-        deldir = self.repo_path + '/.git/objects/pack'
+        deldir = self.repo_path + '\\.git\\objects\\pack'
         delFiles = [f for f in listdir(deldir) if isfile(join(deldir, f))]
         for i in delFiles:
-            file_name = deldir + '/' + i
+            file_name = deldir + '\\' + i
             os.chmod(file_name, 0o777)
         if os.path.exists(self.repo_path):
             shutil.rmtree(self.repo_path,ignore_errors=True)
@@ -107,12 +108,13 @@ class git2repo(object):
                 commits.append(commit)
             self.branch_remove(repo)
         self.clone_repo()
+        self.commit = commits
+        print(len(commits))
         return commits
     
     def get_committed_files(self):
         committed_files = []
-        commits = self.get_commit_objects()
-        print(len(commits))
+        commits = self.commit
         for i in range(len(commits)):
             if len(commits[i].parents) == 0:  # need to handle this case where commit doesnot have a parent
                 continue
