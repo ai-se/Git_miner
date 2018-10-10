@@ -14,13 +14,39 @@ import re, unicodedata
 from pygit2 import GIT_SORT_TOPOLOGICAL, GIT_SORT_REVERSE
 import os
 from utils import utils
+import platform
+import threading
+from multiprocessing import Queue
+from threading import Thread
+import numpy as np
+import itertools
+import pandas as pd
+
+
+
+class ThreadWithReturnValue(Thread):
+    def __init__(self, group=None, target=None, name=None,
+                 args=(), kwargs={}, Verbose=None):
+        Thread.__init__(self, group, target, name, args, kwargs)
+        self._return = None
+    def run(self):
+        #print(type(self._target))
+        if self._target is not None:
+            self._return = self._target(*self._args,
+                                                **self._kwargs)
+    def join(self, *args):
+        Thread.join(self, *args)
+        return self._return
 
 class buggy_commit_maker(object):
     
     
     def __init__(self,project_name,repo_url,repo_name):
         self.project_name = project_name
-        self.data_path = os.getcwd() + '\\data\\'
+        if platform.system() == 'Darwin':
+            self.data_path = os.getcwd() + '/data/'
+        else:
+            self.data_path = os.getcwd() + '\\data\\'
         self.commit = self.read_files('commit')
         self.committed_files = self.read_files('committed_file')
         self.initilize_repo(repo_url,repo_name)
@@ -39,15 +65,45 @@ class buggy_commit_maker(object):
         res=re.search(r'\b{bug|defect|fix|patch|#}\b',utils().stemming(commit),re.IGNORECASE)
         if res is not None:
             return True
-        
-    def get_buggy_commits(self):
-        self.commit['isBuggy'] = pd.Series([0]*self.commit.shape[0])
-        for i in range(self.commit.shape[0]):
-            result = self.isBuggyCommit(self.commit.loc[i,'message'])
+    
+    def buggy_commits(self,commits):
+        for i in range(commits.shape[0]):
+            result = self.isBuggyCommit(commits.loc[i,'message'])
             if result:
-                self.commit.loc[i,'isBuggy'] = 1
+                commits.loc[i,'isBuggy'] = 1
             else:
-                self.commit.loc[i,'isBuggy'] = 0
+                commits.loc[i,'isBuggy'] = 0
+        return commits
+
+    def get_buggy_commits(self):
+        threads = []
+        print(self.commit.shape)
+        self.commit['isBuggy'] = pd.Series([0]*self.commit.shape[0])
+        column_names = self.commit.columns.tolist()
+        bug_fixed_commit = pd.DataFrame([], columns = column_names)
+        commits_np = np.array_split(self.commit, 10)
+        for i in range(10):
+            commits = pd.DataFrame(commits_np[i], columns = column_names)
+            commits.reset_index(inplace = True, drop = True)
+            t = ThreadWithReturnValue(target = self.buggy_commits, args = [commits])
+            threads.append(t)
+        for th in threads:
+            th.start()
+        for th in threads:
+            response = th.join()
+            bug_fixed_commit = pd.concat([bug_fixed_commit,response])
+            bug_fixed_commit.reset_index(inplace = True, drop = True)
+        self.commit = bug_fixed_commit
+        print(self.commit.shape)
+    
+#    def get_buggy_commits(self):
+#        self.commit['isBuggy'] = pd.Series([0]*self.commit.shape[0])
+#        for i in range(self.commit.shape[0]):
+#            result = self.isBuggyCommit(self.commit.loc[i,'message'])
+#            if result:
+#                self.commit.loc[i,'isBuggy'] = 1
+#            else:
+#                self.commit.loc[i,'isBuggy'] = 0
                 
     
     def get_buggy_committer(self):
@@ -64,6 +120,7 @@ class buggy_commit_maker(object):
                     for _line in _diff_files[_value]['old_lines']:
                         if _line != -1:
                             ref = blame.for_line(_line)
+                            print(_value,ref.final_committer.name)
                             bug_creator.append([ref.final_committer.name, ref.orig_commit_id, 1])
                 except:
                     continue

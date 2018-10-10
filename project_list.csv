@@ -1,2 +1,0 @@
-repo_name,repo_owner,git_url,api_base_url,source_type,access_token
-couchdb,apache,git://github.com/apache/couchdb.git,http://api.github.com,github_repo,5d7fc6f31e8a7b596770b5f4fb08e2e73a53b67a

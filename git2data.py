@@ -14,12 +14,16 @@ import math
 import os
 import re
 import networkx as nx
+import platform
 
 class git2data(object):
     
     def __init__(self,access_token,repo_owner,source_type,git_url,api_base_url,repo_name):
         self.repo_name = repo_name
-        self.data_path = os.getcwd() + '/data/'
+        if platform.system() == 'Darwin':
+            self.data_path = os.getcwd() + '/data/'
+        else:
+            self.data_path = os.getcwd() + '\\data\\'
         self.git_client = api_access.git_api_access(access_token,repo_owner,source_type,git_url,api_base_url,repo_name)
         self.git_repo = git2repo.git2repo(git_url,repo_name)
         self.repo = self.git_repo.clone_repo()
@@ -31,11 +35,11 @@ class git2data(object):
         self.user_map = self.git_client.get_users()
             
     def get_commit_data(self):
-        print("Inside get_commit_data in git2data")
+        #print("Inside get_commit_data in git2data")
         self.git_commits = self.git_repo.get_commits()
         
     def get_committed_files(self):
-        print("Inside get_commit_data in git2data")
+        #print("Inside get_commit_data in git2data")
         self.git_committed_files = self.git_repo.get_committed_files()
         return self.git_committed_files
     
@@ -47,6 +51,7 @@ class git2data(object):
         issue_commit_temp = []
         commit_df['issues'] = pd.Series([None]*commit_df.shape[0])
         issue_df['commits'] = pd.Series([None]*issue_df.shape[0])
+        #print("Phase one done")
         for i in range(commit_df.shape[0]):
             _commit_number = commit_df.loc[i,'commit_number']
             _commit_message = commit_df.loc[i,'message']
@@ -58,6 +63,7 @@ class git2data(object):
         links = events_df.dropna()
         links.reset_index(inplace=True)
         issue_commit_temp = []
+        #print("Phase two done")
         for i in range(links.shape[0]):
             if links.loc[i,'commit_number'] in issue_commit_list_1[:,0]:
                 continue
@@ -67,6 +73,7 @@ class git2data(object):
         issue_commit_list = np.append(issue_commit_list_1,issue_commit_list_2, axis = 0)
         issue_commit_df = pd.DataFrame(issue_commit_list, columns = ['commit_id','issues']).drop_duplicates()
         df_unique_issues = issue_commit_df.issues.unique()
+        #print("Phase three done")
         for i in df_unique_issues:
             i = np.int64(i)
             commits = issue_commit_df[issue_commit_df['issues'] == i]['commit_id']
@@ -76,6 +83,7 @@ class git2data(object):
                 continue
             issue_df.at[j[0],'commits'] = commits.values
         df_unique_commits = issue_commit_df.commit_id.unique()
+        #print("Phase four done")
         for i in df_unique_commits:
             issues = issue_commit_df[issue_commit_df['commit_id'] == i]['issues']
             x = commit_df['commit_number'] == i
@@ -89,18 +97,18 @@ class git2data(object):
         return issue_df,commit_df,committed_files_df,issue_comments_df,user_df
     
     def create_data(self):
-        print("1")
         self.get_api_data()
-        print("2")
         self.get_commit_data()
-        print("3")
         self.get_committed_files()
-        print("4")
         issue_data,commit_data,committed_file_data,issue_comment_data,user_data = self.create_link()
+        #print("Phase five done")
         issue_data.to_pickle(self.data_path + self.repo_name + '_issue.pkl')
+        #print("Phase six done")
         commit_data.to_pickle(self.data_path + self.repo_name + '_commit.pkl')
         committed_file_data.to_pickle(self.data_path + self.repo_name + '_committed_file.pkl')
+        #print("Phase seven done")
         issue_comment_data.to_pickle(self.data_path + self.repo_name + '_issue_comment.pkl')
+        #print("Phase eight done")
         user_data.to_pickle(self.data_path + self.repo_name + '_user.pkl')
         self.git_repo.repo_remove()
         print(self.repo_name,"Repo Done")
