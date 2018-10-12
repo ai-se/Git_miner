@@ -21,6 +21,8 @@ from threading import Thread
 import numpy as np
 import itertools
 import pandas as pd
+import itertools
+import math
 
 
 
@@ -77,7 +79,6 @@ class buggy_commit_maker(object):
 
     def get_buggy_commits(self):
         threads = []
-        print(self.commit.shape)
         self.commit['isBuggy'] = pd.Series([0]*self.commit.shape[0])
         column_names = self.commit.columns.tolist()
         bug_fixed_commit = pd.DataFrame([], columns = column_names)
@@ -94,7 +95,6 @@ class buggy_commit_maker(object):
             bug_fixed_commit = pd.concat([bug_fixed_commit,response])
             bug_fixed_commit.reset_index(inplace = True, drop = True)
         self.commit = bug_fixed_commit
-        print(self.commit.shape)
     
 #    def get_buggy_commits(self):
 #        self.commit['isBuggy'] = pd.Series([0]*self.commit.shape[0])
@@ -104,11 +104,9 @@ class buggy_commit_maker(object):
 #                self.commit.loc[i,'isBuggy'] = 1
 #            else:
 #                self.commit.loc[i,'isBuggy'] = 0
-                
-    
-    def get_buggy_committer(self):
-        buggy_commit_df = self.commit[self.commit['isBuggy'] == 1]
-        buggy_diffs = self.git_repo.get_diffs(buggy_commit_df['commit_number'].values.tolist())
+   
+
+    def buggy_committer(self,buggy_diffs):
         bug_creator = []
         for value in buggy_diffs:
             _diff_files = buggy_diffs[value]['files']
@@ -120,19 +118,72 @@ class buggy_commit_maker(object):
                     for _line in _diff_files[_value]['old_lines']:
                         if _line != -1:
                             ref = blame.for_line(_line)
-                            print(_value,ref.final_committer.name)
+                            #print(_value,ref.final_committer.name)
                             bug_creator.append([ref.final_committer.name, ref.orig_commit_id, 1])
                 except:
                     continue
         bug_creator_df = pd.DataFrame(bug_creator, columns = ['committer','commit','ob'])
         bug_creator_df = bug_creator_df.drop_duplicates()
         df = bug_creator_df.groupby( ['committer']).count()
+        return df
+    
+    
+    def get_buggy_committer(self):
+        threads = []
+        df = pd.DataFrame([])
+        # To-Do this is to saperate the data into small chunks from get_diff that is the dict
+        buggy_commit_df = self.commit[self.commit['isBuggy'] == 1]
+        buggy_diffs = self.git_repo.get_diffs(buggy_commit_df['commit_number'].values.tolist())
+        keys = list(buggy_diffs.keys())
+        len_bd = len(buggy_diffs)
+        for i in range(math.ceil(len_bd/10)):
+            sub_keys = keys[int(i*10):int((i+1)*10)]
+            subdict = {x: buggy_diffs[x] for x in sub_keys if x in buggy_diffs}
+            t = ThreadWithReturnValue(target = self.buggy_committer, args = [subdict])
+            threads.append(t)
+        for i in range(0,len(threads),10):
+            _threads = threads[i:i+10]
+            for th in _threads:
+                th.start()
+            for th in _threads:
+                response = th.join()
+                df = pd.concat([df,response])
+                df.reset_index(inplace = True, drop = True)
+            print(df)
         defect_count = []
         for key,value in df.iterrows():
             user = key
             count = value.values.tolist()[0]
             defect_count.append([user,count])
         return defect_count
+    
+#    def get_buggy_committer(self):
+#        buggy_commit_df = self.commit[self.commit['isBuggy'] == 1]
+#        buggy_diffs = self.git_repo.get_diffs(buggy_commit_df['commit_number'].values.tolist())
+#        bug_creator = []
+#        for value in buggy_diffs:
+#            _diff_files = buggy_diffs[value]['files']
+#            self.repo.head.set_target(buggy_diffs[value]['object'].parent_ids[0])
+#            for _value in _diff_files:
+#                try:
+#                    file_path = _diff_files[_value]['file_path']
+#                    blame = self.git_repo.get_blame(file_path)
+#                    for _line in _diff_files[_value]['old_lines']:
+#                        if _line != -1:
+#                            ref = blame.for_line(_line)
+#                            print(_value,ref.final_committer.name)
+#                            bug_creator.append([ref.final_committer.name, ref.orig_commit_id, 1])
+#                except:
+#                    continue
+#        bug_creator_df = pd.DataFrame(bug_creator, columns = ['committer','commit','ob'])
+#        bug_creator_df = bug_creator_df.drop_duplicates()
+#        df = bug_creator_df.groupby( ['committer']).count()
+#        defect_count = []
+#        for key,value in df.iterrows():
+#            user = key
+#            count = value.values.tolist()[0]
+#            defect_count.append([user,count])
+#        return defect_count
     
     def get_commit_count(self):
         committer_count = []
