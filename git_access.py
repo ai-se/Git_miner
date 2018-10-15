@@ -164,6 +164,7 @@ class GitHubClient(RestClient):
     
     def _wait_for_api_rate_limit_reset_time(self, uri, rate_limit_reset_time):
         now = time.mktime(time.localtime())
+        print(rate_limit_reset_time,now,rate_limit_reset_time - now + 1)
         sleep_time = rate_limit_reset_time - now + 1
         rate_limit_reset_strftime = time.strftime("%d %b %Y %H:%M:%S", time.localtime(rate_limit_reset_time))
         logger.warning("API rate limit exceeded for uri: {}. Waiting for %d mins %d seconds. Restarting at %s ...".format(uri), 
