@@ -23,6 +23,8 @@ import threading
 from multiprocessing import Queue
 from threading import Thread
 import math
+import os
+import platform
 
 class ThreadWithReturnValue(Thread):
     def __init__(self, group=None, target=None, name=None,
@@ -46,10 +48,26 @@ class create_code_interaction_graph(object):
         self.repo_name = repo_name
         self.repo_obj = git2repo.git2repo(self.repo_url,self.repo_name)
         self.repo = self.repo_obj.clone_repo()
-        self.commits = self.repo_obj.get_commit_objects()
+        if platform.system() == 'Darwin':
+            self.repo_path = os.getcwd() + '/temp_repo/' + repo_name
+            self.file_path = os.getcwd() + '/data/' + repo_name + '_commit.pkl'
+        else:
+            self.repo_path = os.getcwd() + '\\temp_repo\\' + repo_name
+            self.file_path = os.getcwd() + '\\data\\' + repo_name + '_commit.pkl'
+        #self.commits = self.repo_obj.get_commit_objects()
+        self.commits = self.read_commits()
         self.commit_df = pd.DataFrame(self.commits, columns = ['commit_object'])
-        self.committed_files = self.repo_obj.get_committed_files()
+        #self.committed_files = self.repo_obj.get_committed_files()
         self.diffs = self.get_diffs()
+        
+    def read_commits(self):
+        df = pd.read_pickle(self.file_path)
+        df_commit_id = df.commit_number.values.tolist()
+        commits = []
+        for commit in df_commit_id:
+            obj = self.repo.get(commit)
+            commits.append(obj)
+        return commits
         
     def get_diffs(self):
         commmit_id = []
@@ -71,7 +89,7 @@ class create_code_interaction_graph(object):
                         if _line != -1:
                             ref = blame.for_line(_line)
                             bug_creator.append([ref.final_committer.name,diffs[value]['object'].committer.name ,ref.orig_commit_id, 1])
-                            break
+                            #       break
                 except:
                     continue
         bug_creator_df = pd.DataFrame(bug_creator, columns = ['committer1','committer2','commit','ob'])
@@ -83,12 +101,15 @@ class create_code_interaction_graph(object):
         i = 0
         keys = list(self.diffs.keys())
         len_bd = len(self.diffs)
-        for i in range(math.ceil(len_bd/20)):
-            sub_keys = keys[int(i*20):int((i+1)*20)]
+        sub_list_len = len_bd/20
+        for i in range(20):
+            sub_keys = keys[int(i*sub_list_len):int((i+1)*sub_list_len)]
             subdict = {x: self.diffs[x] for x in sub_keys if x in self.diffs}
             t = ThreadWithReturnValue(target = self.get_bug_creators, args = [subdict])
             threads.append(t)
+        print(len(threads))
         for i in range(0,len(threads),20):
+            print("Starting Thread group:",i)
             _threads = threads[i:i+20]
             for th in _threads:
                 th.start()

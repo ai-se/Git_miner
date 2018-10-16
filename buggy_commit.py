@@ -124,8 +124,7 @@ class buggy_commit_maker(object):
                     continue
         bug_creator_df = pd.DataFrame(bug_creator, columns = ['committer','commit','ob'])
         bug_creator_df = bug_creator_df.drop_duplicates()
-        df = bug_creator_df.groupby( ['committer']).count()
-        return df
+        return bug_creator_df
     
     
     def get_buggy_committer(self):
@@ -149,7 +148,8 @@ class buggy_commit_maker(object):
                 response = th.join()
                 df = pd.concat([df,response])
                 df.reset_index(inplace = True, drop = True)
-            print(df)
+        df.drop_duplicates(inplace = True)
+        df = df.groupby( ['committer']).count()
         defect_count = []
         for key,value in df.iterrows():
             user = key
