@@ -24,9 +24,9 @@ for i in range(project_list.shape[0]):
     
     
     sg = social_interaction.create_social_inteaction_graph(repo_name)
-    cg = code_interaction.create_code_interaction_graph(repo_url,repo_name)
+    cg = code_interaction.create_code_interaction_graph(git_url,repo_name)
     
-    bugs_data = buggy_commit.buggy_commit_maker(repo_name,repo_url,repo_name)
+    bugs_data = buggy_commit.buggy_commit_maker(repo_name,git_url,repo_name)
     bugs_data.get_buggy_commits()
     buggy_commit_data = bugs_data.get_buggy_committer()
     
@@ -103,4 +103,4 @@ for i in range(project_list.shape[0]):
         else:
             first_l.append(df.loc[i,'per'])
             print("Inside first",df.loc[i,'degree'],first)
-    print(round(np.mean(first_l),2),round(np.mean(second_l),2),round(np.mean(third_l),2),round(np.mean(forth_l),2))
+    print(round(np.median(first_l),2),round(np.median(second_l),2),round(np.median(third_l),2),round(np.median(forth_l),2))

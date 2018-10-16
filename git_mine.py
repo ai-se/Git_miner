@@ -5,10 +5,9 @@ Created on Tue Oct 16 11:50:15 2018
 
 @author: suvodeepmajumder
 """
-
+from __future__ import division
 import git_access,api_access,git2repo
 import json
-from __future__ import division
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
