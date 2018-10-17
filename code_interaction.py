@@ -48,7 +48,7 @@ class create_code_interaction_graph(object):
         self.repo_name = repo_name
         self.repo_obj = git2repo.git2repo(self.repo_url,self.repo_name)
         self.repo = self.repo_obj.clone_repo()
-        if platform.system() == 'Darwin':
+        if platform.system() == 'Darwin' or platform.system() == 'Linux':
             self.repo_path = os.getcwd() + '/temp_repo/' + repo_name
             self.file_path = os.getcwd() + '/data/' + repo_name + '_commit.pkl'
         else:

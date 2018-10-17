@@ -52,6 +52,11 @@ class RestClient(object):
                 
                 if response.status_code == 200:
                     return response
+                elif response.status_code == 500:
+                    if retry_count >= max_retry_count:
+                        break
+                    time.sleep(retry_interval)
+                    retry_count += 1
                 else:
                     break
             except requests.RequestException as e:

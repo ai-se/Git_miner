@@ -24,7 +24,7 @@ class create_social_inteaction_graph(object):
         self.read_data()
         
     def read_data(self):
-        if platform.system() == 'Darwin':
+        if platform.system() == 'Darwin' or platform.system() == 'Linux':
             self.comments_details_df = pd.read_pickle(os.getcwd() + '/data/' + self.project_name+ '_issue_comment.pkl')
             self.issue_details_df = pd.read_pickle(os.getcwd() + '/data/' + self.project_name+ '_issue.pkl')
             self.user_map = pd.read_pickle(os.getcwd() + '/data/' + self.project_name+ '_user.pkl')

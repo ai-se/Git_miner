@@ -42,7 +42,7 @@ class get_all_branches(object):
         self.repo_url = repo_url
         self.repo_name = repo_name
         self.commit = []
-        if platform.system() == 'Darwin':
+        if platform.system() == 'Darwin' or platform.system() == 'Linux':
             self.repo_path = os.getcwd() + '/temp_repo/' + repo_name
         else:
             self.repo_path = os.getcwd() + '\\temp_repo\\' + repo_name
@@ -69,7 +69,7 @@ class git2repo(object):
         self.repo_url = repo_url
         self.repo_name = repo_name
         self.repos = []
-        if platform.system() == 'Darwin':
+        if platform.system() == 'Darwin' or platform.system() == 'Linux':
             self.repo_path = os.getcwd() + '/temp_repo/' + repo_name
         else:
             self.repo_path = os.getcwd() + '\\temp_repo\\' + repo_name
@@ -102,13 +102,13 @@ class git2repo(object):
     
     def repo_remove(self):
         self.repo.free()
-        if platform.system() == 'Darwin':
+        if platform.system() == 'Darwin' or platform.system() == 'Linux':
             deldir = self.repo_path + '/.git/objects/pack'
         else:
             deldir = self.repo_path + '\\.git\\objects\\pack'
         delFiles = [f for f in listdir(deldir) if isfile(join(deldir, f))]
         for i in delFiles:
-            if platform.system() == 'Darwin':
+            if platform.system() == 'Darwin' or platform.system() == 'Linux':
                 file_name = deldir + '/' + i
             else:
                 file_name = deldir + '\\' + i
@@ -118,13 +118,13 @@ class git2repo(object):
             
     def branch_remove(self,repo,path):
         repo.free()
-        if platform.system() == 'Darwin':
+        if platform.system() == 'Darwin' or platform.system() == 'Linux':
             deldir = path + '/.git/objects/pack'
         else:
             deldir = path + '\\.git\\objects\\pack'
         delFiles = [f for f in listdir(deldir) if isfile(join(deldir, f))]
         for i in delFiles:
-            if platform.system() == 'Darwin':
+            if platform.system() == 'Darwin' or platform.system() == 'Linux':
                 file_name = deldir + '/' + i
             else:
                 file_name = deldir + '\\' + i

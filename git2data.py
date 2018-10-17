@@ -20,7 +20,7 @@ class git2data(object):
     
     def __init__(self,access_token,repo_owner,source_type,git_url,api_base_url,repo_name):
         self.repo_name = repo_name
-        if platform.system() == 'Darwin':
+        if platform.system() == 'Darwin' or platform.system() == 'Linux':
             self.data_path = os.getcwd() + '/data/'
         else:
             self.data_path = os.getcwd() + '\\data\\'

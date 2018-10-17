@@ -45,7 +45,7 @@ class buggy_commit_maker(object):
     
     def __init__(self,project_name,repo_url,repo_name):
         self.project_name = project_name
-        if platform.system() == 'Darwin':
+        if platform.system() == 'Darwin' or platform.system() == 'Linux':
             self.data_path = os.getcwd() + '/data/'
         else:
             self.data_path = os.getcwd() + '\\data\\'
