@@ -24,6 +24,7 @@ from multiprocessing import Queue
 from threading import Thread
 import math
 import os
+from multiprocessing import Pool, cpu_count
 import platform
 
 class ThreadWithReturnValue(Thread):
@@ -59,6 +60,7 @@ class create_code_interaction_graph(object):
         self.commit_df = pd.DataFrame(self.commits, columns = ['commit_object'])
         #self.committed_files = self.repo_obj.get_committed_files()
         self.diffs = self.get_diffs()
+        self.cores = cpu_count()
         
     def read_commits(self):
         df = pd.read_pickle(self.file_path)
@@ -66,6 +68,9 @@ class create_code_interaction_graph(object):
         commits = []
         for commit in df_commit_id:
             obj = self.repo.get(commit)
+            if obj == None:
+                print(commit)
+                continue
             commits.append(obj)
         return commits
         
@@ -101,16 +106,16 @@ class create_code_interaction_graph(object):
         i = 0
         keys = list(self.diffs.keys())
         len_bd = len(self.diffs)
-        sub_list_len = len_bd/20
-        for i in range(20):
+        sub_list_len = len_bd/self.cores
+        for i in range(self.cores):
             sub_keys = keys[int(i*sub_list_len):int((i+1)*sub_list_len)]
             subdict = {x: self.diffs[x] for x in sub_keys if x in self.diffs}
             t = ThreadWithReturnValue(target = self.get_bug_creators, args = [subdict])
             threads.append(t)
         print(len(threads))
-        for i in range(0,len(threads),20):
+        for i in range(0,len(threads),self.cores):
             print("Starting Thread group:",i)
-            _threads = threads[i:i+20]
+            _threads = threads[i:i+self.cores]
             for th in _threads:
                 th.start()
             for th in _threads:

@@ -23,7 +23,7 @@ import itertools
 import pandas as pd
 import itertools
 import math
-
+from multiprocessing import Pool, cpu_count
 
 
 class ThreadWithReturnValue(Thread):
@@ -52,6 +52,7 @@ class buggy_commit_maker(object):
         self.commit = self.read_files('commit')
         self.committed_files = self.read_files('committed_file')
         self.initilize_repo(repo_url,repo_name)
+        self.cores = cpu_count()
         
     def initilize_repo(self,repo_url,repo_name):
         self.git_repo = git2repo.git2repo(repo_url,repo_name)
@@ -82,8 +83,8 @@ class buggy_commit_maker(object):
         self.commit['isBuggy'] = pd.Series([0]*self.commit.shape[0])
         column_names = self.commit.columns.tolist()
         bug_fixed_commit = pd.DataFrame([], columns = column_names)
-        commits_np = np.array_split(self.commit, 10)
-        for i in range(10):
+        commits_np = np.array_split(self.commit, self.cores)
+        for i in range(self.cores):
             commits = pd.DataFrame(commits_np[i], columns = column_names)
             commits.reset_index(inplace = True, drop = True)
             t = ThreadWithReturnValue(target = self.buggy_commits, args = [commits])
@@ -135,13 +136,14 @@ class buggy_commit_maker(object):
         buggy_diffs = self.git_repo.get_diffs(buggy_commit_df['commit_number'].values.tolist())
         keys = list(buggy_diffs.keys())
         len_bd = len(buggy_diffs)
-        for i in range(math.ceil(len_bd/10)):
-            sub_keys = keys[int(i*10):int((i+1)*10)]
+        sub_list_len = len_bd/self.cores
+        for i in range(self.cores):
+            sub_keys = keys[int(i*sub_list_len):int((i+1)*sub_list_len)]
             subdict = {x: buggy_diffs[x] for x in sub_keys if x in buggy_diffs}
             t = ThreadWithReturnValue(target = self.buggy_committer, args = [subdict])
             threads.append(t)
-        for i in range(0,len(threads),10):
-            _threads = threads[i:i+10]
+        for i in range(0,len(threads),self.cores):
+            _threads = threads[i:i+self.cores]
             for th in _threads:
                 th.start()
             for th in _threads:

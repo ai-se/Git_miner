@@ -20,7 +20,7 @@ from threading import Thread
 import numpy as np
 import itertools
 import pandas as pd
-
+from multiprocessing import Pool, cpu_count
 
 class ThreadWithReturnValue(Thread):
     def __init__(self, group=None, target=None, name=None,
@@ -73,6 +73,7 @@ class git2repo(object):
             self.repo_path = os.getcwd() + '/temp_repo/' + repo_name
         else:
             self.repo_path = os.getcwd() + '\\temp_repo\\' + repo_name
+        self.cores = cpu_count()
         
     def clone_repo(self):
         git_path = pygit2.discover_repository(self.repo_path)
@@ -106,6 +107,7 @@ class git2repo(object):
             deldir = self.repo_path + '/.git/objects/pack'
         else:
             deldir = self.repo_path + '\\.git\\objects\\pack'
+        print(join(deldir, listdir(deldir)[0]))
         delFiles = [f for f in listdir(deldir) if isfile(join(deldir, f))]
         for i in delFiles:
             if platform.system() == 'Darwin' or platform.system() == 'Linux':
@@ -174,8 +176,8 @@ class git2repo(object):
             branch= branch.split("/",1)[1]
             t = ThreadWithReturnValue(target = self.get_commit_data, args = [branch])
             threads.append(t)
-        for i in range(0,len(threads),10):
-            _threads = threads[i:i+10]
+        for i in range(0,len(threads),self.cores):
+            _threads = threads[i:i+self.cores]
             for th in _threads:
                 th.start()
             for th in _threads:
