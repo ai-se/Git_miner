@@ -107,7 +107,7 @@ class git2repo(object):
             deldir = self.repo_path + '/.git/objects/pack'
         else:
             deldir = self.repo_path + '\\.git\\objects\\pack'
-        print(join(deldir, listdir(deldir)[0]))
+        print(os.path.isfile(deldir))
         delFiles = [f for f in listdir(deldir) if isfile(join(deldir, f))]
         for i in delFiles:
             if platform.system() == 'Darwin' or platform.system() == 'Linux':
