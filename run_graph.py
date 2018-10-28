@@ -70,22 +70,27 @@ for i in range(project_list.shape[0]):
             user = key
             count = value.values.tolist()[0]
             commit_count.append([user,count])
-            
+        
+        print("step1")
+        results = [[buggy_commit_data_df,commit_data_df,commit_count,sg_data_df,cg_data_df]]
+        result_pd = pd.DataFrame(results,columns = ['buggy_commit_data_df','commit_data_df',
+                                                    'commit_count','sg_data_df','cg_data_df'])
+        print("step2")
+        result_pd.to_pickle(repo_name + '_final;_results.pkl')
+        print("step3")   
         df = []
         for i in range(cg_data_df.shape[0]):
-            print("+++++++++++")
             buggy_commit_count = buggy_commit_data_df[buggy_commit_data_df['committer'] == cg_data_df.loc[i,'committer']]['count']
-            print(buggy_commit_count)
             if len(buggy_commit_count) == 0:
                 continue
             commit_count = commit_data_df[commit_data_df['committer'] == cg_data_df.loc[i,'committer']]['count']
-            print(commit_count)
             if len(commit_count) == 0:
                 continue
             node_degree = cg_data_df[cg_data_df['committer'] == cg_data_df.loc[i,'committer']]['count']
             df.append([buggy_commit_count.values[0]/commit_count.values[0],node_degree.values[0]])
             
         df = pd.DataFrame(df, columns = ['per','degree'])
+        
         
         degree_d = np.array(df['degree'].values.tolist())
         
@@ -101,16 +106,12 @@ for i in range(project_list.shape[0]):
         for i in range(df.shape[0]):
             if df.loc[i,'degree'] < forth:
                 forth_l.append(df.loc[i,'per'])
-                print("Inside forth",df.loc[i,'degree'],forth)
             elif df.loc[i,'degree'] < third:
                 third_l.append(df.loc[i,'per'])
-                print("Inside third",df.loc[i,'degree'],third)
             elif df.loc[i,'degree'] < second:
                 second_l.append(df.loc[i,'per'])
-                print("Inside second",df.loc[i,'degree'],second)
             else:
                 first_l.append(df.loc[i,'per'])
-                print("Inside first",df.loc[i,'degree'],first)
         print(round(np.median(first_l),2),round(np.median(second_l),2),round(np.median(third_l),2),round(np.median(forth_l),2))
         fp1 = open('run_graph.csv', 'a' , newline='')
         myFile1 = csv.writer(fp1)        
