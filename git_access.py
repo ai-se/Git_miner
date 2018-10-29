@@ -57,6 +57,12 @@ class RestClient(object):
                         break
                     time.sleep(retry_interval)
                     retry_count += 1
+                elif response.status_code == 502:
+                    print("inside bad gateway url",uri)
+                    if retry_count >= max_retry_count:
+                        break
+                    time.sleep(retry_interval)
+                    retry_count += 1
                 else:
                     break
             except requests.RequestException as e:
