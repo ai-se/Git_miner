@@ -76,7 +76,7 @@ for i in range(project_list.shape[0]):
         result_pd = pd.DataFrame(results,columns = ['buggy_commit_data_df','commit_data_df',
                                                     'commit_count','sg_data_df','cg_data_df'])
         print("step2")
-        result_pd.to_pickle(repo_name + '_final;_results.pkl')
+        result_pd.to_pickle('Processed_data/' + repo_name + '_final_results.pkl')
         print("step3")   
         df = []
         for i in range(cg_data_df.shape[0]):

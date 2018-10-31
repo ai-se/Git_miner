@@ -65,9 +65,10 @@ class buggy_commit_maker(object):
     
     
     def isBuggyCommit(self, commit):
-        res=re.search(r'\b{bug|defect|fix|patch|#}\b',utils().stemming(commit),re.IGNORECASE)
+        res=re.search(r'\b{bug|fix|issue|error|correct|proper|deprecat|broke|optimize|patch|solve|slow|obsolete|vulnerab|debug|perf|memory|minor|wart|better|complex|break|investigat|compile|defect|inconsist|crash|problem|resol|#}\b',utils().stemming(commit),re.IGNORECASE)
         if res is not None:
             return True
+        
     
     def buggy_commits(self,commits):
         for i in range(commits.shape[0]):

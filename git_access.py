@@ -131,6 +131,15 @@ class GitHubClient(RestClient):
                 except Exception as e:
                     logger.error(e.message)
                     response.raise_for_status()
+            if status_code == 502:
+                try:
+                    logger.warning('Internal Server Error for url', uri)
+                    time.sleep(500)
+                    self.server_error_retry_count -= 1
+                    return self.get(uri, headers, timeout, **kwargs)
+                except Exception as e:
+                    logger.error(e.message)
+                    response.raise_for_status()
             if status_code == 403:
                 try:
                     error = json.loads(response.content)
