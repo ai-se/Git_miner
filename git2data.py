@@ -5,7 +5,7 @@ Created on Thu Aug 30 10:30:28 2018
 @author: suvod
 """
 from __future__ import division
-import git_access,api_access,git2repo
+import git_access,api_access,git2repo,buggy_commit
 import json
 import pandas as pd
 import numpy as np
@@ -45,8 +45,8 @@ class git2data(object):
     
         
     def create_link(self):
-        issue_df = pd.DataFrame(self.git_issues, columns = ['Issue_number','user_logon','author_type','Desc','title'])
-        commit_df = pd.DataFrame(self.git_commits, columns=['commit_number', 'message', 'parent'])
+        issue_df = pd.DataFrame(self.git_issues, columns = ['Issue_number','user_logon','author_type','Desc','title','lables'])
+        commit_df = pd.DataFrame(self.git_commits, columns=['commit_number', 'message', 'parent','buggy'])
         events_df = pd.DataFrame(self.git_issue_events, columns=['event_type', 'issue_number', 'commit_number'])
         issue_commit_temp = []
         commit_df['issues'] = pd.Series([None]*commit_df.shape[0])

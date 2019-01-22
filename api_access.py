@@ -100,7 +100,11 @@ class git_api_access(object):
                 author_type = x[i]['user']['type']
                 desc =  x[i]['body']
                 title = x[i]['title']
-                issue_details.append([issue_number,user_logon,author_type,desc,title])
+                if x[i]['labels']:
+                    labels = x[i]['labels'][0]['name']
+                else:
+                    labels = None
+                issue_details.append([issue_number,user_logon,author_type,desc,title,labels])
         return issue_details
     
     

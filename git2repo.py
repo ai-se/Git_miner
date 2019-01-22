@@ -10,6 +10,8 @@ from pygit2 import GIT_SORT_TOPOLOGICAL, GIT_SORT_REVERSE,GIT_MERGE_ANALYSIS_UP_
 from pygit2 import Repository
 import shutil,os
 import pygit2
+import re
+from utils import utils
 from os import listdir
 from os.path import isfile, join
 from datetime import datetime
@@ -269,10 +271,15 @@ class git2repo(object):
         for commit in _commits:
             commit_id = commit.id.hex
             commit_message = commit.message
+            res=re.search(r'\b{bug|fix|issue|error|correct|proper|deprecat|broke|optimize|patch|solve|slow|obsolete|vulnerab|debug|perf|memory|minor|wart|better|complex|break|investigat|compile|defect|inconsist|crash|problem|resol|#}\b',utils().stemming(commit_message),re.IGNORECASE)
+            if res is not None:
+                commits_buggy = 1
+            else:
+                commits_buggy = 0
             if len(commit.parent_ids) == 0:
                 commit_parent = None
             else:
                 commit_parent = commit.parent_ids[0].hex
-            commits.append([commit_id,commit_message,commit_parent])
+            commits.append([commit_id,commit_message,commit_parent,commits_buggy])
         return commits
         

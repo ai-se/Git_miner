@@ -22,7 +22,7 @@ from multiprocessing import Queue
 
 project_list = pd.read_csv('project_list.csv')
 for i in range(project_list.shape[0]):
-	try:
+	#try:
 		access_token = project_list.loc[i,'access_token']
 		repo_owner = project_list.loc[i,'repo_owner']
 		source_type = project_list.loc[i,'source_type']
@@ -31,6 +31,6 @@ for i in range(project_list.shape[0]):
 		repo_name = project_list.loc[i,'repo_name']
 		git_data = git2data.git2data(access_token,repo_owner,source_type,git_url,api_base_url,repo_name)
 		git_data.create_data()
-	except Exception as e:
-		print("Exception occured for ",project_list.loc[i,'git_url'])
-		print(e)
+	#except Exception as e:
+	#	print("Exception occured for ",project_list.loc[i,'git_url'])
+	#	print(e)
