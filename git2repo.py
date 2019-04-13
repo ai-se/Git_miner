@@ -141,6 +141,7 @@ class git2repo(object):
         commits = []
         for commit in self.repo.walk(self.repo.head.target, GIT_SORT_TOPOLOGICAL | GIT_SORT_REVERSE):
             commits.append(commit)
+        self.commit = commits
         return commits
     
     def get_commit_data(self,branch):
@@ -230,8 +231,8 @@ class git2repo(object):
                 _diff = self.repo.diff(t1,t0)
                 for j in _diff.deltas:
                     committed_files.append([commits[i].id.hex,j.new_file.id.hex, j.new_file.mode,j.new_file.path])
-            except:
-                print("commit:",commits[i].id)
+            except e:
+                print("commit:",commits[i].id,str(e))
                 continue
         for j in range(len(self.repos)):
             self.branch_remove(self.repos[j][0],self.repos[j][1])
@@ -266,12 +267,12 @@ class git2repo(object):
     
     
     def get_commits(self):
-        _commits = self.get_commit_objects()
+        _commits = self.get_current_commit_objects()
         commits = []
         for commit in _commits:
             commit_id = commit.id.hex
             commit_message = commit.message
-            res=re.search(r'\b{bug|fix|issue|error|correct|proper|deprecat|broke|optimize|patch|solve|slow|obsolete|vulnerab|debug|perf|memory|minor|wart|better|complex|break|investigat|compile|defect|inconsist|crash|problem|resol|#}\b',utils().stemming(commit_message),re.IGNORECASE)
+            res=re.search(r'\b{bug|fix|issue|correct|broke|patch|solve|vulnerab||resoled}\b',utils().stemming(commit_message),re.IGNORECASE)
             if res is not None:
                 commits_buggy = 1
             else:

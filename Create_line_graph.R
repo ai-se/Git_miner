@@ -2,7 +2,7 @@ library(plotly)
 library(scales)
 library(reshape2)
 
-social <- read.csv('/Users/suvodeepmajumder/Documents/AI4SE/Git_miner/Result_data_team_c.csv')
+social <- read.csv('/Users/suvodeepmajumder/Documents/AI4SE/Git_miner/new_results/Result_data_team_Social_line_graph.csv')
 test_data <-
   data.frame(
     var1 = social['Hero_Developer'],
