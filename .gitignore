@@ -115,3 +115,11 @@ venv.bak/
 
 #temp
 temp_repo/
+
+#temp files in linux/mac/R/eclipse
+*~
+.DS_Store
+.Rhistory
+.RData
+.project
+.pydevproject
