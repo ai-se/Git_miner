@@ -116,6 +116,9 @@ venv.bak/
 #temp
 temp_repo/
 
+#VSCODE
+.vscode/
+
 #temp files in linux/mac/R/eclipse
 *~
 .DS_Store
