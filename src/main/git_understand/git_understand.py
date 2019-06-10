@@ -43,7 +43,7 @@ class MetricsGetter(object):
         self.repo_name = repo_name
         self.repo_lang = repo_lang
         self.repo_obj = git2repo.git2repo(self.repo_url,self.repo_name)
-        self.repo = self.repo_obj.clone_master_branch()
+        self.repo = self.repo_obj.clone_repo()
         if platform.system() == 'Darwin' or platform.system() == 'Linux':
             self.repo_path = up(os.getcwd()) + '/temp_repo/' + self.repo_name
             self.file_path = up(os.getcwd()) + '/data/' + self.repo_name + '_commit.pkl'
@@ -70,7 +70,7 @@ class MetricsGetter(object):
     def read_commits(self):
         df = pd.read_pickle(self.file_path)
         df = df[df['buggy'] == 1]
-        df_commits = df.drop(labels = ['message','issues','buggy'], axis = 1)
+        df_commits = df.drop(labels = ['message','buggy'], axis = 1)
         commits = []
         for i in range(df_commits.shape[0]):
             if df_commits.iloc[i,0] == None or df_commits.iloc[i,1] == None:
@@ -78,7 +78,7 @@ class MetricsGetter(object):
             bug_fixing_commit = self.repo.get(df_commits.iloc[i,0])
             bug_existing_commit = self.repo.get(df_commits.iloc[i,1])
             if bug_fixing_commit == None:
-                #print(df_commits.iloc[i,0])
+                print(df_commits.iloc[i,0])
                 continue
             commits.append([bug_existing_commit,bug_fixing_commit])
         return commits
@@ -130,8 +130,11 @@ class MetricsGetter(object):
         elif self.repo_lang == "python":
             cmd = "/Applications/Understand.app/Contents/MacOS/und create -languages python add {} analyze {}".format(
                 str(self.repo_path), str(und_file))
-        if self.repo_lang == "C":
+        elif self.repo_lang == "C":
             cmd = "/Applications/Understand.app/Contents/MacOS/und create -languages C++ add {} analyze {}".format(
+                str(self.repo_path), str(und_file))
+        elif self.repo_lang == "java":
+            cmd = "/Applications/Understand.app/Contents/MacOS/und create -languages Java add {} analyze {}".format(
                 str(self.repo_path), str(und_file))
         out, err = self._os_cmd(cmd)
 
@@ -198,11 +201,11 @@ class MetricsGetter(object):
         #                 suffix='Complete', length=50)
 
         # 1. For each clean-buggy commit pairs
-        #print(len(self.buggy_clean_pairs))
+        print(len(self.buggy_clean_pairs))
         for i in range(len(self.buggy_clean_pairs)):
             buggy_hash = self.buggy_clean_pairs[i][0]
             clean_hash = self.buggy_clean_pairs[i][1]
-            #print(i,(buggy_hash, clean_hash))
+            print(i,(buggy_hash, clean_hash))
             # Go the the cloned project path
             os.chdir(self.repo_path)
             #print(self.repo_path)
@@ -224,7 +227,8 @@ class MetricsGetter(object):
             self._create_und_files("buggy")
             #print(self.buggy_und_file)
             db_buggy = und.open(str(self.buggy_und_file))
-            for file in db_buggy.ents("File"):
+            for file in db_buggy.ents("class"):
+                print(file.longname())
                 # print directory name
                 if str(file) in files_changed:
                     metrics = file.metric(file.metrics())
@@ -245,6 +249,7 @@ class MetricsGetter(object):
 
             # Create a understand file for this hash
             self._create_und_files("clean")
+            print(files_changed)
             db_clean = und.open(str(self.clean_und_file))
             for file in db_clean.ents("File"):
                 # print directory name

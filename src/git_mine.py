@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt
 import math
 import networkx as nx
 import re
-from main.git_log import git2data
+from main.git_log import git2data,git_commit_info
 from interaction import social_interaction
 import threading
 from threading import Barrier
@@ -40,7 +40,8 @@ for i in range(project_list.shape[0]):
     git_url = project_list.loc[i,'git_url']
     api_base_url = project_list.loc[i,'api_base_url']
     repo_name = project_list.loc[i,'repo_name']
-    git_data = git2data.git2data(access_token,repo_owner,source_type,git_url,api_base_url,repo_name)
+    #git_data = git2data.git2data(access_token,repo_owner,source_type,git_url,api_base_url,repo_name)
+    git_data = git_commit_info.git2data(access_token,repo_owner,source_type,git_url,api_base_url,repo_name)
     git_data.create_data()
 	#except Exception as e:
 	#	print("Exception occured for ",project_list.loc[i,'git_url'])

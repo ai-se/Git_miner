@@ -153,6 +153,7 @@ class git2repo(object):
         commits = []
         for commit in self.repo.walk(self.repo.head.target, GIT_SORT_TOPOLOGICAL | GIT_SORT_REVERSE):
             commits.append(commit)
+        self.commit = commits
         return commits
     
     def get_commit_data(self,branch):
@@ -278,7 +279,7 @@ class git2repo(object):
     
     
     def get_commits(self):
-        _commits = self.get_commit_objects()
+        _commits = self.get_current_commit_objects()
         commits = []
         for commit in _commits:
             commit_id = commit.id.hex
