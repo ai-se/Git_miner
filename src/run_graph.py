@@ -14,15 +14,14 @@ import numpy as np
 import csv
 from os.path import dirname as up
 import os
+from pathlib import Path
 import platform
 
 if platform.system() == 'Darwin' or platform.system() == 'Linux':
-    data_path = up(os.getcwd()) + '/project_list.csv'
-    print(up(os.getcwd()))
+    source_projects = up(os.getcwd()) + '/project_list.csv'
 else:
-    data_path = up(os.getcwd()) + '\\project_list.csv'
-
-project_list = pd.read_csv(data_path)
+    source_projects = up(os.getcwd()) + '\\project_list.csv'
+project_list = pd.read_csv(source_projects)
 fp1 = open('run_graph.csv', 'w' , newline='')
 myFile1 = csv.writer(fp1)
 column_names1 = ['project_name','first','second','third','fourth']
@@ -37,7 +36,14 @@ for i in range(project_list.shape[0]):
         git_url = project_list.loc[i,'git_url']
         api_base_url = project_list.loc[i,'api_base_url']
         repo_name = project_list.loc[i,'repo_name'] 
+
+        if platform.system() == 'Darwin' or platform.system() == 'Linux':
+            data_path = up(os.getcwd()) + '/data/' + repo_name + '/'
+        else:
+            data_path = up(os.getcwd()) + '\\data\\' + repo_name + '\\'
         
+        if not Path(data_path).is_dir():
+            os.makedirs(Path(data_path))
         
         sg = social_interaction.create_social_inteaction_graph(repo_name)
         cg = code_interaction.create_code_interaction_graph(git_url,repo_name)
@@ -45,9 +51,15 @@ for i in range(project_list.shape[0]):
         bugs_data = buggy_commit.buggy_commit_maker(repo_name,git_url,repo_name)
         bugs_data.get_buggy_commits()
         buggy_commit_data = bugs_data.get_buggy_committer()
+
+               
         
         sg_data = sg.get_user_node_degree()
-        cg_data = cg.get_user_node_degree()
+        cg_data,bug_creator_df_final = cg.get_user_node_degree()
+
+
+        #bug_creator_df_final.to_pickle(data_path + 'bug_introducing_commits.pkl')
+
         
         commit_data = bugs_data.get_commit_count()
         
@@ -85,47 +97,47 @@ for i in range(project_list.shape[0]):
                                                     'commit_count','sg_data_df','cg_data_df'])
         print("step2")
         result_pd.to_pickle(up(os.getcwd()) + '/Processed_data/' + repo_name + '_final_results.pkl')
-        print("step3")   
-        df = []
-        for i in range(cg_data_df.shape[0]):
-            buggy_commit_count = buggy_commit_data_df[buggy_commit_data_df['committer'] == cg_data_df.loc[i,'committer']]['count']
-            if len(buggy_commit_count) == 0:
-                continue
-            commit_count = commit_data_df[commit_data_df['committer'] == cg_data_df.loc[i,'committer']]['count']
-            if len(commit_count) == 0:
-                continue
-            node_degree = cg_data_df[cg_data_df['committer'] == cg_data_df.loc[i,'committer']]['count']
-            df.append([buggy_commit_count.values[0]/commit_count.values[0],node_degree.values[0]])
+        # print("step3")   
+        # df = []
+        # for i in range(cg_data_df.shape[0]):
+        #     buggy_commit_count = buggy_commit_data_df[buggy_commit_data_df['committer'] == cg_data_df.loc[i,'committer']]['count']
+        #     if len(buggy_commit_count) == 0:
+        #         continue
+        #     commit_count = commit_data_df[commit_data_df['committer'] == cg_data_df.loc[i,'committer']]['count']
+        #     if len(commit_count) == 0:
+        #         continue
+        #     node_degree = cg_data_df[cg_data_df['committer'] == cg_data_df.loc[i,'committer']]['count']
+        #     df.append([buggy_commit_count.values[0]/commit_count.values[0],node_degree.values[0]])
             
-        df = pd.DataFrame(df, columns = ['per','degree'])
+        # df = pd.DataFrame(df, columns = ['per','degree'])
         
         
-        degree_d = np.array(df['degree'].values.tolist())
+        # degree_d = np.array(df['degree'].values.tolist())
         
-        first = np.int32(np.percentile(degree_d,99.9))
-        second = np.int32(np.percentile(degree_d,99))
-        third = np.int32(np.percentile(degree_d,80))
-        forth = np.int32(np.percentile(degree_d,50))
+        # first = np.int32(np.percentile(degree_d,99.9))
+        # second = np.int32(np.percentile(degree_d,99))
+        # third = np.int32(np.percentile(degree_d,80))
+        # forth = np.int32(np.percentile(degree_d,50))
         
-        first_l = []
-        second_l = []
-        third_l = []
-        forth_l = []
-        for i in range(df.shape[0]):
-            if df.loc[i,'degree'] < forth:
-                forth_l.append(df.loc[i,'per'])
-            elif df.loc[i,'degree'] < third:
-                third_l.append(df.loc[i,'per'])
-            elif df.loc[i,'degree'] < second:
-                second_l.append(df.loc[i,'per'])
-            else:
-                first_l.append(df.loc[i,'per'])
-        print(round(np.median(first_l),2),round(np.median(second_l),2),round(np.median(third_l),2),round(np.median(forth_l),2))
-        fp1 = open('run_graph.csv', 'a' , newline='')
-        myFile1 = csv.writer(fp1)        
-        print_list = [repo_name,round(np.median(first_l),2),round(np.median(second_l),2),round(np.median(third_l),2),round(np.median(forth_l),2)]
-        myFile1.writerow(print_list)
-        fp1.close()
+        # first_l = []
+        # second_l = []
+        # third_l = []
+        # forth_l = []
+        # for i in range(df.shape[0]):
+        #     if df.loc[i,'degree'] < forth:
+        #         forth_l.append(df.loc[i,'per'])
+        #     elif df.loc[i,'degree'] < third:
+        #         third_l.append(df.loc[i,'per'])
+        #     elif df.loc[i,'degree'] < second:
+        #         second_l.append(df.loc[i,'per'])
+        #     else:
+        #         first_l.append(df.loc[i,'per'])
+        # print(round(np.median(first_l),2),round(np.median(second_l),2),round(np.median(third_l),2),round(np.median(forth_l),2))
+        # fp1 = open('run_graph.csv', 'a' , newline='')
+        # myFile1 = csv.writer(fp1)        
+        # print_list = [repo_name,round(np.median(first_l),2),round(np.median(second_l),2),round(np.median(third_l),2),round(np.median(forth_l),2)]
+        # myFile1.writerow(print_list)
+        # fp1.close()
 
     except ValueError as e:
         print("Exception occured for ",git_url)

@@ -26,10 +26,12 @@ class utils(object):
     def create_graph(self,matrix):
         gr = nx.Graph()
         rows,cols = np.where(matrix > 0)
-        edges = zip(rows.tolist(), cols.tolist())
-        gr = nx.Graph()
-        gr.add_edges_from(edges)
-        return dict(gr.degree(gr.nodes())),gr
+        gr = nx.DiGraph()
+        for i in range(len(rows)):
+            gr.add_edge(rows[i],cols[i],weight = matrix[rows[i]][cols[i]])
+        #gr.add_edges_from(edges)
+        #gr.add_weighted_edges_from(edges)å
+        return dict(gr.out_degree(gr.nodes(),weight='weight')),gr
     
     def printProgressBar(self,iteration, total, prefix='Progress:', suffix='Complete',
                      decimals=2, length=50, fill='█'):

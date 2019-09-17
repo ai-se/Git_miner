@@ -41,15 +41,18 @@ class MetricsGetter(object):
     def __init__(self,repo_url,repo_name,repo_lang):
         self.repo_url = repo_url
         self.repo_name = repo_name
+        print(self.repo_name)
         self.repo_lang = repo_lang
         self.repo_obj = git2repo.git2repo(self.repo_url,self.repo_name)
         self.repo = self.repo_obj.clone_repo()
         if platform.system() == 'Darwin' or platform.system() == 'Linux':
             self.repo_path = up(os.getcwd()) + '/temp_repo/' + self.repo_name
             self.file_path = up(os.getcwd()) + '/data/' + self.repo_name + '_commit.pkl'
+            self.committed_file = up(os.getcwd()) + '/data/' + self.repo_name + '_committed_file.pkl'
         else:
             self.repo_path = up(os.getcwd()) + '\\temp_repo\\' + self.repo_name
             self.file_path = up(os.getcwd()) + '\\data\\' + self.repo_name + '_commit.pkl'
+            self.committed_file = up(os.getcwd()) + '\\data\\' + self.repo_name + '_committed_file.pkl'
         self.buggy_clean_pairs = self.read_commits()
         self.repo_path = self.repo_obj.repo_path
         # Reference current directory, so we can go back after we are done.
@@ -69,10 +72,12 @@ class MetricsGetter(object):
 
     def read_commits(self):
         df = pd.read_pickle(self.file_path)
+        df_committed_file = pd.read_pickle(self.committed_file)
         df = df[df['buggy'] == 1]
         df_commits = df.drop(labels = ['message','buggy'], axis = 1)
         commits = []
         for i in range(df_commits.shape[0]):
+            committed_files = []
             if df_commits.iloc[i,0] == None or df_commits.iloc[i,1] == None:
                 continue
             bug_fixing_commit = self.repo.get(df_commits.iloc[i,0])
@@ -80,7 +85,11 @@ class MetricsGetter(object):
             if bug_fixing_commit == None:
                 print(df_commits.iloc[i,0])
                 continue
-            commits.append([bug_existing_commit,bug_fixing_commit])
+            for index,row in  df_committed_file[df_committed_file['commit_id'] == df_commits.iloc[i,0]].iterrows():
+                if len(row['file_path'].split('src/')) == 1:
+                    continue
+                committed_files.append(row['file_path'].split('src/')[1].replace('/','.').rsplit('.',1)[0])
+            commits.append([bug_existing_commit,bug_fixing_commit,committed_files])
         return commits
 
     @staticmethod
@@ -205,6 +214,7 @@ class MetricsGetter(object):
         for i in range(len(self.buggy_clean_pairs)):
             buggy_hash = self.buggy_clean_pairs[i][0]
             clean_hash = self.buggy_clean_pairs[i][1]
+            files_changed = self.buggy_clean_pairs[i][2]
             print(i,(buggy_hash, clean_hash))
             # Go the the cloned project path
             os.chdir(self.repo_path)
@@ -214,8 +224,8 @@ class MetricsGetter(object):
             self._os_cmd("git reset --hard master", verbose=False)
 
             # Get a list of files changed between the two hashes
-            files_changed = self._files_changed_in_git_diff(
-                buggy_hash, clean_hash)
+            #files_changed = self._files_changed_in_git_diff(
+            #    buggy_hash, clean_hash)
             # ------------------------------------------------------------------
             # ---------------------- BUGGY FILES METRICS -----------------------
             # ------------------------------------------------------------------
@@ -228,9 +238,9 @@ class MetricsGetter(object):
             #print(self.buggy_und_file)
             db_buggy = und.open(str(self.buggy_und_file))
             for file in db_buggy.ents("class"):
-                print(file.longname())
                 # print directory name
                 if str(file) in files_changed:
+                    print(str(file))
                     metrics = file.metric(file.metrics())
                     metrics["Name"] = file.name()
                     metrics["Bugs"] = 1
@@ -251,9 +261,10 @@ class MetricsGetter(object):
             self._create_und_files("clean")
             print(files_changed)
             db_clean = und.open(str(self.clean_und_file))
-            for file in db_clean.ents("File"):
+            for file in db_clean.ents("class"):
                 # print directory name
                 if str(file) in files_changed:
+                    print(str(file))
                     metrics = file.metric(file.metrics())
                     metrics["Name"] = file.name()
                     metrics["Bugs"] = 0

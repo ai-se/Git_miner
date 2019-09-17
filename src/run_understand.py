@@ -24,10 +24,10 @@ import os
 import platform
 
 if platform.system() == 'Darwin' or platform.system() == 'Linux':
-    data_path = up(os.getcwd()) + '/project_list.csv'
+    data_path = up(os.getcwd()) + '/project_list_1.csv'
     print(up(os.getcwd()))
 else:
-    data_path = up(os.getcwd()) + '\\project_list.csv'
+    data_path = up(os.getcwd()) + '\\project_list_1.csv'
 
 project_list = pd.read_csv(data_path)
 

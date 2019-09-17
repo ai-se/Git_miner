@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 import math
 import networkx as nx
 import os
-import main.utils.utils as utils
+from main.utils import utils as utils
 import platform
 from os.path import dirname as up
 
@@ -26,6 +26,7 @@ class create_social_inteaction_graph(object):
     def read_data(self):
         if platform.system() == 'Darwin' or platform.system() == 'Linux':
             self.comments_details_df = pd.read_pickle(up(os.getcwd()) + '/data/' + self.project_name+ '_issue_comment.pkl')
+            #print(self.comments_details_df)
             self.issue_details_df = pd.read_pickle(up(os.getcwd()) + '/data/' + self.project_name+ '_issue.pkl')
             self.user_map = pd.read_pickle(up(os.getcwd())+ '/data/' + self.project_name+ '_user.pkl')
         else:
@@ -58,7 +59,8 @@ class create_social_inteaction_graph(object):
                     continue
                 comment_to = np.delete(participents,np.where(participents == comment_from))
                 for k in comment_to:
-                    connection_matrix[self.user_dict[comment_from]][self.user_dict[k]] += len(comment_count)
+                    #connection_matrix[self.user_dict[comment_from]][self.user_dict[k]] += len(comment_count)
+                    connection_matrix[self.user_dict[comment_from]][self.user_dict[k]] += comment_count[0]
         return connection_matrix
                     
     
@@ -74,5 +76,6 @@ class create_social_inteaction_graph(object):
             if user_id not in degree.keys():
                 continue
             user_degree[user_name] = degree[user_id]
+        print('Done with social graph')
         return user_degree
         

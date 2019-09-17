@@ -27,6 +27,7 @@ import os
 from multiprocessing import Pool, cpu_count
 import platform
 from os.path import dirname as up
+import sys
 
 class ThreadWithReturnValue(Thread):
     def __init__(self, group=None, target=None, name=None,
@@ -95,8 +96,8 @@ class create_code_interaction_graph(object):
                         if _line != -1:
                             ref = blame.for_line(_line)
                             bug_creator.append([ref.final_committer.name,diffs[value]['object'].committer.name ,ref.orig_commit_id, 1])
-                            #       break
-                except:
+                except Exception as e:
+                    #print(file_path,e)
                     continue
         bug_creator_df = pd.DataFrame(bug_creator, columns = ['committer1','committer2','commit','ob'])
         return bug_creator_df
@@ -104,7 +105,7 @@ class create_code_interaction_graph(object):
     def create_adjacency_matrix(self):
         threads = []
         bug_creator_df = pd.DataFrame([], columns = ['committer1','committer2','commit','ob'])
-        i = 0
+        #i = 0
         keys = list(self.diffs.keys())
         len_bd = len(self.diffs)
         sub_list_len = len_bd/self.cores
@@ -113,7 +114,6 @@ class create_code_interaction_graph(object):
             subdict = {x: self.diffs[x] for x in sub_keys if x in self.diffs}
             t = ThreadWithReturnValue(target = self.get_bug_creators, args = [subdict])
             threads.append(t)
-        print(len(threads))
         for i in range(0,len(threads),self.cores):
             print("Starting Thread group:",i)
             _threads = threads[i:i+self.cores]
@@ -123,6 +123,48 @@ class create_code_interaction_graph(object):
                 response = th.join()
                 bug_creator_df = pd.concat([bug_creator_df,response])
                 bug_creator_df.reset_index(inplace = True, drop = True)
+        bug_creator_df_final = bug_creator_df
+        bug_creator_df.to_csv('temp.csv')
+        bug_creator_df = bug_creator_df.drop(['commit'], axis = 1)
+        df = bug_creator_df.groupby( ['committer1','committer2']).sum()
+
+        defect_count = []
+        for key,value in df.iterrows():
+            user1 = key[0]
+            user2 = key[1]
+            count = value.values.tolist()[0]
+            defect_count.append([user1,user2,count])
+        defect_count_df = pd.DataFrame(defect_count, columns = ['committer1','committer2', 'count'])
+        uniq_users1 = defect_count_df.committer1.unique()
+        uniq_users2 = defect_count_df.committer2.unique()
+        uniq_users = np.unique(np.concatenate((uniq_users1,uniq_users2)))
+        connection_matrix = np.ndarray(shape=(len(uniq_users),len(uniq_users)))
+        connection_matrix = np.zeros((len(uniq_users),len(uniq_users)), dtype=np.int)
+        user_dict = {}
+        rev_user_dict = {}
+        user_id = 0
+        for i in range(len(uniq_users)):
+            user_dict[uniq_users[i]] = user_id
+            rev_user_dict[user_id] = uniq_users[i]
+            user_id += 1
+        for i in range(defect_count_df.shape[0]):
+            changer = user_dict[defect_count_df.loc[i,'committer1']]
+            changed = user_dict[defect_count_df.loc[i,'committer2']]
+            connection_matrix[changer][changed] += defect_count_df.loc[i,'count']
+            
+        return connection_matrix,uniq_users,user_dict,bug_creator_df_final
+
+
+    def create_adjacency_matrix_single(self):
+        threads = []
+        bug_creator_df = pd.DataFrame([], columns = ['committer1','committer2','commit','ob'])
+        i = 0
+        keys = list(self.diffs.keys())
+        len_bd = len(self.diffs)
+        sub_list_len = len_bd/self.cores
+        bug_creator_df = self.get_bug_creators(self.diffs)
+        bug_creator_df.reset_index(inplace = True, drop = True)
+        bug_creator_df_final = bug_creator_df
         bug_creator_df = bug_creator_df.drop(['commit'], axis = 1)
         df = bug_creator_df.groupby( ['committer1','committer2']).count()
         defect_count = []
@@ -149,20 +191,19 @@ class create_code_interaction_graph(object):
             changed = user_dict[defect_count_df.loc[i,'committer2']]
             connection_matrix[changer][changed] += defect_count_df.loc[i,'count']
             
-        return connection_matrix,uniq_users,user_dict
+        return connection_matrix,uniq_users,user_dict,bug_creator_df_final
 
     
     
     def get_user_node_degree(self):
         graph_util = utils.utils()
         print("starting graph")
-        connection_matrix,uniq_users,user_dict = self.create_adjacency_matrix()
+        connection_matrix,uniq_users,user_dict,bug_creator_df_final = self.create_adjacency_matrix()
         print("done graph")
         degree,G = graph_util.create_graph(connection_matrix)
         print("getting degree")
         user_degree = {}
         for i in range(len(uniq_users)):
-            print(i)
             user_name = uniq_users[i]
             user_id = user_dict[user_name]
             if user_id not in degree.keys():
@@ -170,5 +211,5 @@ class create_code_interaction_graph(object):
             user_degree[user_name] = degree[user_id]
         print("Done everything")
         self.repo_obj.repo_remove()
-        return user_degree
+        return user_degree,bug_creator_df_final#,connection_matrix
     

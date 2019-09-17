@@ -100,8 +100,11 @@ class git2data(object):
     
     def create_data(self):
         self.get_api_data()
+        print("API done")
         self.get_commit_data()
+        print("Commit done")
         self.get_committed_files()
+        print("Committed file done")
         issue_data,commit_data,committed_file_data,issue_comment_data,user_data = self.create_link()
         print(self.data_path)
         issue_data.to_pickle(self.data_path + self.repo_name + '_issue.pkl')
