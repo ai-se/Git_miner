@@ -16,7 +16,7 @@ from os.path import dirname as up
 import os
 from pathlib import Path
 import platform
-
+from main.git_log import git2data,git_commit_info
 
 
 def get_heros():
@@ -35,7 +35,8 @@ def get_heros():
             git_url = project_list.loc[i,'git_url']
             api_base_url = project_list.loc[i,'api_base_url']
             repo_name = project_list.loc[i,'repo_name'] 
-
+            git_data = git_commit_info.git2data(access_token,repo_owner,source_type,git_url,api_base_url,repo_name)
+            git_data.create_data()
             if platform.system() == 'Darwin' or platform.system() == 'Linux':
                 data_path = up(os.getcwd()) + '/data/' + repo_name + '/'
             else:
@@ -64,3 +65,5 @@ def get_heros():
             print("Error",e)
             continue
     return project_list
+
+get_heros()

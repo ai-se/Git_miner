@@ -60,6 +60,7 @@ class create_code_interaction_graph(object):
         self.commits = self.read_commits()
         self.commit_df = pd.DataFrame(self.commits, columns = ['commit_object'])
         self.diffs = self.get_diffs()
+        print('diffs done')
         self.cores = cpu_count()
         
     def read_commits(self):
@@ -84,18 +85,19 @@ class create_code_interaction_graph(object):
     def get_bug_creators(self,diffs):
         bug_creator = []
         for value in diffs:
+            #print(diffs[value])
             _diff_files = diffs[value]['files']
             self.repo.head.set_target(diffs[value]['object'].parent_ids[0])
             for _value in _diff_files:
                 try:
                     file_path = _diff_files[_value]['file_path']
-                    blame = self.repo_obj.get_blame(file_path)
+                    #blame = self.repo_obj.get_blame(file_path)
                     bug_creator.append([diffs[value]['object'].committer.name , len(_diff_files[_value]['old_lines'])])
                 except Exception as e:
-                    #print(file_path,e)
+                    print(file_path,e)
                     continue
         bug_creator_df = pd.DataFrame(bug_creator, columns = ['committer1','ob'])
-        bug_creator_df = bug_creator_df.groupby( ['committer1']).sum()
+        bug_creator_df = bug_creator_df.groupby(['committer1']).sum()
         return bug_creator_df
 
 
