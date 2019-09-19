@@ -26,6 +26,7 @@ def get_heros():
         source_projects = up(os.getcwd()) + '\\project_list.csv'
     project_list = pd.read_csv(source_projects)
     project_list['heros'] = [0]*project_list.shape[0]
+    project_list['num_dev'] = [0]*project_list.shape[0]
     projects_hero = []
     for i in range(project_list.shape[0]):
         try:
@@ -55,6 +56,9 @@ def get_heros():
                     continue
                 else:
                     break
+            project_list.iloc[i,8] = project_details.shape[0]
+            if project_details.shape[0] < 8:
+                continue
             if (1 - j/project_details.shape[0]<0.2):
                 project_list.iloc[i,7] = True 
             else:
