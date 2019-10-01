@@ -22,11 +22,6 @@ if platform.system() == 'Darwin' or platform.system() == 'Linux':
 else:
     source_projects = up(os.getcwd()) + '\\project_list.csv'
 project_list = pd.read_csv(source_projects)
-fp1 = open('run_graph.csv', 'w' , newline='')
-myFile1 = csv.writer(fp1)
-column_names1 = ['project_name','first','second','third','fourth']
-myFile1.writerow(column_names1)
-fp1.close()
 
 for i in range(project_list.shape[0]):
     try:
@@ -142,5 +137,3 @@ for i in range(project_list.shape[0]):
     except ValueError as e:
         print("Exception occured for ",git_url)
         print(e)
-
-fp1.close()

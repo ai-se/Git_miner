@@ -71,7 +71,6 @@ class create_code_interaction_graph(object):
         for commit in df_commit_id:
             obj = self.repo.get(commit)
             if obj == None:
-                print(commit)
                 continue
             commits.append(obj)
         return commits

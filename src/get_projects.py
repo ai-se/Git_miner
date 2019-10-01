@@ -25,7 +25,10 @@ def get_heros():
     else:
         source_projects = up(os.getcwd()) + '\\project_list.csv'
     project_list = pd.read_csv(source_projects)
-    project_list['heros'] = [0]*project_list.shape[0]
+    project_list['heros_80'] = [0]*project_list.shape[0]
+    project_list['heros_85'] = [0]*project_list.shape[0]
+    project_list['heros_90'] = [0]*project_list.shape[0]
+    project_list['heros_95'] = [0]*project_list.shape[0]
     project_list['num_dev'] = [0]*project_list.shape[0]
     projects_hero = []
     for i in range(project_list.shape[0]):
@@ -51,18 +54,23 @@ def get_heros():
             project_details.sort_values(by='ob',inplace=True)
             project_details['cum_sum'] = project_details.ob.cumsum()
             total_loc = project_details.ob.sum()
-            for j in range(project_details.shape[0]):
-                if project_details.iloc[j,1] <= project_details.ob.sum()*0.8:
+            #print(project_details,total_loc)
+            contr_list = [0.8,0.85,0.9,0.95]
+            population_list = [0.2,0.15,0.1,0.05]
+            for k in range(4):
+                for j in range(project_details.shape[0]):
+                    if project_details.iloc[j,1] <= project_details.ob.sum()*contr_list[k]:
+                        continue
+                    else:
+                        break
+                project_list.iloc[i,11] = project_details.shape[0]
+
+                if project_details.shape[0] < 8:
                     continue
+                if ((1 - j/project_details.shape[0])<population_list[k]):
+                    project_list.iloc[i,7+k] = True 
                 else:
-                    break
-            project_list.iloc[i,8] = project_details.shape[0]
-            if project_details.shape[0] < 8:
-                continue
-            if (1 - j/project_details.shape[0]<0.2):
-                project_list.iloc[i,7] = True 
-            else:
-                project_list.iloc[i,7] = False
+                    project_list.iloc[i,7+k] = False
 
             project_list.to_csv(up(os.getcwd()) + '/hero_list.csv')
         except Exception as e:
