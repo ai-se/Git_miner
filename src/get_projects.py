@@ -67,6 +67,9 @@ def get_heros():
 
                 if project_details.shape[0] < 8:
                     continue
+                if 1 == j/project_details.shape[0]:
+                    project_list.iloc[i,7+k] = False
+                    continue
                 if ((1 - j/project_details.shape[0])<population_list[k]):
                     project_list.iloc[i,7+k] = True 
                 else:
