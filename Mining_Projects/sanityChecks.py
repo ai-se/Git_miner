@@ -14,6 +14,7 @@ def func1():
     repo_result['issues > 8'] = ["YES"] * len(repo_result)
     repo_result['pull_req > 0'] = ["YES"] * len(repo_result)
     repo_result['commits > 20'] = ["YES"] * len(repo_result)
+    repo_result['contributors > 8'] = ["YES"] * len(repo_result)
     print(repo_result)
     print(repo_result.iloc[1]['repo_owner'])
     removed_projects = 0
@@ -131,6 +132,43 @@ def func1():
             print("Project is not good")
             repo_result.at[n, "commits > 20"] = "NO"
         n+=1
+
+    ## Selecting Projects with contributors > 8
+    c = 0
+    while c < len(repo_result):
+        repo_owner = repo_result.iloc[c]['repo_owner']
+        repo_name = repo_result.iloc[c]['repo_name']
+        commit_url = api_url + 'repos/' + repo_owner + '/' + repo_name + '/' + 'contributors'
+
+        exception_count = 0
+        while exception_count < 2:
+            try:
+                for k in range(0, len(Token_list)):
+                    headers = {'Content-Type': 'application/json', 'Authorization': 'Bearer {0}'.format(Token_list[k])}
+                    # print(Token_list[k])
+                    commit_response = requests.get(commit_url, headers=headers).json()
+                    try:
+                        if (len(commit_response['message']) > 0):
+                            if (k == len(Token_list) - 1):
+                                time.sleep(600)
+                                exception_count = exception_count + 1
+                        else:
+                            continue
+                    except:
+                        break
+                if (exception_count == 0):
+                    break
+                else:
+                    continue
+            except:
+                exception_count = 0
+        print(len(commit_response))
+        if (len(commit_response) > 8):
+            print("Project is good")
+        else:
+            print("Project is not good")
+            repo_result.at[c, "contributors > 8"] = "NO"
+        c+=1
 
     repo_result.to_csv("project_sanity_check.csv")
 
