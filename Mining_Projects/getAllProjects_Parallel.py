@@ -12,8 +12,9 @@ import requests
 def func1():
 
   repo_result = []
-
-  Token_list = [''**'',''**'',''**'',''**'',''**'']
+  print("Inside function 1")
+  Token_list = ["b8964bafb3ec2e8d36eb826984091feedbd3d687"]
+  #Token_list = [''**'',''**'',''**'',''**'',''**'']
 
   i = 0  
   api_url = 'https://api.github.com/'
@@ -74,7 +75,7 @@ def func1():
       break
 
     ## Removing projects having less than 8 issues
-  
+
   p = 0
   while p < len(repo_result):    
     repo_owner = repo_result[p]['owner']
@@ -203,7 +204,8 @@ def func2():
 
   repo_result = []
 
-  Token_list = [''**'',''**'',''**'',''**'',''**'']
+  Token_list = ["b8964bafb3ec2e8d36eb826984091feedbd3d687"]
+  #Token_list = [''**'',''**'',''**'',''**'',''**'']
 
   i = 10000  
   api_url = 'https://api.github.com/'
@@ -392,7 +394,8 @@ def func3():
 
   repo_result = []
 
-  Token_list = [''**'',''**'',''**'',''**'',''**'']
+  Token_list = ["b8964bafb3ec2e8d36eb826984091feedbd3d687"]
+  #Token_list = [''**'',''**'',''**'',''**'',''**'']
 
   i = 20000  
   api_url = 'https://api.github.com/'
@@ -581,7 +584,8 @@ def func4():
 
   repo_result = []
 
-  Token_list = [''**'',''**'',''**'',''**'',''**'']
+  Token_list = ["b8964bafb3ec2e8d36eb826984091feedbd3d687"]
+  #Token_list = [''**'',''**'',''**'',''**'',''**'']
 
   i = 30000  
   api_url = 'https://api.github.com/'
@@ -774,7 +778,8 @@ if __name__ == '__main__':
   p1 = Process(target=func1)
   p2 = Process(target=func2)
   p3 = Process(target=func3)
-  p4 = Process(target=func4)  
+  p4 = Process(target=func4)
+  print("Process created")
   p1.start()
   p2.start()
   p3.start()
