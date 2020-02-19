@@ -11,8 +11,8 @@ import os
 def func1():
     print("Inside function 1")
     api_url = 'https://api.github.com/'
-    Token_list = ["b8964bafb3ec2e8d36eb826984091feedbd3d687", "d851bf6f7a5654880fc1ca0c32966f40c08c8675", "3b254401b257ff098a21750faff7065c7d390bd3", "26d4b50354944b985978bf8cdee95fe4474c144c", "57b854031d4433381cf37d8f965e2d384c094977", "24bb51c704586a04fb7c75715fdffa3608a88924"]
-    repo_result = pd.read_csv('project_list//projects_JavaScript.csv')
+    Token_list = ["3461f9c10321ddfb8168f9085dceca627ddf11bb", "add6e0272e9fde10578a94e922b27782746adbf6", "da983d960481028511776d8ad34fc7bad8c21113", "4da5ac9ff801fa9c1897a3076a44647c585788bc"]
+    repo_result = pd.read_csv('project_list//project_info.csv')
     n = len(repo_result)
     repo_result = repo_result[:n//4]
     #repo_result.reset_index(drop=True, inplace=True)
@@ -185,13 +185,14 @@ def func1():
             repo_result.at[s, "stars"] = stars
         s+=1
     #return  repo_result
-    repo_result.to_csv("javascript_project_sanity_check.csv", mode = 'a+', index = False)
+    print("Writing to csv file")
+    repo_result.to_csv("ruby_project_sanity_check.csv", mode = 'a+', index = False)
 
 def func2():
     print("Inside function 2")
     api_url = 'https://api.github.com/'
-    Token_list = ["b8964bafb3ec2e8d36eb826984091feedbd3d687", "d851bf6f7a5654880fc1ca0c32966f40c08c8675", "3b254401b257ff098a21750faff7065c7d390bd3", "26d4b50354944b985978bf8cdee95fe4474c144c", "57b854031d4433381cf37d8f965e2d384c094977", "24bb51c704586a04fb7c75715fdffa3608a88924"]
-    repo_result = pd.read_csv('project_list//projects_JavaScript.csv')
+    Token_list = ["3461f9c10321ddfb8168f9085dceca627ddf11bb", "add6e0272e9fde10578a94e922b27782746adbf6", "da983d960481028511776d8ad34fc7bad8c21113", "4da5ac9ff801fa9c1897a3076a44647c585788bc"]
+    repo_result = pd.read_csv('project_list//project_info.csv')
     n = len(repo_result)
     repo_result = repo_result[n//4:n//2]
     repo_result.reset_index(drop=True, inplace=True)
@@ -365,13 +366,14 @@ def func2():
             repo_result.at[s, "stars"] = stars
         s+=1
     #return repo_result
-    repo_result.to_csv("javascript_project_sanity_check.csv", mode = 'a+', header = False, index = False)
+    print("Writing to csv file")
+    repo_result.to_csv("ruby_project_sanity_check.csv", mode = 'a+', header = False, index = False)
 
 def func3():
     print("-----INSIDE FUNCTION 3 ------------")
     api_url = 'https://api.github.com/'
-    Token_list = ["b8964bafb3ec2e8d36eb826984091feedbd3d687", "d851bf6f7a5654880fc1ca0c32966f40c08c8675", "3b254401b257ff098a21750faff7065c7d390bd3", "26d4b50354944b985978bf8cdee95fe4474c144c", "57b854031d4433381cf37d8f965e2d384c094977", "24bb51c704586a04fb7c75715fdffa3608a88924"]
-    repo_result = pd.read_csv('project_list//projects_JavaScript.csv')
+    Token_list = ["3461f9c10321ddfb8168f9085dceca627ddf11bb", "add6e0272e9fde10578a94e922b27782746adbf6", "da983d960481028511776d8ad34fc7bad8c21113", "4da5ac9ff801fa9c1897a3076a44647c585788bc"]
+    repo_result = pd.read_csv('project_list//project_info.csv')
     n = len(repo_result)
     repo_result = repo_result[n//2:3*n//4]
     repo_result.reset_index(drop=True, inplace=True)
@@ -548,13 +550,14 @@ def func3():
             repo_result.at[s, "stars"] = stars
         s+=1
     #return repo_result
-    repo_result.to_csv("javascript_project_sanity_check.csv", mode = 'a+', header = False, index = False)
+    print("Writing to csv file")
+    repo_result.to_csv("ruby_project_sanity_check.csv", mode = 'a+', header = False, index = False)
 
 def func4():
     print("Inside function 4")
     api_url = 'https://api.github.com/'
-    Token_list = ["b8964bafb3ec2e8d36eb826984091feedbd3d687", "d851bf6f7a5654880fc1ca0c32966f40c08c8675", "3b254401b257ff098a21750faff7065c7d390bd3", "26d4b50354944b985978bf8cdee95fe4474c144c", "57b854031d4433381cf37d8f965e2d384c094977", "24bb51c704586a04fb7c75715fdffa3608a88924"]
-    repo_result = pd.read_csv('project_list//projects_JavaScript.csv')
+    Token_list = ["3461f9c10321ddfb8168f9085dceca627ddf11bb", "add6e0272e9fde10578a94e922b27782746adbf6", "da983d960481028511776d8ad34fc7bad8c21113", "4da5ac9ff801fa9c1897a3076a44647c585788bc"]
+    repo_result = pd.read_csv('project_list//project_info.csv')
     n = len(repo_result)
     repo_result = repo_result[3*n//4:]
     repo_result.reset_index(drop=True, inplace=True)
@@ -729,11 +732,12 @@ def func4():
             repo_result.at[s, "stars"] = stars
         s+=1
     #return repo_result
-    repo_result.to_csv("javascript_project_sanity_check.csv", mode = 'a+', header = False, index = False)
+    print("Writing to csv file")
+    repo_result.to_csv("ruby_project_sanity_check.csv", mode = 'a+', header = False, index = False)
 
 if __name__ == '__main__':
-    if os.path.isfile("javascript_project_sanity_check.csv") :
-        os.remove("javascript_project_sanity_check.csv")
+    if os.path.isfile("ruby_project_sanity_check.csv") :
+        os.remove("ruby_project_sanity_check.csv")
     lock = Lock()
     p1 = Process(target=func1)
     p2 = Process(target=func2)
