@@ -1,0 +1,1083 @@
+Unnamed: 0,repo_name,repo_owner,project_url,description,size,watchers_count,forks_count,open_issues,issues > 8,pull_req > 0,commits > 20,contributors > 8,stars
+540,fastspline,jamesorr,https://github.com/jamesorr/fastspline,Fast smoothing spline routine in Fortran 90 usable in python,326,11,0,0,NO,NO,NO,NO,11
+541,CloverLeaf,Mantevo,https://github.com/Mantevo/CloverLeaf,Compressible Euler equations on a Cartesian grid,113,11,0,0,NO,NO,NO,NO,11
+542,atmos,VirtualPlanetaryLaboratory,https://github.com/VirtualPlanetaryLaboratory/atmos,,18184,11,6,3,NO,YES,NO,NO,11
+543,AtChem2,AtChem,https://github.com/AtChem/AtChem2,Atmospheric chemistry box-model for the MCM,5048,11,6,29,YES,YES,YES,NO,11
+544,aronnax,edoddridge,https://github.com/edoddridge/aronnax,"An idealised isopycnal model that can be run either with n+1/2 layers, or with n layers and variable bathymetry.",70320,10,2,38,YES,YES,YES,NO,10
+545,NHWAVE,JimKirby,https://github.com/JimKirby/NHWAVE,NHWAVE Developer Group and Software Distribution,42183,10,12,10,NO,YES,YES,NO,10
+546,FEST-3D,FEST3D,https://github.com/FEST3D/FEST-3D,The source code for Finite volume Explicit STructured 3Dimensional (FEST-3D) solver.,7044,10,2,4,NO,YES,YES,NO,10
+547,mizuRoute,NCAR,https://github.com/NCAR/mizuRoute,Stand-alone streamflow routing model,28702,10,20,6,NO,YES,YES,NO,10
+548,openpde,francescosalvadore,https://github.com/francescosalvadore/openpde,,5432,10,0,3,NO,YES,YES,NO,10
+549,allen-tildesley,glennklockwood,https://github.com/glennklockwood/allen-tildesley,"Sample code from Allen & Tildesley's Computer Simulation of Liquids, 1st Ed.  See https://github.com/Allen-Tildesley/examples for modernized and updated examples from the 2nd edition.",114,10,12,0,NO,NO,NO,NO,10
+550,pyhyp,mdolab,https://github.com/mdolab/pyhyp,pyHyp generates volume meshes from surface meshes using hyperbolic marching.,9741,10,13,2,NO,YES,YES,NO,10
+551,DNAWorks,davidhoover,https://github.com/davidhoover/DNAWorks,Automatic oligonucleotide design for PCR-based gene synthesis ,88,10,14,2,NO,NO,YES,NO,10
+552,landslides-trigrs,usgs,https://github.com/usgs/landslides-trigrs,,286,10,13,2,NO,YES,YES,NO,10
+553,FortLua,adolgert,https://github.com/adolgert/FortLua,Example of Calling Lua from Fortran,127,10,2,1,NO,YES,NO,NO,10
+554,neuralnetwork,anjohan,https://github.com/anjohan/neuralnetwork,"Simple, parallel, object-oriented Fortran neural network",29,10,0,0,NO,NO,NO,NO,10
+555,fishman,dongli,https://github.com/dongli/fishman,A SCVT mesh generation tool,142,10,1,0,NO,YES,YES,NO,10
+556,scalapack,Reference-ScaLAPACK,https://github.com/Reference-ScaLAPACK/scalapack,ScaLAPACK development repository,2805,10,9,5,NO,YES,YES,NO,11
+557,MORFEUS-Source,sourceryinstitute,https://github.com/sourceryinstitute/MORFEUS-Source,Multi-physics Object-oriented Reconfigurable Fluid Environment for Unified Simulations,4029,10,0,5,NO,YES,YES,NO,10
+558,generic_rk,cbcoutinho,https://github.com/cbcoutinho/generic_rk,A generic Runge-Kutta module to solve a system of ODEs,1647,10,1,0,NO,NO,YES,NO,10
+559,sod,gcmt-group,https://github.com/gcmt-group/sod, Site-Occupation Disorder,377,10,8,0,NO,NO,YES,NO,10
+560,CCFDV3.0,PARALLELCCFD,https://github.com/PARALLELCCFD/CCFDV3.0,"CCFDV3.0 is an open-source written in fortran for the analysis of CFD problems on structured meshes (CGNS format).                           用户手册详见doc/文件夹中,编译方法详见README文件。修改了兰氏温度和开氏温度转换错误。",2809,10,5,1,NO,NO,YES,NO,10
+561,smash,cmsi,https://github.com/cmsi/smash,Massively parallel software for quantum chemistry calculations ,6958,10,4,1,NO,YES,YES,NO,10
+562,Algorithms,andreypudov,https://github.com/andreypudov/Algorithms,The Laboratory of Algorithms,841,10,2,0,NO,NO,YES,NO,10
+563,connectivity-modeling-system,beatrixparis,https://github.com/beatrixparis/connectivity-modeling-system,"The CMS is a multiscale stochastic Lagrangian framework developed by Paris' Lab at the Rosenstiel School of Marine & Atmospheric Science to study complex migrations and give probability estimates of dispersion, connectivity, fate of pollutants, and other Lagrangian phenomena. This repository facilitates community contributions to CMS modules.",5912,10,15,16,YES,YES,YES,NO,10
+564,fold2Bloch-Wien2k,rubel75,https://github.com/rubel75/fold2Bloch-Wien2k,Unfolding of first-principle electronic band structure,1339,10,4,0,NO,NO,YES,NO,10
+565,DRC_Fortran,TUDelft-DataDrivenControl,https://github.com/TUDelft-DataDrivenControl/DRC_Fortran,"Delft Research Controller (DRC), Bladed-style DISCON baseline wind turbine controller",2184,10,9,1,NO,YES,YES,NO,10
+566,qe-gipaw,dceresoli,https://github.com/dceresoli/qe-gipaw,QE-GIPAW for Quantum-Espresso (official repository),4892,10,7,1,NO,YES,YES,NO,10
+567,piernik,piernik-dev,https://github.com/piernik-dev/piernik,Piernik MHD Code,26356,10,15,27,YES,YES,YES,NO,10
+568,ester,ester-project,https://github.com/ester-project/ester,Evolution STEllaire en Rotation.,110804,10,5,1,NO,YES,YES,NO,11
+569,SimpleCrop,chporter,https://github.com/chporter/SimpleCrop,Ricardo Braga's Simple Crop model. Used as a simple example of a modular crop model in the style of DSSAT-CSM.,59,10,17,0,NO,NO,NO,NO,10
+570,HPCAcademyFortran,ZedThree,https://github.com/ZedThree/HPCAcademyFortran,Fortran course for HPC Academy,11293,10,0,0,NO,NO,YES,NO,10
+571,FORESEER,szaghi,https://github.com/szaghi/FORESEER,FOrtran RiEmann SolveErs EnviRonment,15054,10,2,1,NO,YES,YES,NO,10
+572,WPS,NCAR,https://github.com/NCAR/WPS,,1868,10,8,1,NO,YES,YES,NO,10
+573,swig-fortran-dev,sethrj,https://github.com/sethrj/swig-fortran-dev,Development/testing repo for SWIG+Fortran,604,10,1,0,NO,NO,YES,NO,11
+574,OpenSTAP,HaoguangYang,https://github.com/HaoguangYang/OpenSTAP,"OpenSTAP is a Finite Element Method (FEM) Solver based on STAP (KJ Bathe, FORTRAN IV), and modified version STAP90 (Prof. Xiong Zhang, Tsinghua University, FORTRAN 90). Basic elements, some advanced elements and methods are added and an Abaqus interface as well. Works with ParaView and Intel MKL.",108652,10,10,0,NO,NO,YES,NO,10
+575,nitsol,cmacmackin,https://github.com/cmacmackin/nitsol,Unofficial mirror of NITSOL library,111,10,2,0,NO,NO,NO,NO,10
+576,nka,nncarlson,https://github.com/nncarlson/nka,Nonlinear Krylov acceleration of fixed-point and Newton-like methods,708,10,2,0,NO,NO,YES,NO,10
+577,playmol,atoms-ufrj,https://github.com/atoms-ufrj/playmol,Playmol is a(nother) software for building molecular models,1861,10,4,0,NO,YES,YES,NO,10
+578,daglib,jacobwilliams,https://github.com/jacobwilliams/daglib,Directed Acyclic Graphs With Modern Fortran,56,10,2,0,NO,NO,NO,NO,10
+579,NTPoly,william-dawson,https://github.com/william-dawson/NTPoly,A massively parallel library for computing the functions of sparse matrices. ,9427,10,3,3,NO,YES,YES,NO,10
+580,focal,LKedward,https://github.com/LKedward/focal,A modern Fortran abstraction layer for OpenCL,312,10,1,0,NO,YES,YES,NO,10
+581,pfunit,laristra,https://github.com/laristra/pfunit,Mirror of PFUnit repository (http://git.code.sf.net/p/pfunit/code),12171,10,5,1,NO,NO,YES,YES,10
+582,MISTRAL,pseudospectators,https://github.com/pseudospectators/MISTRAL,Experimental research code for 3D Navier-Stokes equation using the method of artificial compressibility and finite differences,1722,10,2,0,NO,NO,YES,NO,10
+583,array_passing_performance,jlokimlin,https://github.com/jlokimlin/array_passing_performance,This project studies the impact of passing various types of arrays as dummy (formal) arguments.,18,10,0,0,NO,NO,NO,NO,10
+584,fortran-cuda-interfaces,MentorEmbedded,https://github.com/MentorEmbedded/fortran-cuda-interfaces,,19,10,0,0,NO,NO,NO,NO,10
+585,piclas,piclas-framework,https://github.com/piclas-framework/piclas,"PICLas is a parallel, three-dimensional PIC-DSMC solver developed cooperatively by the Institute of Space Systems, Institute of Aerodynamics and Gas Dynamics at the University of Stuttgart and the spin-off boltzplatz. PICLas is a flexible particle-based plasma simulation suite.",209639,10,3,0,NO,NO,YES,NO,10
+586,modern-fortran,floquet,https://github.com/floquet/modern-fortran,,86163,10,0,0,NO,NO,YES,NO,10
+587,libdspl-2.0,Dsplib,https://github.com/Dsplib/libdspl-2.0,,34837,10,2,0,NO,YES,YES,NO,10
+588,iESM,E3SM-Project,https://github.com/E3SM-Project/iESM,The Integrated Earth System Model (iESM) couples the Global Change Assessment Model  to the Community Earth System Model,45125,10,4,1,NO,NO,NO,NO,10
+589,factual,cmacmackin,https://github.com/cmacmackin/factual,Field Abstract Calculus Type Useable and Aesthetic Library,373,10,0,0,NO,NO,YES,NO,10
+590,fortran-kmeans,Eroica-cpp,https://github.com/Eroica-cpp/fortran-kmeans,A Fortran library for K-Means algorithm.,13,10,3,0,NO,NO,YES,NO,10
+591,dns,mt5555,https://github.com/mt5555/dns,direct numerical simulation,11024,10,19,1,NO,NO,YES,NO,10
+592,fitpackpp,jbaayen,https://github.com/jbaayen/fitpackpp,C++ binding for FITPACK B-spline curve and surface fitting routines,348,10,10,3,NO,YES,NO,NO,9
+593,sosie,brodeau,https://github.com/brodeau/sosie,SOSIE is Only a Surface Interpolation Environment ,214307,10,8,7,NO,YES,YES,NO,11
+594,cedar,cedar-framework,https://github.com/cedar-framework/cedar,"A robust, variational multigrid library implementing BoxMG on large scale parallel systems.",2369,10,3,10,NO,YES,YES,NO,10
+595,rpn-calc-fortran,scivision,https://github.com/scivision/rpn-calc-fortran,Fortran 2018 Reverse Polish Notation (RPN) calculator. Over 100 functions not in standard Fortran,1500,10,0,0,NO,NO,YES,NO,10
+596,adventure,Neko250,https://github.com/Neko250/adventure,Colossal Cave Adventure source code ! (1976),1556,10,2,0,NO,NO,NO,NO,11
+597,BladeX,usuaero,https://github.com/usuaero/BladeX,Blade Element Propeller Code,11,10,3,0,NO,NO,NO,NO,10
+598,for90-mom2,jmakitalo,https://github.com/jmakitalo/for90-mom2,Fortran 90 code for Method of Moments discretized integral operator formulations of EM scattering from dielectric/lossy/plasmonic/PEC objects (rewritten from the original for90-mom).,206,10,9,2,NO,YES,YES,NO,11
+599,HARP_Opt,NREL,https://github.com/NREL/HARP_Opt,HARP_Opt: Horizontal Axis Rotor Performance Optimization,55511,10,12,1,NO,NO,YES,NO,10
+600,lcmap-change-detection-c,USGS-EROS,https://github.com/USGS-EROS/lcmap-change-detection-c,LCMAP modules for change detection [WIP],962,10,20,2,NO,YES,YES,NO,10
+601,NS_Solver_IBM,shantanu7,https://github.com/shantanu7/NS_Solver_IBM,CFD assignment 2D incompressible Navier-Stokes solver,1814,10,3,0,NO,NO,NO,NO,10
+602,mxmx,ramos,https://github.com/ramos/mxmx,MIXMAX,504,9,0,0,NO,NO,NO,NO,9
+603,pyavl,pankajp,https://github.com/pankajp/pyavl,PyAVL is a python based gui interface to the Athena Vortex Lattice (AVL) program for aerodynamic and other analysis,1300,9,3,1,NO,NO,YES,NO,9
+604,ifeffit,newville,https://github.com/newville/ifeffit,ifeffit XAFS analysis programs,4163,9,4,2,NO,YES,YES,NO,9
+605,feff85exafs,xraypy,https://github.com/xraypy/feff85exafs,Feff8L: Open Source theoretical EXAFS fitting standards,11003,9,4,12,YES,YES,YES,NO,9
+606,ce-tddft,dceresoli,https://github.com/dceresoli/ce-tddft,Real-time TDDFT for Quantum-Espresso,3123,9,5,0,NO,NO,YES,NO,9
+607,UCLCHEM,uclchem,https://github.com/uclchem/UCLCHEM,UCLCHEM - A gas-grain chemical code for Astrochemistry.,25950,9,6,0,NO,YES,YES,NO,9
+608,FTeikPy,keurfonluu,https://github.com/keurfonluu/FTeikPy,FTeikPy is a Python module that computes accurate first arrival traveltimes in 2-D and 3-D heterogeneous isotropic velocity model.,5044,9,3,0,NO,NO,YES,NO,9
+609,gt-swt,arnoldrobbins,https://github.com/arnoldrobbins/gt-swt,The Georgia Tech Software Tools Subsystem and C Compiler for Prime Computers,41911,9,0,0,NO,NO,YES,NO,9
+610,Periodic_NBO,Chengcheng-Xiao,https://github.com/Chengcheng-Xiao/Periodic_NBO,Natural Bond Orbital algorithm to handle systems characterized by periodic symmetry,149,9,4,0,NO,NO,NO,NO,9
+611,DART,NCAR,https://github.com/NCAR/DART,Data Assimilation Research Testbed,440780,9,9,2,NO,YES,YES,YES,9
+612,RegCM,ictp-esp,https://github.com/ictp-esp/RegCM,ICTP Regional Climate Model,92461,9,1,0,NO,NO,YES,YES,9
+613,contrib-snufflings,pyrocko,https://github.com/pyrocko/contrib-snufflings,User contributed snufflings collection,7499,9,10,6,NO,YES,YES,NO,9
+614,shabaka,omhafez,https://github.com/omhafez/shabaka,Image-Based Mesh Generation,81054,9,2,0,NO,NO,YES,NO,9
+615,mercury6_binary,rsmullen,https://github.com/rsmullen/mercury6_binary,Version of the Chambers Mercury N-body integrator that can handle a central binary,505,9,2,0,NO,NO,YES,NO,9
+616,calypso,geodynamics,https://github.com/geodynamics/calypso,"Calypso performs magnetohydrodynamics (MHD) simulation in a rotating spherical shell, modeled as Boussinesq fluid driven by thermal or compositional buoyancy.",31106,9,5,0,NO,YES,YES,NO,9
+617,VARDEN,BoxLib-Codes,https://github.com/BoxLib-Codes/VARDEN,Variable-density incompressible Navier-Stokes code in F90,1436,9,5,0,NO,NO,YES,NO,9
+618,SCI-effects-simulation,research-group-of-Xinzheng-Lu,https://github.com/research-group-of-Xinzheng-Lu/SCI-effects-simulation,Open source codes for city-scale nonlinear time history analysis of buildings considering site-city interaction effects.,12014,9,3,0,NO,NO,NO,NO,9
+619,nonEquilibriumGreensFunction,brian-dellabetta,https://github.com/brian-dellabetta/nonEquilibriumGreensFunction,Calculates transport dynamics of a customizable channel and contact configuration in the Non-Equilibrium Green's Function Formalism,160,9,5,0,NO,NO,NO,NO,9
+620,lev00,hornos,https://github.com/hornos/lev00,"L. N. Kantorovich, User-friendly visualisation program for ab initio DFT codes VASP, SIESTA, QE and QUICKSTEP, 1996-2012, unpublished.",256,9,10,0,NO,NO,NO,NO,9
+621,classic,clawpack,https://github.com/clawpack/classic,Classic single-grid Fortran routines,488,9,19,10,NO,YES,YES,NO,9
+622,FFNN,Lili-Mou,https://github.com/Lili-Mou/FFNN,Feed-forward neural networks,82441,9,1,0,NO,NO,NO,NO,9
+623,Nekbone,Nek5000,https://github.com/Nek5000/Nekbone,Proxy app for Nek5000,777,9,11,2,NO,YES,NO,NO,9
+624,Nbody6,nbodyx,https://github.com/nbodyx/Nbody6,NBODY6,2288,9,5,1,NO,YES,YES,NO,9
+625,uclales,uclales,https://github.com/uclales/uclales,Large eddy simulation code for atmospheric flow,24597,9,14,3,NO,YES,YES,NO,9
+626,fortran_oo,pletzer,https://github.com/pletzer/fortran_oo,,22,9,1,0,NO,YES,YES,NO,9
+627,GEM,ychen38,https://github.com/ychen38/GEM,A software for computer simulation of magnetically confined plasmas,16233,9,6,0,NO,YES,YES,NO,9
+628,FLOw,szaghi,https://github.com/szaghi/FLOw,Fortran fLuid Object,11526,9,4,5,NO,NO,YES,NO,9
+629,mamba,shortlab,https://github.com/shortlab/mamba,"Public (open source) repository for the MAMBA porous media chemistry, heat transfer, and fluid flow code, supported by CASL (the Consortium for Advanced Simulation of LWRs)",56784,9,11,1,NO,YES,YES,NO,9
+630,vtkmofo,porteri,https://github.com/porteri/vtkmofo,VTK format using modern fortran,1174,9,5,6,NO,YES,YES,NO,9
+631,fortran-string-utility-module,tomedunn,https://github.com/tomedunn/fortran-string-utility-module,,15,9,1,0,NO,NO,NO,NO,9
+632,feast,certik,https://github.com/certik/feast,FEAST Eigenvalue Solver,3084,9,4,1,NO,NO,NO,NO,9
+633,DangerousSnake,dangeroussnake,https://github.com/dangeroussnake/DangerousSnake,A simple snake game written in FORTRAN using gfortran and ncurses.,83,9,1,1,NO,YES,YES,NO,9
+634,stda,grimme-lab,https://github.com/grimme-lab/stda,"stda program for computing excited states and response functions via simplified TD-DFT methods (sTDA, sTD-DFT, and SF-sTD-DFT)",580,9,4,1,NO,YES,NO,NO,10
+635,hsdar,cran,https://github.com/cran/hsdar,":exclamation: This is a read-only mirror of the CRAN R package repository.  hsdar — Manage, Analyse and Simulate Hyperspectral Data. Homepage: http://vhrz669.hrz.uni-marburg.de/lcrs/, http://teledetection.ipgp.jussieu.fr/prosail/  ",13082,9,6,2,NO,YES,NO,NO,9
+636,postg,aoterodelaroza,https://github.com/aoterodelaroza/postg,Calculate the dispersion energy and related quantities in gas-phase systems using the exchange-hole dipole moment (XDM) model.,990,9,3,0,NO,YES,YES,NO,9
+637,scalapackfx,dftbplus,https://github.com/dftbplus/scalapackfx,Modern Fortran wrappers around ScaLAPACK routines,219,9,4,2,NO,YES,YES,NO,9
+638,SIS2,NOAA-GFDL,https://github.com/NOAA-GFDL/SIS2,NOAA-GFDL's Sea Ice Simulator version 2,4900,9,29,10,NO,YES,YES,YES,9
+639,MPMD-with-Coarray-Fortran-Load-Balancing-Example-Program,MichaelSiehl,https://github.com/MichaelSiehl/MPMD-with-Coarray-Fortran-Load-Balancing-Example-Program,THIS REPOSITORY CONTAINS A FORTRAN (2008) COARRAY EXAMPLE PROGRAM THAT ILLUSTRATES A SIMPLE PGAS LOAD BALANCING TECHNIQUE,382,9,1,1,NO,NO,YES,NO,9
+640,BigstickPublick,cwjsdsu,https://github.com/cwjsdsu/BigstickPublick,"Open-access version of BIGSTICK configuration-interaction, a.k.a. shell-diagonalization, Fortran 90 code",2557,9,6,1,NO,NO,NO,NO,9
+641,molscat,molscat,https://github.com/molscat/molscat,,9029,9,3,0,NO,NO,YES,NO,9
+642,WAM,mywave,https://github.com/mywave/WAM,third generation spectral wave model WAM Cycle 4.5.4,7299,9,11,1,NO,NO,NO,NO,9
+643,tenstream,tenstream,https://github.com/tenstream/tenstream,,89779,9,6,0,NO,YES,YES,NO,9
+644,GenASiS_Mathematics,GenASiS,https://github.com/GenASiS/GenASiS_Mathematics,"Object-oriented manifolds, operations, and solvers for large-scale physics simulations",2363,9,1,0,NO,NO,YES,NO,9
+645,pydrus,raoulcollenteur,https://github.com/raoulcollenteur/pydrus,:sweat_drops: Python implementation of the HYDRUS-1D unsaturated zone model,3955,9,2,3,NO,NO,YES,NO,9
+646,abaqusPy,youngung,https://github.com/youngung/abaqusPy,My Abaqus related stuffs (under development),503,9,10,0,NO,NO,YES,NO,9
+647,unstructured-finite-volume,komahanb,https://github.com/komahanb/unstructured-finite-volume,Unstructured Finite Volume Solver for Partial Differential Equations,2219,9,1,0,NO,NO,YES,NO,9
+648,MFV3d,svaverbe,https://github.com/svaverbe/MFV3d,A FORTRAN implementation of a Moving Finite Volume MHD code in three dimensions including self-gravity.,890,9,7,0,NO,NO,NO,NO,9
+649,AERMOD-linux,arifwn,https://github.com/arifwn/AERMOD-linux,,597,9,4,2,NO,NO,NO,NO,9
+650,eiscor,eiscor,https://github.com/eiscor/eiscor,eigensolvers based on unitary core transformations,4219,9,3,2,NO,YES,YES,NO,9
+651,GITM,aaronjridley,https://github.com/aaronjridley/GITM,The Global Ionosphere/Thermosphere Model,30334,9,7,4,NO,YES,YES,NO,9
+652,speedy.f90,samhatfield,https://github.com/samhatfield/speedy.f90,An intermediate complexity atmospheric general circulation model,37959,9,1,3,NO,YES,YES,NO,9
+653,flx_wrf2,sajinh,https://github.com/sajinh/flx_wrf2,FLEXPART for WRF,44475,9,11,2,NO,NO,NO,NO,9
+654,MODFLOW-USG,mwtoews,https://github.com/mwtoews/MODFLOW-USG,"(non-official) Three-dimensional, unstructured, finite-difference groundwater flow model",35277,9,4,0,NO,YES,NO,NO,9
+655,DeepNetStuff,mehtadushy,https://github.com/mehtadushy/DeepNetStuff,Bits and bobs from various deepnet experiments,188401,9,3,0,NO,NO,NO,NO,9
+656,ParallelForest,bert9bert,https://github.com/bert9bert/ParallelForest,"R package implementing random forest classification using parallel computing, built with Fortran and OpenMP in the backend.",4147,9,4,2,NO,NO,YES,NO,9
+657,hdf5-feedstock,conda-forge,https://github.com/conda-forge/hdf5-feedstock,A conda-smithy repository for hdf5.,227,9,33,7,NO,YES,YES,YES,9
+658,PelePhysics,AMReX-Combustion,https://github.com/AMReX-Combustion/PelePhysics,A collection of physics databases and implementation code for use with the Pele suite of of codes,33798,9,15,4,NO,YES,YES,YES,9
+659,woptic,woptic,https://github.com/woptic/woptic,optical conductivity with Wannier functions and adaptive k-mesh refinement,1627,9,4,15,YES,NO,YES,NO,9
+660,FortranHashDict,ropeonfire,https://github.com/ropeonfire/FortranHashDict,A Key-Value Dictionary for Fortran implemented with a hashtable and singly-linked lists.,34,9,0,0,NO,NO,NO,NO,9
+661,CPFEM_code,gabortimar,https://github.com/gabortimar/CPFEM_code,Source code for Crystal Plasticity Finite Element simulation program written in Fortran 90.,1552,9,5,0,NO,NO,NO,NO,9
+662,multifluids,FluidityProject,https://github.com/FluidityProject/multifluids,Multifluids prototype code,145590,9,5,2,NO,NO,YES,YES,9
+663,kpp,barronh,https://github.com/barronh/kpp,Kinetic Pre-Processor (from http://people.cs.vt.edu/~asandu/Software/Kpp/) with updates to allow working with MCM.,1203,9,4,0,NO,YES,YES,NO,9
+664,applied_math,dcelisgarza,https://github.com/dcelisgarza/applied_math,Applied maths codes.,8183,9,0,0,NO,NO,YES,NO,9
+665,Nek5000-deprecated,Nek5000-deprecated,https://github.com/Nek5000-deprecated/Nek5000-deprecated,Nek5000,2289,9,14,7,NO,YES,YES,NO,9
+666,mpich-docker,aespinosa,https://github.com/aespinosa/mpich-docker,MPICH3 with Docker (Global Hack Day 2014 Entry),160,9,1,0,NO,NO,NO,NO,9
+667,dataset1d,perrette,https://github.com/perrette/dataset1d,"pandas DataFrame for fortran, with netCDF I/O",224,9,0,0,NO,NO,YES,NO,9
+668,LevelSetFortran,musheen,https://github.com/musheen/LevelSetFortran,Three-dimensional level set code in Fortran. Reads an STL file and creates a signed distance field using WENO5. Gives you an option to runs min/max flow on the level set field to smooth the geometry. ,165,9,3,0,NO,YES,YES,NO,9
+669,LLEA,helgee,https://github.com/helgee/LLEA,LLEA (Low-Level Engine for Astrodynamics) a modern Fortran astrodynamics library,366,9,1,0,NO,NO,YES,NO,9
+670,HMcode,alexander-mead,https://github.com/alexander-mead/HMcode,Source code for non-linear matter power spectrum prediction.,243,9,4,0,NO,NO,YES,NO,9
+671,generic-procedures,modern-fortran,https://github.com/modern-fortran/generic-procedures,Generic procedures in Fortran,744,9,0,0,NO,NO,NO,NO,9
+672,ADGA,AbinitioDGA,https://github.com/AbinitioDGA/ADGA,Abinitio Dynamical Vertex Approximation,65941,9,0,0,NO,NO,YES,NO,9
+673,nsCouette,dfeldmann,https://github.com/dfeldmann/nsCouette,A high-performance code for direct numerical simulations of turbulent Taylor-Couette flow,20720,9,4,0,NO,NO,NO,NO,10
+674,ZstdFortranLib,zbeekman,https://github.com/zbeekman/ZstdFortranLib,👨‍💻Zaak's 🧩(missing) 🏛Standard 🔬Fortran 📚Library 🚧(WIP),271,9,0,0,NO,YES,YES,NO,9
+675,Modtran,space-physics,https://github.com/space-physics/Modtran,"Modtran atmospheric model, in Fortran and Python interface",4985,9,3,0,NO,NO,NO,NO,10
+676,fortran_quaternion,pdebuyl,https://github.com/pdebuyl/fortran_quaternion,Basic quaternion operations,14,9,0,1,NO,NO,YES,NO,9
+677,optionsf90,cngilbreth,https://github.com/cngilbreth/optionsf90,Options & input processing for modern Fortran,154,9,3,1,NO,NO,YES,NO,9
+678,elk-w90-improved,rohkeaID,https://github.com/rohkeaID/elk-w90-improved,An interface for ELK-Wannier90 calculations,7373,9,1,0,NO,YES,YES,NO,9
+679,pflotran,pflotran,https://github.com/pflotran/pflotran,,96781,9,4,0,NO,NO,YES,YES,9
+680,dungeon,GOFAI,https://github.com/GOFAI/dungeon,the classic text adventure updated to compile using gfortran,266,9,1,0,NO,YES,NO,NO,9
+681,LETFT,PengLiPK,https://github.com/PengLiPK/LETFT,A software about 3D local earthquake tomography with full topography. The outputs are 3D P- and S-wave velocity model.,22859,9,4,0,NO,NO,YES,NO,9
+682,uncertainties,ramos,https://github.com/ramos/uncertainties,Fortran MODULE for linear propagation of errors,10,9,1,0,NO,NO,NO,NO,9
+683,IHPCSS_Coding_challenge_2019,capellil,https://github.com/capellil/IHPCSS_Coding_challenge_2019,The repository containing everything you need to compete in the IHPCSS 2019 programming challenge.,1192,9,10,0,NO,NO,YES,NO,9
+684,wien2wannier,wien2wannier,https://github.com/wien2wannier/wien2wannier,from linearized augmented plane waves to maximally localized Wannier functions,4448,9,6,5,NO,NO,YES,NO,9
+685,carlson-elliptic-integrals,jacobwilliams,https://github.com/jacobwilliams/carlson-elliptic-integrals,Carlson symmetric forms of elliptic integrals,604,9,1,0,NO,NO,NO,NO,9
+686,ellc,pmaxted,https://github.com/pmaxted/ellc,Light curve model for transiting exoplanets and eclipsing binary stars,13464,9,1,2,NO,NO,NO,NO,9
+687,seisloc,speedshi,https://github.com/speedshi/seisloc,seismic location using waveform migration based methods,4031,9,2,2,NO,YES,YES,NO,9
+688,hazel2,aasensio,https://github.com/aasensio/hazel2,Hazel v2.0: synthesis and inversion of Stokes profiles caused by the joint action of atomic level polarization and the Hanle and Zeeman effects,50347,9,2,9,NO,NO,YES,NO,9
+689,CENS,ManyBodyPhysics,https://github.com/ManyBodyPhysics/CENS,This repository contains several sets of many-body codes developed by Morten Hjorth-Jensen and collaborators. The codes follow the GNU  GPL v.3 public license settings.,17692,9,5,0,NO,YES,YES,NO,9
+690,NS-2D,hangsz,https://github.com/hangsz/NS-2D,Function Test for NS-2D Solver.,101404,9,12,0,NO,NO,NO,NO,9
+691,tristan-mp-pitp,ntoles,https://github.com/ntoles/tristan-mp-pitp,Particle-in-cell code TRISTAN-MP,1037,9,17,0,NO,YES,NO,NO,9
+692,Fortran---CGAL-polyhedra,LadaF,https://github.com/LadaF/Fortran---CGAL-polyhedra,Fortran bindings to the CGAL library to query whether a point is inside of a polyhedron and their distance.,264,8,2,1,NO,NO,NO,NO,8
+693,Multigrid_Poisson_Solver_3D,phquanta,https://github.com/phquanta/Multigrid_Poisson_Solver_3D,3D Parallel(MPI)  Multigrid Poisson Solver,9,8,1,0,NO,NO,NO,NO,8
+694,fortranString,bceverly,https://github.com/bceverly/fortranString,String class in Fortran 2008,32,8,0,1,NO,NO,YES,NO,8
+695,dataplot,usnistgov,https://github.com/usnistgov/dataplot,Source code and auxiliary files for dataplot.,36120,8,1,0,NO,NO,NO,NO,8
+696,matprod,radfordneal,https://github.com/radfordneal/matprod,Library for fast matrix multiplication that preserves naive rounding,7473,8,2,0,NO,NO,YES,NO,8
+697,advanced-parallel-prog,csc-training,https://github.com/csc-training/advanced-parallel-prog,Advanced Parallel Programming,4238,8,4,0,NO,NO,YES,NO,8
+698,DAzimSurfTomo,Chuanming-Liu,https://github.com/Chuanming-Liu/DAzimSurfTomo,Direct inversion of Rayleigh wave dispersion data for 3-D azimuthal anisotropy based on ray tracing,57718,8,8,0,NO,YES,YES,NO,8
+699,gees,Azrael3000,https://github.com/Azrael3000/gees,GPL Euler equation solver,36,8,5,4,NO,NO,YES,NO,8
+700,ode-openacc,starkiller-astro,https://github.com/starkiller-astro/ode-openacc,Some tests about solving ODEs / reaction networks on GPUs using OpenACC,3037,8,3,0,NO,YES,YES,NO,8
+701,clawpack-4.x,clawpack,https://github.com/clawpack/clawpack-4.x,The old svn repository from kingkong will move here for future development.,3218,8,8,2,NO,YES,YES,NO,8
+702,isoft,cmacmackin,https://github.com/cmacmackin/isoft,ISOFT: Ice Shelf/Ocean Fluid- and Thermodynamics,16842,8,1,0,NO,NO,YES,NO,8
+703,dnad,joddlehod,https://github.com/joddlehod/dnad,A Dual Number Automatic Differentiation Module for Fortran,8,8,1,0,NO,NO,NO,NO,8
+704,vaspwfc,QijingZheng,https://github.com/QijingZheng/vaspwfc,"create wavefunction file from selected spin, kpoint and band index in VASP wavecar",20,8,9,0,NO,NO,NO,NO,8
+705,Grid2Grid,LHEEA,https://github.com/LHEEA/Grid2Grid,HOS Wrapper for C++/fortran CFD solvers,18871,8,7,1,NO,YES,YES,NO,8
+706,Architect,albz,https://github.com/albz/Architect,a hybrid 2D code for plasma wakefield acceleration,501,8,5,0,NO,YES,YES,NO,8
+707,gs3,alegarra,https://github.com/alegarra/gs3,"GS3, software for genomic prediction and whole genome Bayesian analysis",1173,8,3,1,NO,YES,YES,NO,8
+708,octave-3.8.2-enable-64-ubuntu-14.04,calaba,https://github.com/calaba/octave-3.8.2-enable-64-ubuntu-14.04,Octave 3.8.2 compiled with --enable-64 (experimental switch) on 64-bit Ubuntu Linux Desktop 14.04 (and higher),90472,8,3,0,NO,NO,YES,NO,8
+709,PyLocEQ,amir-allam,https://github.com/amir-allam/PyLocEQ,Earthquake location in python based on eikonal travel times in 3D velocity models,9557,8,5,0,NO,YES,YES,NO,8
+710,PyFVS,tharen,https://github.com/tharen/PyFVS,A Python package and extension for the Forest Vegetation Simulator,73364,8,1,9,NO,NO,YES,NO,8
+711,ddPCM,filippolipparini,https://github.com/filippolipparini/ddPCM,A fast domain decomposition based implementation of the COSMO solvation model,9730,8,11,0,NO,NO,NO,NO,8
+712,Unit,andreypudov,https://github.com/andreypudov/Unit,A unit testing library for Fortran,90,8,1,0,NO,NO,YES,NO,8
+713,MORTIF,szaghi,https://github.com/szaghi/MORTIF,MORTon Indexer (Z-order) Fortran environment,1101,8,1,2,NO,YES,NO,NO,8
+714,diffusion-map,wesbarnett,https://github.com/wesbarnett/diffusion-map,Comparison of principal components analysis with diffusion maps on toy data sets and a molecular simulation trajectory,50495,8,2,0,NO,NO,YES,NO,8
+715,OSM2018,sischei,https://github.com/sischei/OSM2018,,88259,8,32,0,NO,NO,YES,NO,8
+716,Reflection-Removal,bhaktipriya,https://github.com/bhaktipriya/Reflection-Removal,Reflection Removal using Ghosting Cueues and Patch Priors. Modelled as modeled as a half Quadratic Optimization Problem.,25202,8,3,0,NO,NO,NO,NO,8
+717,nanofort,jshahbazi,https://github.com/jshahbazi/nanofort,Fortran bindings for the nanomsg sockets library,17,8,1,0,NO,NO,NO,NO,8
+718,Fortran_Davidson,NLESC-JCER,https://github.com/NLESC-JCER/Fortran_Davidson,Davidson eigensolver implemented in Fortran,15154,8,2,3,NO,YES,YES,NO,8
+719,channel-f90,davecats,https://github.com/davecats/channel-f90,Direct Numerical Simulation of an incompressible turbulent channel flow (F90),35,8,5,0,NO,YES,NO,NO,8
+720,pydirect,npinto,https://github.com/npinto/pydirect,Python wrapper to the DIRECT global optimization algorithm (forked from http://code.google.com/p/pydirect/source/browse),152,8,5,1,NO,NO,NO,NO,8
+721,decwar,drforbin,https://github.com/drforbin/decwar,Historic decwar fortran IV code which has been modified to run on simh (standard tops10 system),584,8,1,1,NO,YES,NO,NO,8
+722,libsparse,jvdp1,https://github.com/jvdp1/libsparse,,374,8,0,0,NO,YES,YES,NO,8
+723,SummerSchool2014,fomics,https://github.com/fomics/SummerSchool2014,CSCS-USI Summer School in Parallel Programming 2014,53249,8,11,0,NO,YES,YES,NO,8
+724,FEHM,lanl,https://github.com/lanl/FEHM,Finite Element Heat and Mass Transfer Code,89905,8,7,17,YES,YES,YES,NO,8
+725,global-workflow,NOAA-EMC,https://github.com/NOAA-EMC/global-workflow,Global Superstructure/Workflow currently supporting the Finite-Volume on a Cubed-Sphere Global Forecast System (FV3GFS),70310,8,11,9,NO,YES,YES,YES,8
+726,SeisElastic2D,crewesleo,https://github.com/crewesleo/SeisElastic2D,"An open-source package for multiparameter FWI in isotropic-, anisotropic- and visco-elastic media",40646,8,5,0,NO,NO,YES,NO,8
+727,FASMA-synthesis,MariaTsantaki,https://github.com/MariaTsantaki/FASMA-synthesis,Python code for stellar spectral analysis,51782,8,1,3,NO,YES,YES,NO,7
+728,mheap,trifling,https://github.com/trifling/mheap,Modern Fortran implementation of the heap data structure,9,8,1,1,NO,NO,NO,NO,8
+729,fortran-collections,bast,https://github.com/bast/fortran-collections,Got tired of Fortran not having high level containers.,7,8,1,0,NO,NO,NO,NO,8
+730,DNN,Quiota,https://github.com/Quiota/DNN,Contains Deep Learning Code implemented on generic CPUs & Intel Xeon Phi Coprocessors,8443,8,8,0,NO,NO,NO,NO,8
+731,f90getopt,haniibrahim,https://github.com/haniibrahim/f90getopt,getopt functionality (C-like command-line argument parsing) for Fortran 90,28,8,2,0,NO,NO,YES,NO,8
+732,hercules,friedenhe,https://github.com/friedenhe/hercules,HERCULES: An open source direct numerical simulation solver,1434,8,1,0,NO,NO,NO,NO,9
+733,feasolver,luogyong,https://github.com/luogyong/feasolver,a finite element in geotechnical applications,2253,8,3,0,NO,NO,YES,NO,8
+734,ConductionFEM,anak-fhv,https://github.com/anak-fhv/ConductionFEM,FEM code for conduction heat transfer using ICEM-CFD .msh files,2128,8,2,0,NO,YES,YES,NO,8
+735,FLINT,princemahajan,https://github.com/princemahajan/FLINT,Fortran Library for numerical INTegration of differential equations,895,8,0,0,NO,NO,YES,NO,8
+736,snap,metno,https://github.com/metno/snap,Severe Nuclear Accident Programme,16810,8,2,0,NO,YES,YES,NO,8
+737,FORbID,giacombum,https://github.com/giacombum/FORbID,Simple OOP Fortran Definite Integrals Solver,61,8,3,7,NO,YES,YES,NO,8
+738,matlab,jacobwilliams,https://github.com/jacobwilliams/matlab,,272,8,1,0,NO,NO,NO,NO,8
+739,sfincs,landreman,https://github.com/landreman/sfincs,SFINCS: the Stellarator Fokker-Planck Iterative Neoclassical Conservative Solver,78572,8,7,2,NO,YES,YES,NO,8
+740,Grid-generation,hangsz,https://github.com/hangsz/Grid-generation,,6964,8,9,0,NO,NO,NO,NO,8
+741,GGI_TLM,ggiemr,https://github.com/ggiemr/GGI_TLM,Time Domain electromagnetic modelling based on the TLM technique,83329,8,2,0,NO,NO,YES,NO,8
+742,deSolve,cran,https://github.com/cran/deSolve,":exclamation: This is a read-only mirror of the CRAN R package repository.  deSolve — Solvers for Initial Value Problems of Differential Equations ('ODE', 'DAE', 'DDE'). Homepage: http://desolve.r-forge.r-project.org/  ",13797,8,2,0,NO,NO,YES,NO,8
+743,cs498,rauhul,https://github.com/rauhul/cs498,Applied Machine Learning UIUC SP 2017,39730,8,3,0,NO,NO,YES,NO,8
+744,HASTY,szaghi,https://github.com/szaghi/HASTY,HASh Table fortran container exploting coarraY,6562,8,0,5,NO,NO,YES,NO,8
+745,fold2Bloch-VASP,rubel75,https://github.com/rubel75/fold2Bloch-VASP,Unfolding the band structure of a supercell obtained with VASP,451,8,7,0,NO,NO,YES,NO,8
+746,ParaviewPlugins,jrper,https://github.com/jrper/ParaviewPlugins,My ParaView plug source code.,1247,8,3,0,NO,NO,YES,NO,8
+747,GFC,DmitryLyakh,https://github.com/DmitryLyakh/GFC,,273,8,0,0,NO,NO,YES,NO,8
+748,AWOT,nguy,https://github.com/nguy/AWOT,Airborne Weather Observations Toolkit - A python-based package,9808,8,6,5,NO,YES,YES,NO,8
+749,torontonian-sampling,XanaduAI,https://github.com/XanaduAI/torontonian-sampling," This repository contains the source code used to produce the results presented in the paper ""Classical benchmarking of Gaussian Boson Sampling on the Titan supercomputer"".",27,8,3,0,NO,NO,NO,NO,8
+750,MAOOAM,Climdyn,https://github.com/Climdyn/MAOOAM,"Lua, Fortran and Python implementations of MAOOAM: the Modular Arbitrary-Order Ocean-Atmosphere Model",10415,8,9,1,NO,YES,YES,NO,8
+751,Le_OOPFortran,iurisegtovich,https://github.com/iurisegtovich/Le_OOPFortran,Learning Object Oriented Programming in Fortran,158,8,1,2,NO,NO,NO,NO,8
+752,EStokTP,PACChem,https://github.com/PACChem/EStokTP,,4489,8,5,0,NO,YES,YES,NO,8
+753,quantum_scf,xiangyunbin,https://github.com/xiangyunbin/quantum_scf,,194,8,10,0,NO,NO,NO,NO,8
+754,relax,geodynamics,https://github.com/geodynamics/relax,Relax implements a semi-analytic Fourier-domain solver and equivalent body forces to compute quasi-static relaxation of stress perturbation.,88379,8,7,0,NO,NO,YES,NO,8
+755,fregex,andreww,https://github.com/andreww/fregex,Regular expressions in Fortran,104,8,4,0,NO,NO,YES,NO,8
+756,freeon,FreeON,https://github.com/FreeON/freeon,Linear Scaling Electronic Structure,113482,8,4,2,NO,YES,YES,NO,8
+757,FSM2,RichardEssery,https://github.com/RichardEssery/FSM2,Flexible Snow Model - a multi-physics energy balance model of accumulation and melt of snow on the ground and in forest canopies,1541,8,4,3,NO,YES,YES,NO,8
+758,HORSES2D,juanmanzanero,https://github.com/juanmanzanero/HORSES2D,Two dimensional high-order spectral element method fluid dynamics solver,1250,8,3,0,NO,NO,YES,NO,8
+759,HOMMEXX,E3SM-Project,https://github.com/E3SM-Project/HOMMEXX,Clone of ACME for CMDV-SE project to convert HOMME to C++,49767,8,0,57,YES,YES,YES,YES,8
+760,euler2D-kfvs-Fortran2003,truongd8593,https://github.com/truongd8593/euler2D-kfvs-Fortran2003,"2D solver for Euler equations using kinetic flux vector splitting scheme, written in OOP F2003",1377,8,7,0,NO,NO,YES,NO,8
+761,fortran-generics,certik,https://github.com/certik/fortran-generics,Use cases for Fortran generics,20,8,1,0,NO,YES,NO,NO,8
+762,DMFTtools,aamaricci,https://github.com/aamaricci/DMFTtools,A collection of fortran modules and routines based on SciFortran used in my DMFT or CondMat numerical codes.,462,8,5,0,NO,NO,YES,NO,8
+763,ABAQUS_Subroutines,ALandauer,https://github.com/ALandauer/ABAQUS_Subroutines,Viscoplastic UMAT and rotational body force UEL,1796,8,10,0,NO,NO,NO,NO,8
+764,whamp,irfu,https://github.com/irfu/whamp,WHAMP - Waves in Homogeneous Anisotropic Magnetized Plasma.,5908,8,5,0,NO,NO,YES,NO,8
+765,PararealF90,Parallel-in-Time,https://github.com/Parallel-in-Time/PararealF90,Lightweight Fortran 90 Parareal for 3D Burgers' equation,2234,8,2,1,NO,YES,YES,NO,10
+766,Monte-Carlo-Radiation-Phd,lewisfish,https://github.com/lewisfish/Monte-Carlo-Radiation-Phd,Monte Carlo Radiation Transport code for biological tissues.,1690,8,1,0,NO,NO,YES,NO,8
+767,Improved_Phase-Field_LBM_2D,AbbasHub,https://github.com/AbbasHub/Improved_Phase-Field_LBM_2D,Improved conservative phase-field LBM code for multiphase flows in a 2D periodic domain,20,8,6,0,NO,NO,NO,NO,8
+768,SMFAPAC,mickcollins,https://github.com/mickcollins/SMFAPAC,systematic molecular fragmentation by annihilation,9028,8,1,1,NO,NO,YES,NO,8
+769,MAIZSIM,ARS-CSGCL-DT,https://github.com/ARS-CSGCL-DT/MAIZSIM,Source code for maize or corn (Zea Mays) simulation model,103239,8,10,1,NO,YES,YES,NO,8
+770,GMCORE,LASG-GAMIL,https://github.com/LASG-GAMIL/GMCORE,Grid-point Multiple-Conservation dynamical cORE,349,8,3,0,NO,NO,YES,NO,8
+771,wrf,cloudruninc,https://github.com/cloudruninc/wrf,Weather Research and Forecasting (WRF) model,53042,8,0,0,NO,YES,NO,NO,8
+772,pyfwrd,NoisyLeon,https://github.com/NoisyLeon/pyfwrd,"A forward modelling code for surface wave, receiver functions and shear wave splitting, given tilted hexagonal symmetric media",26181,8,9,1,NO,NO,YES,NO,8
+773,fortranLAB,iurisegtovich,https://github.com/iurisegtovich/fortranLAB,"A collection of links, samples, examples and tests for setup and usage of fortran (or maybe c) with libraries providing number crunching capabilities like those of MATLAB",10827,8,0,0,NO,NO,YES,NO,8
+774,MultiNest,rjw57,https://github.com/rjw57/MultiNest,MultiNest is a Bayesian inference tool which calculates the evidence and explores the parameter space which may contain multiple posterior modes and pronounced (curving) degeneracies in moderately high dimensions.,179,8,13,2,NO,YES,YES,NO,8
+775,gabriel,jdonners,https://github.com/jdonners/gabriel,Fortran library to simplify the use of MPI for halo exchanges and transformations,310,8,0,5,NO,YES,YES,NO,8
+776,lagrange_interpolator,jlokimlin,https://github.com/jlokimlin/lagrange_interpolator,An OOP library for 1 and 2-dimensional Lagrange interpolation,5,8,1,0,NO,NO,NO,NO,8
+777,fortran-tutorial,cmacmackin,https://github.com/cmacmackin/fortran-tutorial,An introduction for programmers who have no experience with Fortran,320,8,6,0,NO,NO,NO,NO,8
+778,specfem1d,geodynamics,https://github.com/geodynamics/specfem1d,SPECFEM1D simulates seismic wave propagation in a one-dimensional heterogeneous medium. It is a small code that allows users to learn how a spectral-element program is written.,117,8,16,0,NO,YES,YES,NO,8
+779,lineclipping-python-fortran,scivision,https://github.com/scivision/lineclipping-python-fortran,"Line clipping in clean, simple, modern Fortran and Python",43,8,1,0,NO,YES,YES,NO,8
+780,wrf-downscaling,ebimodeling,https://github.com/ebimodeling/wrf-downscaling,,133868,8,9,5,NO,NO,YES,NO,8
+781,yajl-fort,nncarlson,https://github.com/nncarlson/yajl-fort,YAJL-Fort:  A modern Fortran interface to the YAJL library,294,8,2,1,NO,NO,YES,NO,8
+782,moog,andycasey,https://github.com/andycasey/moog,A package installer for the MOOG code,1894,8,10,5,NO,YES,YES,NO,8
+783,SimpleMAC,jonkomperda,https://github.com/jonkomperda/SimpleMAC,"SimpleMAC is a marker and call method CFD (computational fluid dynamics) solver. It was originally developed for a graduate supercomputing course, and is now being released and updated for further use.",9156,8,0,1,NO,NO,YES,NO,8
+784,Non-Reflecting-Boundary-Conditions-NRBC,hlalit,https://github.com/hlalit/Non-Reflecting-Boundary-Conditions-NRBC,"Implemented the non-reflecting boundary conditions of Poinsot and Lele, JCP 1992 with Fortran. Input files have been provided Validation has been done using a subsonic compressible channel flow test case second order spatial differencing has been used and 4th order Runge Kutta scheme for time advancement Compressible finite difference solver implemented",11,8,2,1,NO,NO,NO,NO,8
+785,UQTk,sandialabs,https://github.com/sandialabs/UQTk,Sandia Uncertainty Quantification Toolkit,7743,8,3,0,NO,NO,NO,NO,8
+786,cfd,sAlexander,https://github.com/sAlexander/cfd,2d CFD solves the incompressible Euler equations. Code written in Fortran,168,7,2,0,NO,NO,YES,NO,7
+787,Fortran-Utilities,apmccartney,https://github.com/apmccartney/Fortran-Utilities,a small collection of utilities written in fortran 2008 in an object-oriented style.,124,7,0,0,NO,NO,NO,NO,7
+788,mplabs,carlosrosales,https://github.com/carlosrosales/mplabs,Multiphase Lattice Boltzmann Suite,3640,7,8,0,NO,NO,NO,NO,7
+789,nodalDG,lightd22,https://github.com/lightd22/nodalDG,Nodal discontinuous Galerkin methods,188,7,7,0,NO,NO,YES,NO,7
+790,py_interp,markelg,https://github.com/markelg/py_interp,"Command line tool for interpolating WRF output files to pressure levels, as well as computing a series of diagnostics such as low, medium and high cloud cover.",200,7,2,0,NO,NO,NO,NO,7
+791,slicot,KTH-AC,https://github.com/KTH-AC/slicot,SLICOT: Subroutine Library in Systems and Control Theory,2911,7,3,1,NO,YES,NO,NO,7
+792,PsrPopPy,samb8s,https://github.com/samb8s/PsrPopPy,"Python implementation of PSRPOP, designed to be run from the command line or from Python scripts/interpreter",4632,7,18,0,NO,YES,YES,NO,7
+793,Perplex,davehirsch,https://github.com/davehirsch/Perplex,"A cross-platform thermodynamics program for geologists, written in Fortran and C",6760,7,2,0,NO,NO,YES,NO,7
+794,DSHARK,pastfalk,https://github.com/pastfalk/DSHARK,,70,7,3,0,NO,NO,NO,NO,7
+795,f08sdl2,interkosmos,https://github.com/interkosmos/f08sdl2,Interfaces to SDL 2.0 for Fortran 2008,2106,7,0,0,NO,NO,YES,NO,7
+796,GIEM2G,DarthLaran,https://github.com/DarthLaran/GIEM2G,Gnu Integral Equation Modeling in ElectroMagnetic  Geophysics ,5493,7,2,0,NO,NO,YES,NO,7
+797,mineos,geodynamics,https://github.com/geodynamics/mineos,Mineos computes synthetic seismograms in a spherically symmetric non-rotating Earth by summing normal modes.,77757,7,16,6,NO,YES,YES,NO,7
+798,benchio,EPCCed,https://github.com/EPCCed/benchio,EPCC I/O benchmarking applications,60,7,1,4,NO,NO,NO,NO,7
+799,librmn,armnlib,https://github.com/armnlib/librmn,Collection of routines for numerical weather prediction,2217,7,2,0,NO,YES,YES,NO,7
+800,fortran-string,dongli,https://github.com/dongli/fortran-string,A readable Fortran string module,19,7,1,0,NO,NO,NO,NO,7
+801,libSUFR,MarcvdSluys,https://github.com/MarcvdSluys/libSUFR,ibSUFR is a library containing Some Useful Fortran Routines,718,7,4,0,NO,NO,YES,NO,7
+802,MPI_Practicals_Solutions,themisa,https://github.com/themisa/MPI_Practicals_Solutions,Solutions for the MPI Practicals for Summer School 2014,72,7,1,0,NO,NO,NO,NO,7
+803,py2f,rjfarmer,https://github.com/rjfarmer/py2f,embed pyton in fortran code,42,7,1,0,NO,NO,YES,NO,7
+804,postlammps,atoms-ufrj,https://github.com/atoms-ufrj/postlammps,A tool for performing post-processing of lammps log files,334,7,3,0,NO,YES,YES,NO,7
+805,morton_fortran,jannisteunissen,https://github.com/jannisteunissen/morton_fortran,Convert between regular and Morton indices in 2D and 3D,20,7,0,0,NO,NO,NO,NO,7
+806,gfortran.dg,nncarlson,https://github.com/nncarlson/gfortran.dg,The GFortran testsuite rigged for testing other Fortran compilers,2770,7,2,13,YES,YES,NO,NO,7
+807,fortran-container,dongli,https://github.com/dongli/fortran-container,This repository contains some container data structure types for Fortran.,55,7,5,0,NO,YES,YES,NO,7
+808,MC3deconv,akuhara,https://github.com/akuhara/MC3deconv,Bayeisan inversion to recover Green's functions of receiver-side structures from teleseismic waveforms,4023,7,2,0,NO,NO,YES,NO,7
+809,Coding-Examples,srinathv,https://github.com/srinathv/Coding-Examples,Organize test codes for all languages,10680,7,2,0,NO,NO,YES,NO,7
+270,spherepack,jlokimlin,https://github.com/jlokimlin/spherepack,Open source software to perform spherical harmonic transforms and compute spherical differential operators.,5259,18,5,6,NO,NO,YES,NO,18
+271,asgs,jasonfleming,https://github.com/jasonfleming/asgs,"The ADCIRC Surge Guidance System (ASGS) provides software infrastructure for automating ADCIRC for real time or operational deployments, as well as a variety of tools for pre- and post-processing ADCIRC data.",132711,18,14,81,YES,YES,YES,YES,19
+272,config_fortran,jannisteunissen,https://github.com/jannisteunissen/config_fortran,Configuration file parser for Fortran,87,18,3,1,NO,YES,YES,NO,18
+273,VASP_TDM,QijingZheng,https://github.com/QijingZheng/VASP_TDM,Transition Dipole Moments from VASP WAVECAR,12,18,13,6,NO,NO,NO,NO,18
+274,CommonModules,hornekyle,https://github.com/hornekyle/CommonModules,A collection of Fortran modules for scientific programs,2568,18,0,0,NO,NO,YES,NO,18
+275,euler2d_cudaFortran,pkestene,https://github.com/pkestene/euler2d_cudaFortran,2nd order Godunov solver for 2d Euler equations written in CUDA Fortran - Deprecated - see instead https://github.com/pkestene/euler2d_kokkos,38,18,6,0,NO,NO,NO,NO,18
+276,XH5For,victorsndvg,https://github.com/victorsndvg/XH5For,XDMF parallel partitioned mesh I/O on top of HDF5,7533,18,2,1,NO,YES,YES,NO,18
+277,f2py-examples,scivision,https://github.com/scivision/f2py-examples,Examples of using f2py to get high-speed Fortran integrated with Python easily,55,18,5,1,NO,NO,YES,NO,18
+278,hopr,flexi-framework,https://github.com/flexi-framework/hopr,HOPR is an open-source tool for the generation of three-dimensional unstructured high-order meshes.,11300,18,10,3,NO,YES,YES,NO,18
+279,NICOLE,hsocasnavarro,https://github.com/hsocasnavarro/NICOLE,NLTE Stokes Synthesis/Inversion Code,29827,18,5,0,NO,YES,YES,NO,18
+280,general-purpose-fortran,urbanjost,https://github.com/urbanjost/general-purpose-fortran,General Purpose Fortran Cooperative,2015030,18,5,0,NO,NO,YES,NO,18
+281,dftatom,certik,https://github.com/certik/dftatom,"Routines for Radial Integration of Dirac, Schrödinger, and Poisson Equations",355,18,10,9,NO,YES,YES,NO,18
+282,NormalModes,js1019,https://github.com/js1019/NormalModes,Normal Modes at Planetary Scales,133318,18,5,1,NO,YES,YES,NO,18
+283,PyBDSF,lofar-astron,https://github.com/lofar-astron/PyBDSF,Python Blob Detector and Source Finder,8365,18,12,24,YES,YES,YES,YES,19
+284,thermochimica,ORNL-CEES,https://github.com/ORNL-CEES/thermochimica,"THERMOCHIMICA is a computational library for chemical thermodynamics. It determines a unique combination of phases and their compositions for a prescribed chemical composition, temperature and pressure. The solver and the underlying thermodynamic models can be used to estimate the chemical state and various constitutive and transport properties necessary for various materials and process models.",7537,18,7,0,NO,YES,YES,NO,18
+285,msise00,space-physics,https://github.com/space-physics/msise00,NRL MSISE-00 atmospheric model-- in Python and Matlab!,4525,18,10,4,NO,YES,YES,NO,18
+286,FMM3D,flatironinstitute,https://github.com/flatironinstitute/FMM3D,"Flatiron Institute Fast Multipole Libraries --- This codebase is a set of libraries to compute N-body interactions governed by the Laplace and Helmholtz equations, to a specified precision, in three dimensions, on a multi-core shared-memory machine. ",16522,18,2,0,NO,YES,YES,NO,17
+287,auto-07p,auto-07p,https://github.com/auto-07p/auto-07p,AUTO is a publicly available software for continuation and bifurcation problems in ordinary differential equations originally written in 1980 and widely used in the dynamical systems community.,6626,18,9,2,NO,NO,YES,NO,19
+288,ESP-rSource,ESP-rCommunity,https://github.com/ESP-rCommunity/ESP-rSource,ESP-r source code ,81602,18,13,7,NO,YES,YES,NO,18
+289,mathext,gonum,https://github.com/gonum/mathext,mathext implements basic elementary functions not included in the Go standard library [DEPRECATED],210,17,4,0,NO,YES,YES,NO,17
+290,Nemoh,LHEEA,https://github.com/LHEEA/Nemoh,,35178,17,10,5,NO,NO,YES,NO,17
+291,NBODY6,mtrenti,https://github.com/mtrenti/NBODY6,Sverre Aarseth's Direct N-body code project,1781,17,10,2,NO,NO,YES,NO,17
+292,jagurs,jagurs-admin,https://github.com/jagurs-admin/jagurs,JAGURS is a tsunami simulation code solving linear/nonlinear long-wave/Boussinesq equations with/without effects of elastic deformation of the Earth due to tsunami load and vertical profile of seawater density stratification. This code was paralleled by using OpenMP and MPI. ,87342,17,9,2,NO,YES,YES,NO,17
+293,wrf,yyr,https://github.com/yyr/wrf,Release History of Weather Research and Forecast model (unofficial repo),66353,17,8,1,NO,NO,NO,NO,17
+294,fortran_function_parser,jacobwilliams,https://github.com/jacobwilliams/fortran_function_parser,Modern Fortran Function Parser,23,17,1,1,NO,NO,NO,NO,17
+295,IRI2016,space-physics,https://github.com/space-physics/IRI2016,International Reference Ionosphere 2016 from Python and Matlab,5646,17,7,0,NO,YES,YES,NO,17
+296,Taxila-LBM,ecoon,https://github.com/ecoon/Taxila-LBM,Lattice Boltzmann code from LANL,3898,17,10,2,NO,NO,YES,NO,17
+297,Karaoke-Game-Android-App,ericcj24,https://github.com/ericcj24/Karaoke-Game-Android-App,This is a Android app using ndk and sdk packages,19440,17,2,3,NO,NO,NO,NO,17
+298,BPEM,DwyaneChou,https://github.com/DwyaneChou/BPEM,A Barotropic Primitive Equation Model,141949,17,5,0,NO,NO,YES,NO,17
+299,fhash,jl2922,https://github.com/jl2922/fhash,Fast hash map implementation in fortran,23,17,4,0,NO,YES,YES,NO,18
+300,flibcpp,swig-fortran,https://github.com/swig-fortran/flibcpp,Fortran bindings to the C++ Standard Library.,290,17,0,0,NO,YES,YES,NO,17
+301,iap-cgfd-adv-cases,dongli,https://github.com/dongli/iap-cgfd-adv-cases,This is a repository for storing some advection case for teaching CGFD.,41,17,7,0,NO,NO,YES,NO,17
+302,WOFOST,ajwdewit,https://github.com/ajwdewit/WOFOST,FORTRAN version of the WOrld FOod STudies (WOFOST) crop simulation model.,4795,17,20,0,NO,NO,YES,NO,17
+303,wrf-model-cuda-sample,lydia-schiff,https://github.com/lydia-schiff/wrf-model-cuda-sample,"Numerical weather prediction code from the WRF model, translated from Fortran to CUDA-C. Too fast.",176,17,7,3,NO,NO,NO,NO,17
+304,defmod-swpc,Chunfang,https://github.com/Chunfang/defmod-swpc,A code for fault rupture (defmod) and wave propagation (swpc).,31853,17,6,2,NO,NO,YES,NO,17
+305,gFTL,Goddard-Fortran-Ecosystem,https://github.com/Goddard-Fortran-Ecosystem/gFTL,,270,17,2,6,NO,YES,YES,NO,17
+306,LinkedList,degawa,https://github.com/degawa/LinkedList,Doubly Linked List for Fortran 2003.,152,17,0,1,NO,NO,NO,NO,17
+307,py-design,PredictiveScienceLab,https://github.com/PredictiveScienceLab/py-design,Design of random experiments in Python,146,17,6,4,NO,NO,NO,NO,17
+308,FoXy,Fortran-FOSS-Programmers,https://github.com/Fortran-FOSS-Programmers/FoXy,Fortran XML parser for poor people,5923,17,4,3,NO,YES,YES,NO,17
+309,afnl,ramos,https://github.com/ramos/afnl,A FORTRAN numerical library.,14176,17,6,0,NO,NO,YES,NO,17
+310,zork-fortran,videogamepreservation,https://github.com/videogamepreservation/zork-fortran,Original Fortran source code for Zork,216,17,18,0,NO,NO,NO,NO,17
+311,lookup_table_fortran,jannisteunissen,https://github.com/jannisteunissen/lookup_table_fortran,Linear lookup table implemented in modern Fortran,35,17,4,0,NO,NO,YES,NO,17
+312,FURY,szaghi,https://github.com/szaghi/FURY,Fortran Units (environment) for Reliable phYsical math,16711,17,2,10,NO,YES,YES,NO,17
+313,rte-rrtmgp,RobertPincus,https://github.com/RobertPincus/rte-rrtmgp,RTE+RRTMGP is a set of codes for computing radiative fluxes in planetary atmospheres.,124251,17,19,7,NO,YES,YES,NO,17
+314,arpack,inducer,https://github.com/inducer/arpack,Distribution of ARPACK with various bug fixes,815,16,5,4,NO,YES,YES,NO,16
+315,ForEx,victorsndvg,https://github.com/victorsndvg/ForEx,Fortran User Defined Exceptions Handler,34,16,4,0,NO,YES,NO,NO,16
+316,fortran-linked-list,tomedunn,https://github.com/tomedunn/fortran-linked-list,Fortran module showing how to implement a linked-list in Fortran using unlimited polymorphic derived types.,116,16,1,1,NO,NO,NO,NO,16
+317,delphi,ml4ai,https://github.com/ml4ai/delphi,Framework for assembling causal probabilistic models from text and software.,47456,16,13,13,YES,YES,YES,YES,16
+318,pyspharm,jswhit,https://github.com/jswhit/pyspharm,Automatically exported from code.google.com/p/pyspharm,363,16,8,4,NO,YES,YES,NO,16
+319,py-orthpol,PredictiveScienceLab,https://github.com/PredictiveScienceLab/py-orthpol,Construct orhogonal polynomials using Python,268,16,13,4,NO,YES,NO,NO,16
+320,SBioA,aloctavodia,https://github.com/aloctavodia/SBioA,An introduction to Structural Bioinformatics Algorithms and scientific computing using Python/PyMOL,5751,16,8,1,NO,YES,YES,NO,16
+321,cism,CISM,https://github.com/CISM/cism,Public repository for source code of higher-order Community Ice Sheet Model,14745,16,8,0,NO,NO,NO,NO,16
+322,fortran_notes,zmiimz,https://github.com/zmiimz/fortran_notes,simple and hopefully useful snippets in modern fortran,5353,16,3,0,NO,NO,YES,NO,16
+323,CDFTOOLS,meom-group,https://github.com/meom-group/CDFTOOLS,A fortran package for analysis and diagnostics on NEMO ocean model output.,4082,16,18,12,YES,YES,YES,NO,16
+324,DSMACC,barronh,https://github.com/barronh/DSMACC,Dynamically Simple Model of Atmospheric Chemical Complexity,5269,16,5,2,NO,NO,YES,NO,16
+325,fmmlib3d,zgimbutas,https://github.com/zgimbutas/fmmlib3d,Fast Multipole Method (FMM) library in R^3,11269,16,7,5,NO,NO,NO,NO,16
+326,daspy,daspy,https://github.com/daspy/daspy,Python Multivariate Land Data Assimilation System with High Performance Computing for CLM 4.5,250861,16,10,0,NO,NO,YES,NO,16
+327,NPY-for-Fortran,MRedies,https://github.com/MRedies/NPY-for-Fortran,A FORTRAN module to write Numpy's *.npy and *.npz files,18237,16,3,0,NO,YES,YES,NO,16
+328,fortran_tester,pdebuyl,https://github.com/pdebuyl/fortran_tester,Fortran module to test Fortran programs,268,16,6,1,NO,YES,YES,NO,16
+329,unfold,unfoldtoolbox,https://github.com/unfoldtoolbox/unfold,A matlab EEG toolbox to perform overlap correction and non-linear & linear regression.,26421,16,3,26,YES,YES,YES,NO,16
+330,f2py-sockets,b-fg,https://github.com/b-fg/f2py-sockets,Example on how to use sockets to transfer data from Fortran to Python and viceversa,40,16,0,0,NO,NO,NO,NO,16
+331,fortran,exercism,https://github.com/exercism/fortran,Exercism exercises in Fortran.,119,16,10,10,NO,YES,YES,NO,16
+332,Xoptfoil,montagdude,https://github.com/montagdude/Xoptfoil,Airfoil optimization with Xfoil,1414,16,11,0,NO,YES,YES,NO,17
+333,AFiD_GPU_opensource,PhysicsofFluids,https://github.com/PhysicsofFluids/AFiD_GPU_opensource,Version of the AFiD code ported to GPU accelerators,129,16,7,0,NO,NO,NO,NO,16
+334,pyHWM14,rilma,https://github.com/rilma/pyHWM14,Python interface for the Horizontal Wind Model 2014 (HWM14),2724,16,7,0,NO,YES,YES,NO,16
+335,scipydirect,andim,https://github.com/andim/scipydirect,Python wrapper to the DIRECT global optimization algorithm with scipy.optimize compatible call syntax,99,16,6,2,NO,YES,YES,NO,16
+336,colossalcaveadventure,videogamepreservation,https://github.com/videogamepreservation/colossalcaveadventure,Colossal Cave Adventure. Written in PDP-10 FORTRAN. Badass.,134,16,13,0,NO,NO,NO,NO,17
+337,WABBIT,adaptive-cfd,https://github.com/adaptive-cfd/WABBIT,Wavelet Adaptive Block-Based solver for Interactions with Turbulence,15209,16,13,16,YES,YES,YES,NO,16
+338,oorb,oorb,https://github.com/oorb/oorb,Automatically exported from code.google.com/p/oorb,1407,16,34,11,YES,YES,YES,YES,16
+339,ds3_kernel_testing,karlnapf,https://github.com/karlnapf/ds3_kernel_testing,"Material for the practical of the DS3 course on ""Representing and comparing probabilities with kernels""",62296,16,13,1,NO,YES,NO,NO,16
+340,swb,smwesten-usgs,https://github.com/smwesten-usgs/swb,Soil-Water-Balance: A Modified Thornthwaite-Mather Soil-Water-Balance Code for Estimating Groundwater Recharge.,231219,16,8,9,NO,YES,YES,NO,21
+341,zofu,acroucher,https://github.com/acroucher/zofu,Zofu is Object-oriented Fortran Unit-testing,89,16,1,0,NO,NO,YES,NO,16
+342,PolyCon,cmacmackin,https://github.com/cmacmackin/PolyCon,Polymorphic container object for Fortran,647,16,0,1,NO,NO,NO,NO,16
+343,GrowClust,dttrugman,https://github.com/dttrugman/GrowClust,,4823,16,9,0,NO,YES,NO,NO,16
+344,CB-Fortran-Color-Theme,kookma,https://github.com/kookma/CB-Fortran-Color-Theme,Code Blocks color theme for Fortran language ,676,16,0,0,NO,NO,YES,NO,16
+345,dop853,jacobwilliams,https://github.com/jacobwilliams/dop853,Modern Fortran Edition of Hairer's DOP853 ODE Solver,848,16,4,1,NO,YES,YES,NO,16
+346,fortran-guidelines,ebranlard,https://github.com/ebranlard/fortran-guidelines,Guidelines for programming in fortran,454,16,1,0,NO,NO,YES,NO,16
+347,ZOO,szaghi,https://github.com/szaghi/ZOO,"ZOO, Zaghi fOrtran cOllection, where my wild Fortran pets will survive",387,16,2,0,NO,NO,NO,NO,16
+348,gFTL,nasa,https://github.com/nasa/gFTL,,137,16,8,0,NO,YES,NO,NO,16
+349,UPIC-2.0,UCLA-Plasma-Simulation-Group,https://github.com/UCLA-Plasma-Simulation-Group/UPIC-2.0,Framework of trusted components for building and customizing parallel particle-in-cell codes for plasma simulation.,4033,16,14,0,NO,NO,NO,NO,16
+350,ASKI,seismology-RUB,https://github.com/seismology-RUB/ASKI,ASKI main package: seismic Full Waveform Inversion and sensitivity analysis based on waveform sensitivity kernels,25181,15,18,0,NO,NO,YES,NO,15
+351,fortran-error-handler,samharrison7,https://github.com/samharrison7/fortran-error-handler,"Comprehensive error framework for applications requiring functional and robust error handling, utilising the power of modern object-oriented Fortran.",324,15,0,2,NO,NO,YES,NO,15
+352,GR1D,evanoconnor,https://github.com/evanoconnor/GR1D,"General Relativistic, Spherically Symmetry, Neutrino Transport Code for Stellar Collapse",661,15,7,3,NO,YES,YES,NO,15
+353,ddeabm,jacobwilliams,https://github.com/jacobwilliams/ddeabm,Modern Fortran implementation of the DDEABM Adams-Bashforth algorithm,2355,15,3,1,NO,YES,YES,NO,15
+354,lio,MALBECC,https://github.com/MALBECC/lio,Linear implementation of DFT calculations (CPU and GPU),106804,15,17,17,YES,YES,YES,NO,15
+355,ooflib,furstj,https://github.com/furstj/ooflib,Object Oriented Fortran Library,820,15,2,0,NO,NO,YES,NO,15
+356,FUPRAL,RBCanelas,https://github.com/RBCanelas/FUPRAL,Fortran OO implementation of a generic container using an unlimited polymorphic class. Implementation of a resizable container array and a double linked list.,885,15,0,0,NO,NO,NO,NO,15
+357,fempar,fempar,https://github.com/fempar/fempar,Finite Element Multiphysics PARallel solvers. Official mirror from https://gitlab.com/fempar/fempar,24254,15,5,0,NO,NO,YES,YES,16
+358,L-BFGS-ocaml,Chris00,https://github.com/Chris00/L-BFGS-ocaml,OCaml bindings for L-BFGS,198,15,2,0,NO,YES,YES,NO,15
+359,MeshTools,su2code,https://github.com/su2code/MeshTools,Mesh tools for SU2,1324,15,14,0,NO,NO,NO,NO,15
+360,PowellOpt,jacobwilliams,https://github.com/jacobwilliams/PowellOpt,Optimization algorithms by M.J.D. Powell,768,15,5,0,NO,NO,YES,NO,15
+361,fortran-search-and-sort,jacobwilliams,https://github.com/jacobwilliams/fortran-search-and-sort,Searching and sorting with modern Fortran,13,15,1,0,NO,NO,NO,NO,15
+362,COSPv2.0,CFMIP,https://github.com/CFMIP/COSPv2.0,COSP - The CFMIP (Cloud Feedbacks Model Intercomparison Project) Observation Simulator Package,16968,15,18,10,NO,YES,YES,NO,15
+363,EFDC-MPI,fearghalodonncha,https://github.com/fearghalodonncha/EFDC-MPI,MPI parallel version of the popular Environmental Fluid Dynamics Code (EFDC),29366,15,6,0,NO,NO,YES,NO,15
+364,gp-parallel-ts,kirthevasank,https://github.com/kirthevasank/gp-parallel-ts,Parallelised Thompson Sampling in GPs for Bayesian Optimisation,155,15,6,0,NO,NO,NO,NO,15
+365,KGen,NCAR,https://github.com/NCAR/KGen,Fortran Kernel Generator,11594,15,11,36,YES,YES,YES,NO,15
+366,dqmc_demo,wanderxu,https://github.com/wanderxu/dqmc_demo,,301,15,5,0,NO,NO,YES,NO,15
+367,pfczm-abaqus,jianyingwu,https://github.com/jianyingwu/pfczm-abaqus,Implementation of the phase-field regularized cohesive zone model (PF-CZM) into ABAQUS.,4637,15,8,0,NO,NO,NO,NO,15
+368,GARD,NCAR,https://github.com/NCAR/GARD,Generalized Analog Regression Downscaling (GARD) code,542,15,12,19,YES,YES,YES,NO,15
+369,splash,danieljprice,https://github.com/danieljprice/splash,,7133,15,9,12,YES,YES,YES,YES,15
+370,workfunction,WMD-group,https://github.com/WMD-group/workfunction,Calculate the planar averaged electrostatic potential for the density functional theory code VASP (Version 5 compatible),30994,15,8,0,NO,NO,NO,NO,15
+371,adjac,pv,https://github.com/pv/adjac,Automatic Differentiation (1st order) for Fortran 95,209,15,2,0,NO,NO,YES,NO,15
+372,cpu_timer,jlokimlin,https://github.com/jlokimlin/cpu_timer,A computational tool to benchmark large-scale simulations.,85,15,1,1,NO,NO,YES,NO,15
+373,PSU_WRF_EnKF,myying,https://github.com/myying/PSU_WRF_EnKF,,1009,15,20,0,NO,YES,YES,NO,15
+374,fortran-examples,Pjer-zhang,https://github.com/Pjer-zhang/fortran-examples,homeworks and useful examples,121,15,19,0,NO,NO,NO,NO,15
+375,LibForQ,jonasmaziero,https://github.com/jonasmaziero/LibForQ,A Fortran Library for Quantum Information Science,418,15,2,0,NO,NO,YES,NO,15
+376,octree-mg,jannisteunissen,https://github.com/jannisteunissen/octree-mg,MPI geometric multigrid solver for quadtree/octree grids,642,14,3,0,NO,NO,YES,NO,14
+377,fluxo,project-fluxo,https://github.com/project-fluxo/fluxo,Fluxo implements the DGSEM for general advection-diffusion equations,1106,14,8,0,NO,NO,YES,NO,14
+378,SeismicPackage,gitzhzhg,https://github.com/gitzhzhg/SeismicPackage,Open source seismic packages collected from varieties of websites,267528,14,12,0,NO,NO,NO,NO,14
+379,fosolvers,mianzhi,https://github.com/mianzhi/fosolvers,FOSolverS: a Suite of Free & Open Source Solvers. A brief overview: ,3872,14,4,3,NO,NO,YES,NO,14
+380,zen-of-fortran-talk,szaghi,https://github.com/szaghi/zen-of-fortran-talk,"a path to discover Modern Fortran, a poor, informal talk for newbies Fortraners",1209,14,4,0,NO,YES,NO,NO,15
+381,glmnet,jeffwong,https://github.com/jeffwong/glmnet,R package glmnet for estimating lasso and elastic net,793,14,18,8,NO,YES,NO,NO,14
+382,Hefei-NAMD,QijingZheng,https://github.com/QijingZheng/Hefei-NAMD, ab-initio nonadiabatic molecular dynamics program,1510,14,10,1,NO,YES,NO,NO,14
+383,tetran,lewisjb,https://github.com/lewisjb/tetran,Tetris-style game written in FORTRAN-95,19,14,1,0,NO,YES,NO,NO,14
+384,FARLib,Sbai7,https://github.com/Sbai7/FARLib,Fortran Array collection library,35,14,0,0,NO,NO,YES,NO,14
+385,mpifx,dftbplus,https://github.com/dftbplus/mpifx,Modern Fortran wrappers around MPI routines,192,14,7,1,NO,YES,YES,NO,14
+386,Fortran-utilities,NECP-XJTU,https://github.com/NECP-XJTU/Fortran-utilities,"It is a FORTRAN utilities library, which is to help the FORTRAN developers to put more efforts on the physics software development.",129,14,0,0,NO,NO,NO,NO,14
+387,apexpy,aburrell,https://github.com/aburrell/apexpy,A Python wrapper for Apex coordinates,525,14,5,6,NO,YES,YES,NO,14
+388,libmbd,jhrmnn,https://github.com/jhrmnn/libmbd,Many-body dispersion library,3096,14,6,5,NO,NO,YES,NO,14
+389,example-fortran,codecov,https://github.com/codecov/example-fortran,Example repo for uploading reports to Codecov,45,14,7,0,NO,YES,NO,NO,14
+390,HDF5_utils,tiasus,https://github.com/tiasus/HDF5_utils,my own Fortran high level interface for HDF5,85,14,2,1,NO,YES,YES,NO,14
+391,MUMPSjInv.jl,JuliaInv,https://github.com/JuliaInv/MUMPSjInv.jl,MUMPS interface for Julia,9485,14,15,9,NO,YES,YES,NO,14
+392,IM2ODE,YueyuZhang,https://github.com/YueyuZhang/IM2ODE,Inverse Design of Materials by Multi-objective Differential Evolution,549,14,4,0,NO,YES,NO,NO,14
+393,overkit-fortran,majosm,https://github.com/majosm/overkit-fortran,Open source overset grid assembly and remapping toolkit,1068,14,5,0,NO,NO,YES,NO,14
+394,orac,ORAC-CC,https://github.com/ORAC-CC/orac,Optimal Retrieval of Aerosol and Cloud,10237,14,7,10,NO,YES,YES,NO,14
+395,call_py_fort,nbren12,https://github.com/nbren12/call_py_fort,Call python from fortran,17,14,1,4,NO,YES,NO,NO,14
+396,GHOST,pmininni,https://github.com/pmininni/GHOST,GHOST (the Geophysical High-Order Suite for Turbulence) is an accurate and highly scalable pseudospectral code that solves a variety of PDEs often encountered in studies of turbulent flows.,1498,14,6,0,NO,NO,YES,NO,14
+397,miniSMC,WeiqunZhang,https://github.com/WeiqunZhang/miniSMC,  DNS code solving compressible Navier-Stokes equations for viscous multi-component reacting flows,288,14,22,0,NO,NO,NO,NO,14
+398,CVMix-src,CVMix,https://github.com/CVMix/CVMix-src,CVMix source code (including protex documentation) as well as build system and examples / tests,5224,14,22,22,YES,YES,YES,YES,14
+399,BeFoR64,szaghi,https://github.com/szaghi/BeFoR64,"BeFoR64, Base64 encoding/decoding library for FoRtran poor men",1794,14,9,3,NO,YES,YES,NO,14
+400,pysic,thynnine,https://github.com/thynnine/pysic,Python library for advanced atomistic simulations,18063,14,6,3,NO,YES,YES,NO,14
+401,modflow-2005-upcg,jdhughes-usgs,https://github.com/jdhughes-usgs/modflow-2005-upcg,MODFLOW-2005 version 1.10 with the UPCG solver,48160,14,1,0,NO,NO,YES,NO,14
+402,iso,aarondotter,https://github.com/aarondotter/iso,MESA isochrone code,694,14,4,2,NO,NO,YES,NO,14
+403,py_gmm,gevero,https://github.com/gevero/py_gmm,"A Generalized Multiparticle Mie code, especially suited for plasmonics",9138,14,9,3,NO,NO,YES,NO,14
+404,nap,ryokbys,https://github.com/ryokbys/nap,Nagoya Atomistic-simulation Package (NAP). Why don't you take a NAP? ;),10068,14,2,0,NO,NO,YES,NO,14
+405,2D_CARFIVE,dattv,https://github.com/dattv/2D_CARFIVE,2D Cartesian Quadtree Adaptive Mesh Refinement (AMR) for multiphase Five Equations Model ,46,14,9,0,NO,NO,YES,NO,14
+406,ODEInterface.jl,luchr,https://github.com/luchr/ODEInterface.jl,julia package providing an interface for ODE-solvers written in Fortran,7562,14,9,4,NO,YES,YES,NO,14
+407,BasicDTUController,DTUWindEnergy,https://github.com/DTUWindEnergy/BasicDTUController,"This repository is no longer being updated, and has been moved to DTU Wind Energy's GitLab server: https://gitlab.windenergy.dtu.dk/OpenLAC/BasicDTUController",1320,14,23,10,NO,YES,YES,YES,14
+408,rads,remkos,https://github.com/remkos/rads,Radar Altimeter Database System (RADS),11040,14,14,27,YES,YES,YES,NO,14
+409,FUNWAVE-TVD,fengyanshi,https://github.com/fengyanshi/FUNWAVE-TVD,,70166,14,25,5,NO,YES,YES,NO,14
+410,FortGL,lewisfish,https://github.com/lewisfish/FortGL,Software renderer in pure Fortran,1295,14,0,0,NO,YES,YES,NO,14
+411,xfoil,RobotLocomotion,https://github.com/RobotLocomotion/xfoil,Fork of Mark Drela's XFOIL software (http://raphael.mit.edu/xfoil) which builds using cmake.,3975,14,6,1,NO,YES,YES,NO,14
+412,feappv,sanjayg0,https://github.com/sanjayg0/feappv,FEAPpv -- free personal version of the FEAP,14351,14,12,0,NO,YES,YES,NO,16
+413,fiona,dongli,https://github.com/dongli/fiona,Fortran IO Netcdf Assembly,82,14,2,0,NO,YES,YES,NO,14
+414,specfem3d_geotech,geodynamics,https://github.com/geodynamics/specfem3d_geotech,SPECFEM3D_GEOTECH is an open-source command-driven software for 3D slope stability analysis and simulation of 3D multistage excavation based on the spectral-element method.,19634,14,9,3,NO,YES,YES,NO,14
+415,scikits.bvp_solver,jsalvatier,https://github.com/jsalvatier/scikits.bvp_solver,Python package for solving two-point boundary value problems that wraps BVP_SOLVER,902,13,7,7,NO,YES,NO,NO,13
+416,chimera,hightower8083,https://github.com/hightower8083/chimera,Fourier-Bessel Particle-In-Cell code,41357,13,2,0,NO,YES,YES,NO,13
+417,ModeMap,JMSkelton,https://github.com/JMSkelton/ModeMap,A set of tools for mapping and analysing the potential-energy surfaces along phonon modes.,1021,13,9,0,NO,NO,YES,NO,13
+418,tetran,fortran-gaming,https://github.com/fortran-gaming/tetran,"Falling-block object-oriented Fortran 2018 game, resizable playfield",1177,13,1,0,NO,NO,YES,NO,13
+419,FITTER,szaghi,https://github.com/szaghi/FITTER,Fortran tIc Toc Timer,45,13,1,1,NO,NO,NO,NO,13
+420,wafo,wafo-project,https://github.com/wafo-project/wafo,Automatically exported from code.google.com/p/wafo,60715,13,8,8,NO,YES,YES,NO,13
+421,dales,dalesteam,https://github.com/dalesteam/dales,Dutch Atmospheric Large-Eddy Simulation model,140596,13,19,31,YES,YES,YES,YES,13
+422,romstools,trondkr,https://github.com/trondkr/romstools,A variety of tools for plotting and analysing output from the Regional Ocean Model (ROMS),11801,13,6,0,NO,YES,YES,NO,13
+423,FIDASIM,D3DEnergetic,https://github.com/D3DEnergetic/FIDASIM,A Neutral Beam and Fast-ion Diagnostic Modeling Suite,466896,13,8,9,NO,YES,YES,YES,13
+424,HPC-Phase_Field,Marsfish1981,https://github.com/Marsfish1981/HPC-Phase_Field,This is a software package for simulation of micro-structure evolution using phase field model,2381,13,6,0,NO,NO,NO,NO,13
+425,MiMA,mjucker,https://github.com/mjucker/MiMA,Model of an idealized Moist Atmosphere: Intermediate-complexity General Circulation Model with full radiation,16888,13,7,0,NO,YES,YES,NO,13
+426,flogging,Exteris,https://github.com/Exteris/flogging,A Fortran logging system with MPI support,537,13,2,0,NO,YES,YES,NO,13
+427,gadfit,raullaasner,https://github.com/raullaasner/gadfit,Global nonlinear optimization with automatic differentiation,1754,13,2,1,NO,NO,YES,NO,13
+428,CROCO-NH,ducousso,https://github.com/ducousso/CROCO-NH,a non-hydrostatic incompressible ocean model based on CROCO,31060,13,4,0,NO,NO,YES,NO,13
+429,spaceMARINE,kylekanos,https://github.com/kylekanos/spaceMARINE,Solves 2D/3D hydrodynamic problems in Eulerian framework on a Cartesian grid with Adaptive Mesh Refinement via the BoxLib library,200,13,3,0,NO,NO,YES,NO,13
+430,NuLib,evanoconnor,https://github.com/evanoconnor/NuLib,open-source neutrino interaction library,2282,13,11,8,NO,YES,YES,NO,13
+431,faiNumber-Fortran,kevinhng86,https://github.com/kevinhng86/faiNumber-Fortran,"A fast, flexible, and secure numerical library for Fortran.",313,13,0,0,NO,NO,NO,NO,13
+432,PyRADS,ddbkoll,https://github.com/ddbkoll/PyRADS,A line-by-line longwave radiation code for planetary atmospheres.,13991,13,1,3,NO,YES,YES,NO,13
+433,Q6,qusers,https://github.com/qusers/Q6,"Q6 Repository -- EVB, FEP and LIE simulator.",35526,13,6,8,NO,YES,YES,NO,13
+434,GridGen,Sbai7,https://github.com/Sbai7/GridGen,Command-line Grid Generation Program and much More,776,13,0,0,NO,YES,YES,NO,13
+435,DIVA,gher-ulg,https://github.com/gher-ulg/DIVA,DIVA (Data-Interpolating Variational Analysis) is a software tool dedicated to the spatial interpolation of in situ data in oceanography.,39196,13,3,2,NO,YES,YES,NO,13
+436,global_solution_yale19,sischei,https://github.com/sischei/global_solution_yale19,,61896,13,9,0,NO,NO,YES,NO,14
+437,fortran-programming,hancockyang,https://github.com/hancockyang/fortran-programming,"It is FORTRAN programming practice for 'Walter S. Brainerd, Guide to Fortran 2008 Programming'",47,13,0,0,NO,NO,YES,NO,13
+438,SBDART,paulricchiazzi,https://github.com/paulricchiazzi/SBDART,Plane-parallel radiative transfer code based on DISORT and LOWTRAN band-models,2932,13,7,2,NO,NO,YES,NO,13
+439,mo_netcdf,schaefed,https://github.com/schaefed/mo_netcdf,Modern fortran netcdf wrapper,82,13,2,0,NO,YES,YES,NO,13
+440,COSMIC,COSMIC-PopSynth,https://github.com/COSMIC-PopSynth/COSMIC,COSMIC (Compact Object Synthesis and Monte Carlo Investigation Code),10221,13,24,19,YES,YES,YES,NO,13
+441,User_Codes,fasrc,https://github.com/fasrc/User_Codes,,20594,13,8,0,NO,YES,YES,YES,13
+442,grasp,compas,https://github.com/compas/grasp,General Relativistic Atomic Structure Package,1810,13,15,20,YES,YES,NO,NO,13
+443,mc_kernel,seismology,https://github.com/seismology/mc_kernel,Calculate seismic sensitivity kernels using Axisem,43667,13,7,14,YES,YES,YES,NO,13
+444,fortran-octree,dongli,https://github.com/dongli/fortran-octree,A Fortran octree implementation,20,13,4,0,NO,NO,NO,NO,13
+445,iqist,huangli712,https://github.com/huangli712/iqist,Interacting Quantum Impurity Solver Toolkit,267796,13,3,1,NO,NO,YES,NO,13
+446,eigenkernel,eigenkernel,https://github.com/eigenkernel/eigenkernel,EigenKernel - a package of hybrid parallel solvers for eigenvalue problems,229,13,1,2,NO,YES,YES,NO,13
+447,ncio,alex-robinson,https://github.com/alex-robinson/ncio,Simple Fortran interface to NetCDF reading and writing.,878,13,3,4,NO,YES,YES,NO,14
+448,shadow3,oasys-kit,https://github.com/oasys-kit/shadow3,Official repository for shadow3 (x-ray-tracer engine),4978,13,10,20,YES,YES,YES,NO,13
+449,thermo_pw,dalcorso,https://github.com/dalcorso/thermo_pw,Ab-initio computation of material properties,22228,13,7,0,NO,NO,YES,NO,13
+450,PROFESS,EACcodes,https://github.com/EACcodes/PROFESS,PRinceton Orbital-Free Electronic Structure Software,2782,13,10,0,NO,YES,YES,NO,13
+451,nciplot,aoterodelaroza,https://github.com/aoterodelaroza/nciplot,Non-covalent index plots in molecular systems.,107727,13,2,0,NO,YES,YES,NO,13
+452,xml-fortran,paulromano,https://github.com/paulromano/xml-fortran,XML modules for Fortran based on Arjen Markus' project,580,13,6,4,NO,NO,YES,NO,13
+453,Fortran,bhermanmit,https://github.com/bhermanmit/Fortran,22.901 Fortran Class,4033,13,4,0,NO,NO,YES,NO,13
+454,cgenie.muffin,derpycode,https://github.com/derpycode/cgenie.muffin,,70204,12,10,2,NO,YES,YES,YES,12
+455,stringsort,jacobwilliams,https://github.com/jacobwilliams/stringsort,Just some sorting routines for strings,12,12,0,0,NO,NO,NO,NO,12
+456,Tinker-HP,TinkerTools,https://github.com/TinkerTools/Tinker-HP,Tinker-HP: High Performance Massively Parallel Evolution of Tinker,94857,12,3,0,NO,NO,YES,NO,12
+457,tlab,turbulencia,https://github.com/turbulencia/tlab,,20511,12,11,0,NO,YES,YES,NO,13
+458,Puffin,UKFELs,https://github.com/UKFELs/Puffin,3D unaveraged FEL simulation code,14845,12,10,27,YES,YES,YES,NO,12
+459,COAWST,jcwarner-usgs,https://github.com/jcwarner-usgs/COAWST,This is a testing and development version. Not suitable for general distribution.,797563,12,22,0,NO,YES,YES,NO,13
+460,Cosmos,UW-COSMOS,https://github.com/UW-COSMOS/Cosmos,Knowledge base construction from raw scientific documents,74693,12,7,10,YES,YES,YES,YES,12
+461,MFC-Caltech,ComputationalFlowPhysics,https://github.com/ComputationalFlowPhysics/MFC-Caltech,High-fidelity multiphase flow simulation,21605,12,5,0,NO,NO,NO,NO,12
+462,slatec,Rufflewind,https://github.com/Rufflewind/slatec,SLATEC Common Mathematical Library,3228,12,6,0,NO,NO,NO,NO,12
+463,QTAdaptive,dattv,https://github.com/dattv/QTAdaptive,Quadtree Adaptive Mesh Refinement,56,12,8,1,NO,NO,YES,NO,12
+464,ecalj,tkotani,https://github.com/tkotani/ecalj,The quasiparticle self-consistent GW method  in the PMT method (LAPW+LMTO+Lo). See the README.md;,158798,12,15,0,NO,YES,YES,NO,12
+465,fmmlib2d,zgimbutas,https://github.com/zgimbutas/fmmlib2d,Fast Multipole Method (FMM) library in R^2,4272,12,5,0,NO,NO,NO,NO,12
+466,V1,LBNL-AMO-MCTDHF,https://github.com/LBNL-AMO-MCTDHF/V1,LBNL-AMO-MCTDHF v1.36! . . . . . ,35236,12,3,13,YES,YES,YES,NO,12
+467,Unstr3d---CFD-solver,wtffqbpl,https://github.com/wtffqbpl/Unstr3d---CFD-solver,An unstrctured 3-D Euler equation solver ( tetrahedral cell type),15,12,6,0,NO,NO,NO,NO,12
+468,Mie_scattering,cfinch,https://github.com/cfinch/Mie_scattering,Collection of codes to calculate scattering from spheres using the Mie solution,216,12,7,0,NO,NO,NO,NO,12
+469,AMR-LBM-OpenMP-2D,AbbasHub,https://github.com/AbbasHub/AMR-LBM-OpenMP-2D,Adaptive Mesh Refinement (AMR) technique utilized with the Lattice-Boltzmann Method (LBM) for numerical simulation of multiphase flows. OpenMP is used for parallelization of the code on share-memory machines.,41,12,7,0,NO,NO,NO,NO,12
+470,GEMINI,gemini3d,https://github.com/gemini3d/GEMINI,public repo for ionospheric fluid electrodynamic model,8642,12,3,0,NO,YES,YES,NO,13
+471,Fortran-Expression-Evaluator,ivomarb,https://github.com/ivomarb/Fortran-Expression-Evaluator,An open source fortran expression evaluator (parser).,167,12,0,9,NO,NO,NO,NO,12
+472,T-Blade3,GTSL-UC,https://github.com/GTSL-UC/T-Blade3,"T-Blade3 VERSION 1.2: T-Blade3 is a general parametric 3D blade geometry builder. The tool can create a variety of 3D blade geometries based on few basic parameters and limited interaction with a CAD system. The geometric and aerodynamic parameters are used to create 2D airfoils and these airfoils are stacked on the desired stacking axis. The tool generates a specified number of 2D blade sections in a 3D Cartesian coordinate system. The geometry modeler can also be used for generating 3D blades with special features like bent tip, split tip and other concepts, which can be explored with minimum changes to the blade geometry. The use of control points for the definition of splines makes it easy to modify the blade shapes quickly and smoothly to obtain the desired blade model. The second derivative of the mean-line (related to the curvature) is controlled using B-splines to create the airfoils. This is analytically integrated twice to obtain the mean-line. A smooth thickness distribution is then added to the airfoil with two options either the Wennerstrom distribution or a quartic B-spline thickness distribution. B-splines have also been implemented to achieve customized airfoil leading and trailing edges.",4339,12,6,0,NO,NO,YES,NO,12
+473,odepack,jacobwilliams,https://github.com/jacobwilliams/odepack,Unofficial Mirror of the ODEPACK Library,381,12,7,0,NO,NO,NO,NO,12
+474,Icepack,CICE-Consortium,https://github.com/CICE-Consortium/Icepack,Development repository for sea-ice column physics,7705,12,41,17,YES,YES,YES,YES,12
+475,open-fortran-parser-xml,mbdevpl,https://github.com/mbdevpl/open-fortran-parser-xml,"XML output generator for Open Fortran Parser, and Python wrapper for it.",642,12,2,1,NO,YES,YES,NO,12
+476,forutils,cmbant,https://github.com/cmbant/forutils,Fortran 2008 utility functions and reusable classes,111,12,2,0,NO,NO,YES,NO,12
+477,fArgParse,Goddard-Fortran-Ecosystem,https://github.com/Goddard-Fortran-Ecosystem/fArgParse,Command line argument parsing for Fortran,196,12,0,5,NO,YES,YES,NO,12
+478,NueralNets,arjo129,https://github.com/arjo129/NueralNets,Fortran Based Nueral Networks,47,12,1,0,NO,NO,NO,NO,12
+479,lusol,nwh,https://github.com/nwh/lusol,Matlab interface to LUSOL,1198,12,3,2,NO,YES,YES,NO,12
+480,Topo,NCAR,https://github.com/NCAR/Topo,NCAR Global Model Topography Generation Software for Unstructured Grids,2593262,12,8,0,NO,YES,YES,NO,12
+481,FGPU,LLNL,https://github.com/LLNL/FGPU,,107,12,4,0,NO,YES,YES,NO,12
+482,nswc,jacobwilliams,https://github.com/jacobwilliams/nswc,NSWC Mathematics Subroutine Library,37808,12,4,0,NO,NO,NO,NO,12
+483,finite-fault,usgs,https://github.com/usgs/finite-fault,Finite-Fault Modeling of the Earthquake Source using Teleseismic Body Waves,72906,12,12,3,NO,YES,NO,NO,12
+484,Textbook-FEM,jvleta,https://github.com/jvleta/Textbook-FEM,,626,12,12,0,NO,NO,NO,NO,12
+485,SALMON,SALMON-TDDFT,https://github.com/SALMON-TDDFT/SALMON,Scientific program for first-principles electron dynamics calculations ,2728,12,16,5,NO,YES,YES,NO,12
+486,wavy,wavebitscientific,https://github.com/wavebitscientific/wavy,A spectral ocean wave modeling framework,1207,12,3,4,NO,NO,NO,NO,12
+487,paleoToolkit,CESM-Development,https://github.com/CESM-Development/paleoToolkit,paleo tools for cesm,204318,12,11,0,NO,YES,YES,NO,12
+488,aces4,UFParLab,https://github.com/UFParLab/aces4,Parallel Computational Chemistry Application,27282,12,11,3,NO,YES,YES,NO,12
+489,qtcm,jwblin,https://github.com/jwblin/qtcm,A Python Implementation of the Neelin-Zeng QTCM1,56728,12,4,0,NO,NO,NO,NO,12
+490,futility,cmacmackin,https://github.com/cmacmackin/futility,A collection of modern Fortran utilities,117,11,1,2,NO,NO,NO,NO,11
+491,Octopus,jinbow,https://github.com/jinbow/Octopus,Offline calculation of particle trajectories,166,11,3,0,NO,NO,YES,NO,11
+492,B5500-software,retro-software,https://github.com/retro-software/B5500-software,Common source code repository for emulators of the Burroughs B5500 computer system.,17246,11,2,0,NO,NO,YES,NO,11
+493,GLOW,NCAR,https://github.com/NCAR/GLOW,The GLobal airglOW Model,543,11,8,1,NO,YES,NO,NO,11
+494,MoDeNa,MoDeNa-EUProject,https://github.com/MoDeNa-EUProject/MoDeNa,Software Framework for MOdelling of morphology DEvelopment of micro- and NAnostructures (MoDeNa),40560,11,17,7,NO,YES,YES,YES,11
+495,HydroBlocks,chaneyn,https://github.com/chaneyn/HydroBlocks,,275715,11,5,2,NO,YES,YES,NO,11
+496,ptools,ptools,https://github.com/ptools/ptools,,12892,11,12,37,YES,YES,YES,NO,11
+497,C2-Ray3Dm,garrelt,https://github.com/garrelt/C2-Ray3Dm,"The 3D version of C2-Ray for multiple sources, hydrogen only",1010,11,3,3,NO,YES,YES,NO,11
+498,mld2p4-2,sfilippone,https://github.com/sfilippone/mld2p4-2,,12424,11,6,0,NO,YES,YES,NO,11
+499,pd-abstractions-and-libraries,gilbertohasnofb,https://github.com/gilbertohasnofb/pd-abstractions-and-libraries,,4587,11,0,0,NO,NO,YES,NO,11
+500,IMEX_SfloW2D,demichie,https://github.com/demichie/IMEX_SfloW2D,Shallow water granular flow model,37120,11,3,4,NO,NO,YES,NO,11
+501,fortran_hash_table,pdebuyl,https://github.com/pdebuyl/fortran_hash_table,"""<string,string>"" hash table in Fortran 2008",178,11,1,0,NO,NO,YES,NO,11
+502,neutran,m87,https://github.com/m87/neutran,Backpropagation neural network in Fortran 90/95,40,11,3,0,NO,YES,YES,NO,11
+503,BSAM1.2,BSAM,https://github.com/BSAM/BSAM1.2,Version 1.2,64,11,4,0,NO,NO,NO,NO,11
+504,flibs,philip-peterson,https://github.com/philip-peterson/flibs,"Fortran libraries (written by other people, I am merely forking)",1013,11,5,0,NO,NO,NO,NO,11
+505,MuSTEM,HamishGBrown,https://github.com/HamishGBrown/MuSTEM,"Open source version of the MuSTEM multislice electron microscopy simulation code, developed at the University of Melbourne.",207404,11,10,15,YES,YES,YES,NO,11
+506,fortran-unit-test,dongli,https://github.com/dongli/fortran-unit-test,Another Fortran unit test library,87,11,3,0,NO,YES,YES,NO,11
+507,FOSSIL,szaghi,https://github.com/szaghi/FOSSIL,"FOSSIL, FOrtran Stereo (si) Litography parser",3879,11,2,2,NO,NO,YES,NO,11
+508,amica,japalmer29,https://github.com/japalmer29/amica,Code for AMICA: Adaptive Mixture ICA with shared components,31400,11,2,14,YES,YES,YES,NO,11
+509,SCRIP,SCRIP-Project,https://github.com/SCRIP-Project/SCRIP,,1517,11,10,3,NO,YES,YES,NO,12
+510,splf2003,pyccel,https://github.com/pyccel/splf2003,Fortran 2003 library for B-Splines/NURBS and Computer Aided Design Algorithms,696,11,3,0,NO,NO,NO,NO,11
+511,DEFY,szaghi,https://github.com/szaghi/DEFY,DEmystify Fortran mYths,140,11,1,0,NO,YES,YES,NO,11
+512,umwm,umwm,https://github.com/umwm/umwm,University of Miami Wave Model,827,11,2,1,NO,YES,YES,NO,11
+513,fortran90,arrghb2012,https://github.com/arrghb2012/fortran90,"http://fortran90.org source code examples
+",403,11,2,0,NO,YES,NO,NO,11
+514,mcluster,ahwkuepper,https://github.com/ahwkuepper/mcluster,McLuster - a tool to make a star cluster,487,11,17,8,NO,YES,YES,NO,11
+515,collections,komahanb,https://github.com/komahanb/collections,"Collections are set of objects that are can be iterated in convenient fashion. This is a Modern Fortran Collections Library containing interfaces (Iterable, Collection, List, Set) and implementations (LinkedList, HashSet and TreeSet). ",32,11,1,0,NO,NO,YES,NO,11
+516,Mpi-IoC-HDF5-Fortran-CMake,rchuso,https://github.com/rchuso/Mpi-IoC-HDF5-Fortran-CMake,"Example of using Message Passing Interface and Inversion of Control with modern Fortran and HDF5, all built with CMake.",36,11,1,0,NO,YES,NO,NO,11
+517,modern_fftpack,jlokimlin,https://github.com/jlokimlin/modern_fftpack,An OOP library of fast Fourier transforms,279,11,2,6,NO,NO,YES,NO,11
+518,EMUstack,bjornsturmberg,https://github.com/bjornsturmberg/EMUstack,"EMUstack is an open-source simulation package for calculating light propagation through multi-layered stacks of dispersive, lossy, nanostructured, optical media. It implements a generalised scattering matrix method, which extends the physical intuition of thin film optics to complex structures.",51071,11,8,3,NO,YES,YES,NO,11
+519,MissileSimulation,bgin,https://github.com/bgin/MissileSimulation,Air-to-Air Radar Guided Missile Modelling and Simulation Project,19897,11,1,0,NO,NO,YES,NO,11
+520,IBFS-IF2D,atchieu,https://github.com/atchieu/IBFS-IF2D,Immersed boundary fractional step method written in FORTRAN 90,125,11,10,0,NO,NO,NO,NO,11
+521,OOP-Fortran-Examples,cmacmackin,https://github.com/cmacmackin/OOP-Fortran-Examples,"Examples of using the object-oriented features in Fortran, taken from my presentation at RSECon 2019",7,11,0,0,NO,NO,NO,NO,11
+522,Empire-for-PDP-10,DigitalMars,https://github.com/DigitalMars/Empire-for-PDP-10,Empire for the PDP-10 in the FORTRAN-10 programming language,152,11,6,0,NO,NO,NO,NO,11
+523,nonlin,jchristopherson,https://github.com/jchristopherson/nonlin,A library that provides routines to compute the solutions to systems of nonlinear equations.,3495,11,0,0,NO,YES,YES,NO,11
+524,hole2,osmart,https://github.com/osmart/hole2,Source code for HOLE program.,2421,11,6,1,NO,NO,YES,NO,11
+525,ChernNubmer,quanshengwu,https://github.com/quanshengwu/ChernNubmer,Using different methods to calculate Chern number for Haldane model with disorder,58,11,12,0,NO,NO,NO,NO,11
+526,ttb,adtzlr,https://github.com/adtzlr/ttb,Tensor Toolbox for Modern Fortran,3787,11,10,5,NO,NO,YES,NO,11
+527,ccx_cae,imirzov,https://github.com/imirzov/ccx_cae,CalculiX CAE - GUI/pre-processor for CalculiX CrunchiX. It's designed to guide you through the keywords creation sequence and is aimed to help you reach correct input file with no mistakes.,137862,11,0,0,NO,YES,YES,NO,11
+528,fms-idealized,tapios,https://github.com/tapios/fms-idealized,FMS-idealized moist GCM of O'Gorman and Schneider 2008 and dry GCM of Schneider and Walker 2006,46644,11,10,0,NO,NO,NO,NO,11
+529,DISCOVER,NKI-CCB,https://github.com/NKI-CCB/DISCOVER,DISCOVER co-occurrence and mutual exclusivity analysis for cancer genomics data,351,11,6,2,NO,YES,NO,NO,11
+530,NekCEM,NekCEM,https://github.com/NekCEM/NekCEM,"Spectral-element solver for Maxwell's equations, drift-diffusion equations, and more.",22651,11,13,16,YES,YES,YES,YES,11
+531,seagrid,sea-mat,https://github.com/sea-mat/seagrid,Orthogonal curvilinear grid creator for Matlab,2019,11,11,1,NO,NO,NO,NO,11
+532,deltares-delft3d-b,nerdalize,https://github.com/nerdalize/deltares-delft3d-b,"Docker container to run Delft3D: a world leading open-source 2D/3D modeling suite to investigate hydrodynamics, sediment transport, morphology and water quality for fluvial, estuarine and coastal environments.",103328,11,9,0,NO,YES,NO,NO,11
+533,CyGutz,yaoyongxin,https://github.com/yaoyongxin/CyGutz,A versatile Gutzwiller solver to optimize the single Slater determinant and local many-body degrees of freedom simultaneously within the Gutzwiller approximation or equivalently Slave-boson approach. ,232467,11,4,0,NO,NO,YES,NO,11
+534,fpluslib,r5r3,https://github.com/r5r3/fpluslib,object oriented fortran library with container classes.,2402,11,0,0,NO,NO,YES,NO,11
+535,radmc3d-0.41,dullemond,https://github.com/dullemond/radmc3d-0.41,,42427,11,3,1,NO,YES,YES,NO,11
+536,RayTran,lewisfish,https://github.com/lewisfish/RayTran,Ray tracer in pure Fortran,15647,11,1,0,NO,NO,NO,NO,11
+537,Doping-Effects-in-Graphene,jamesmcm,https://github.com/jamesmcm/Doping-Effects-in-Graphene,Theoretical modelling of doping effects and magnetic field effects on the quantum transport in Graphene.,4521,11,3,0,NO,YES,YES,NO,11
+538,PlPlotLib,hornekyle,https://github.com/hornekyle/PlPlotLib,Matplotlib personality wrapper for PlPlot in Fortran,3509,11,0,3,NO,NO,YES,NO,11
+539,gMultiwfn,stecue,https://github.com/stecue/gMultiwfn,"A third-party distribution of Multiwfn for gfortran, 100% free!",59889,11,4,0,NO,YES,YES,NO,11
+810,Dynamical-Systems-Toolbox-V2,ecoetzee,https://github.com/ecoetzee/Dynamical-Systems-Toolbox-V2,Matlab integration of AUTO for dynamical systems analysis,13953,7,4,0,NO,YES,NO,NO,7
+811,IMPACT-Z,impact-lbl,https://github.com/impact-lbl/IMPACT-Z,For IMPACT-Z beam dynamics code users and developers,10907,7,5,1,NO,YES,NO,NO,7
+812,RALFit,ralna,https://github.com/ralna/RALFit,A non-linear least squares solver,2869,7,4,30,YES,YES,YES,NO,7
+813,fume,dongli,https://github.com/dongli/fume,Fluid Universal Modeling Environment,16,7,0,0,NO,NO,NO,NO,7
+814,Fortran-Library-for-Material-Constitutive-Models,jenovencio,https://github.com/jenovencio/Fortran-Library-for-Material-Constitutive-Models,"This library has a lot of Fortran Routines for model implicit material constitutive behavior. There are implementation of Neo-Hooken, Odgen and Hencky potential for hyperelastic behavior.",7765,7,6,0,NO,NO,NO,NO,7
+815,dsmc,schuberm,https://github.com/schuberm/dsmc,monte carlo of heat conduction from nanoparticle,401,7,3,1,NO,NO,NO,NO,7
+816,chimera2castro,ECP-Astro,https://github.com/ECP-Astro/chimera2castro,,335,7,5,1,NO,YES,YES,NO,7
+817,NHDS,danielver02,https://github.com/danielver02/NHDS,The New Hampshire Dispersion relation Solver,272,7,4,0,NO,YES,YES,NO,7
+818,tests-uh,openshmem-org,https://github.com/openshmem-org/tests-uh,OpenSHMEM Test Suite,2361,7,15,2,NO,YES,YES,YES,7
+819,icatt-2016,helgee,https://github.com/helgee/icatt-2016,"Supplementary materials for ""A Comparative Study Of Programming Languages for Next-Generations Astrodynamics Systems""",198,7,1,2,NO,YES,YES,NO,7
+820,RGP-Gen,everhusk,https://github.com/everhusk/RGP-Gen,Real Gas Property File Generator for ANSYS CFX V14.5,590,7,8,3,NO,YES,YES,NO,7
+821,hdf5-tutorial,kmanalo,https://github.com/kmanalo/hdf5-tutorial,,232,7,0,0,NO,NO,NO,NO,7
+822,hdf5_interface,fccf,https://github.com/fccf/hdf5_interface,high level  fortran interface for HDF5,152,7,2,0,NO,YES,YES,NO,7
+823,RIKsrf,fgallovic,https://github.com/fgallovic/RIKsrf,RIK earthquake source model: Slip rate generator,4046,7,3,1,NO,NO,NO,NO,7
+824,ppiclF,dpzwick,https://github.com/dpzwick/ppiclF,A parallel particle-in-cell library in Fortran.,3777,7,3,8,NO,YES,YES,NO,8
+825,quantreg,cran,https://github.com/cran/quantreg,:exclamation: This is a read-only mirror of the CRAN R package repository.  quantreg — Quantile Regression. Homepage: https://www.r-project.org  ,3736,7,6,0,NO,NO,YES,NO,7
+826,RMPCDMD,pdebuyl-lab,https://github.com/pdebuyl-lab/RMPCDMD,Code to perform chemical MPCD simulations,1246,7,2,0,NO,YES,YES,NO,7
+827,PPM_RC,yafshar,https://github.com/yafshar/PPM_RC,2D-3D distributed parallel Region Competition segmentation algorithm,730,7,1,0,NO,NO,YES,NO,7
+828,lbfgsb-sys,noshu,https://github.com/noshu/lbfgsb-sys,Rust binding of fortran Limited memory LBFGS subroutine,51,7,2,2,NO,YES,YES,NO,7
+829,mt3d-usgs,MODFLOW-USGS,https://github.com/MODFLOW-USGS/mt3d-usgs,MT3D-USGS Repository,49017,7,8,6,NO,YES,YES,NO,7
+830,qmd-progress,lanl,https://github.com/lanl/qmd-progress,"PROGRESS: Parallel, Rapid O(N) and Graph-based Recursive Electronic Structure Solver.",127795,7,8,9,NO,YES,YES,NO,7
+831,GenASiS_Basics,GenASiS,https://github.com/GenASiS/GenASiS_Basics,Object-oriented Utilitarian Functionality for Large-scale Physics Simulations ,391,7,0,0,NO,NO,NO,NO,7
+832,euler2d,cpraveen,https://github.com/cpraveen/euler2d,2-D inviscid flow and adjoint solver,336,7,11,0,NO,NO,YES,NO,7
+833,pyboxlib,memmett,https://github.com/memmett/pyboxlib,Python BoxLib wrapper,124,7,0,0,NO,NO,NO,NO,7
+834,leaks_hunter,szaghi,https://github.com/szaghi/leaks_hunter,hunter of Fortran Compilers memory leaks,24,7,0,0,NO,NO,NO,NO,7
+835,partmc,compdyn,https://github.com/compdyn/partmc,Particle-resolved stochastic atmospheric aerosol model,161789,7,5,40,YES,YES,YES,NO,8
+836,Nek5000,yhaomin2007,https://github.com/yhaomin2007/Nek5000,Nek5000 usr defined code and examples,46606,7,11,0,NO,NO,YES,NO,7
+837,linalg,jchristopherson,https://github.com/jchristopherson/linalg,A linear algebra library that provides a user-friendly interface to several BLAS and LAPACK routines.,5167,7,0,0,NO,YES,YES,NO,7
+838,raytracer,edin,https://github.com/edin/raytracer,Performance comparison of various compilers,9478,7,0,0,NO,NO,YES,NO,7
+839,nsc2ke,cpraveen,https://github.com/cpraveen/nsc2ke,Finite-Volume Galerkin program computing 2D and axisymmetric flows,1496,7,5,0,NO,NO,NO,NO,7
+840,MPMD-with-Fortran-2008-Coarrays,MichaelSiehl,https://github.com/MichaelSiehl/MPMD-with-Fortran-2008-Coarrays,THIS REPOSITORY IS DEDICATED TO A PROGRAMMING STYLE THAT ALLOWS MPMD-LIKE PARALLEL PROGRAMMING USING FORTRAN 2008 COARRAYS (PGAS),656,7,0,0,NO,YES,YES,NO,7
+841,single-linked-list,szaghi,https://github.com/szaghi/single-linked-list,,172,7,0,0,NO,NO,NO,NO,7
+842,PyDQED,jwallen,https://github.com/jwallen/PyDQED,A Python wrapper for the DQED constrained nonlinear optimization code,221,7,2,2,NO,YES,NO,NO,7
+843,vsop87,ctdk,https://github.com/ctdk/vsop87,VSOP87 files,8346,7,8,0,NO,NO,NO,NO,7
+844,PLMC,fortranguy,https://github.com/fortranguy/PLMC,A simple Physics of Liquids Monte Carlo simulation code written in Fortran,26416,7,0,0,NO,NO,YES,NO,7
+845,gmsh-to-vtk-and-tecplot,truongd8593,https://github.com/truongd8593/gmsh-to-vtk-and-tecplot,Convert .msh mesh file (Quadrilateral) of gmsh to .vtk file and/or .dat tecplot file,1098,7,7,0,NO,NO,NO,NO,7
+846,pscf,dmorse,https://github.com/dmorse/pscf,Polymer self-consistent field theory (Fortran version),4344,7,14,2,NO,YES,YES,NO,7
+847,Pecube-HUGG,HUGG,https://github.com/HUGG/Pecube-HUGG,This repository is for the Helsinki University Geodynamics Group (HUGG) version of Pecube.,5406,7,2,1,NO,YES,YES,NO,7
+848,Quasincompact3d,xcompact3d,https://github.com/xcompact3d/Quasincompact3d,"Old version of the solver for the compressible Navier-Stokes equations in the low Mach number limit (no longer actively developed, it is recommended to use the new version of Incompact3d)",6806,7,4,0,NO,YES,YES,NO,7
+849,aircraft-datcom,arktools,https://github.com/arktools/aircraft-datcom,Modified USAF Aircraft DATCOM,37964,7,2,1,NO,NO,YES,NO,7
+850,Millennial,email-clm,https://github.com/email-clm/Millennial,This is a repository for the newly developed Millennial model,5733,7,4,3,NO,NO,NO,NO,7
+851,libga,ramos,https://github.com/ramos/libga,A FORTRAN genetic algorithm optimisation library,196,7,2,0,NO,NO,NO,NO,7
+852,Fractiles,abrahamson,https://github.com/abrahamson/Fractiles,,220,7,4,0,NO,YES,YES,NO,7
+853,NLP-Sentence-Compression,kyeah,https://github.com/kyeah/NLP-Sentence-Compression,Paraphrasic Sentence Compression using Deep-Link Bilingual Phrase Alignments.,82928,7,3,0,NO,NO,YES,NO,7
+854,Kepler,jasonfrowe,https://github.com/jasonfrowe/Kepler,"Source code to Find, Model and manipulate Planetary Transits",22059,7,0,4,NO,NO,YES,NO,7
+855,scsbz,tflovorn,https://github.com/tflovorn/scsbz,Mean-field self-consistent equations for slave-boson superconductivity.,127,7,9,1,NO,NO,YES,NO,7
+856,PC-SAFT,CoolProp,https://github.com/CoolProp/PC-SAFT,Open-source implementation of PC-SAFT equation of state,144,7,3,1,NO,YES,NO,NO,7
+857,jams_makefile,mcuntz,https://github.com/mcuntz/jams_makefile,"Provide a portable, versatile way of compiling Fortran, C, C++, and mixed projects.",33546,7,0,0,NO,NO,YES,NO,7
+858,TCSFA,timy,https://github.com/timy/TCSFA,Trajectory-Based Coulomb-Corrected Strong Field Approximation,1184,7,4,0,NO,NO,YES,NO,7
+859,PROPACK,poulson,https://github.com/poulson/PROPACK,Rasmus Larsen's PROPACK,49986,7,0,1,NO,NO,NO,NO,7
+860,channel-f90-mpi,davecats,https://github.com/davecats/channel-f90-mpi,Direct Numerical Simulation of an incompressible turbulent channel flow (F90 - MPI),48,7,8,0,NO,NO,YES,NO,7
+861,xoroshiro128plus_fortran,jannisteunissen,https://github.com/jannisteunissen/xoroshiro128plus_fortran,Fortran implementation of xoroshiro128+,13,7,2,0,NO,NO,NO,NO,7
+862,DIABLO,johnryantaylor,https://github.com/johnryantaylor/DIABLO,DNS In A Box...Laptop Optimized!,840,7,14,1,NO,YES,YES,NO,7
+863,FiniteVolumeMethods,Paulms,https://github.com/Paulms/FiniteVolumeMethods,Finite Volume Methods for Hyperbolic Problems,74,7,1,0,NO,NO,YES,NO,7
+864,ForestESS,wengensheng,https://github.com/wengensheng/ForestESS,"ForestESS simulates plant demographic processes  (e.g., growth, reproduction, and mortality), competition for light and soil resources, and soil biogeochemical processes. The codes are from the version of LM3-PPA used to simulate the forest successional dynamics in the paper of Weng, E., Farrior, CE, Dybzinski, R, and Pacala, SW, et al. 2016 Global Change Biology.",2040,7,5,1,NO,YES,YES,NO,7
+865,OpenMP_Fortran_runtime_wrappers,jeffhammond,https://github.com/jeffhammond/OpenMP_Fortran_runtime_wrappers,Fortran 200x ISO_C_BINDING wrappers for OpenMP C runtime library calls,20,7,0,0,NO,NO,NO,NO,7
+866,FOLLIA,giacombum,https://github.com/giacombum/FOLLIA,Fortran Library for Lagrange InterpolAtion,21,7,2,0,NO,NO,YES,NO,7
+867,healpixmirror,healpy,https://github.com/healpy/healpixmirror,Read-only mirror of HEALPix,118872,7,1,0,NO,NO,YES,NO,7
+868,radcal,firemodels,https://github.com/firemodels/radcal,Radiative properties of gaseous species and soot,6953,7,17,2,NO,YES,YES,NO,7
+869,NEXD-2D,seismology-RUB,https://github.com/seismology-RUB/NEXD-2D,2D solver of the NEXD package,63274,7,8,0,NO,NO,NO,NO,7
+870,papers,mmdg-oxford,https://github.com/mmdg-oxford/papers,Full data of our published papers ,147661,7,7,0,NO,NO,NO,NO,7
+871,ButterflyPACK,liuyangzhuan,https://github.com/liuyangzhuan/ButterflyPACK,,802091,7,0,1,NO,NO,YES,NO,7
+872,mocsy,jamesorr,https://github.com/jamesorr/mocsy,Routines to model ocean carbonate system thermodynamics,6065,7,9,2,NO,YES,YES,NO,7
+873,fortran_lib,vjaunet,https://github.com/vjaunet/fortran_lib,Same as fortran_lib but ported to gfortran,2365,7,0,0,NO,NO,YES,NO,7
+874,HANK,ikarib,https://github.com/ikarib/HANK,Replication of Heterogeneous Agent New Keynesian (HANK) model in MATLAB,4959,7,13,2,NO,NO,NO,NO,7
+875,StochOptim,keurfonluu,https://github.com/keurfonluu/StochOptim,StochOptim provides user friendly functions to solve optimization problems using stochastic algorithms,79,7,2,0,NO,NO,NO,NO,7
+876,F90-Numerical-Lib,calebwherry,https://github.com/calebwherry/F90-Numerical-Lib,"Numerical library written in FORTRAN 90 containing integration, interpolation, differentiation, etc. routines.",6012,7,5,0,NO,NO,NO,NO,7
+877,grackle,grackle-project,https://github.com/grackle-project/grackle,The Grackle chemistry and cooling library for astrophysical simulations and models.,44397,7,19,10,NO,YES,YES,YES,7
+878,create_orac_lut,ORAC-CC,https://github.com/ORAC-CC/create_orac_lut,Creates radiative transfer operator LUTs for the Optimal Retrieval of Aerosol and Cloud (ORAC) code and various other retrieval systems.,3078,7,1,0,NO,NO,YES,NO,7
+879,dftd3-lib,dftbplus,https://github.com/dftbplus/dftd3-lib,Library version of S. Grimmes DFTD3 code.,993,7,4,0,NO,YES,YES,NO,7
+880,seren,dhubber,https://github.com/dhubber/seren,SEREN SPH code (Hubber et al. 2011) for astrophysical hydrodynamics simulations,46188,7,6,0,NO,NO,YES,NO,7
+881,dStar,nworbde,https://github.com/nworbde/dStar,routines for computing neutron star structure and evolution,823,7,3,0,NO,YES,YES,NO,7
+882,pysurf96,miili,https://github.com/miili/pysurf96,"Python wrapper for modelling surface wave dispersion curves from surf96 - Computer Programs in Seismology, R. Hermann",30,7,1,2,NO,NO,NO,NO,7
+883,mex,jtilly,https://github.com/jtilly/mex,Examples on how to use Fortran and C++ mex files with Matlab,328,7,7,1,NO,YES,YES,NO,7
+884,math77,jacobwilliams,https://github.com/jacobwilliams/math77,Unofficial Mirror of the JPL MATH77 Library,45190,7,1,1,NO,NO,NO,NO,7
+885,CCMD,everhusk,https://github.com/everhusk/CCMD,Centrifugal Compressor Meanline Design,16368,7,7,1,NO,YES,NO,NO,7
+886,GSW-Fortran,TEOS-10,https://github.com/TEOS-10/GSW-Fortran,Gibbs-SeaWater (GSW) Oceanographic Toolbox in Fortran,11125,7,11,3,NO,YES,YES,NO,7
+887,bitsy,leetmaa,https://github.com/leetmaa/bitsy,A fortran module for SHA-256 hashing.,148,7,3,0,NO,NO,NO,NO,7
+888,uquantchem,petrossou,https://github.com/petrossou/uquantchem,A versatile and easy to use Quantum Chemistry Computational Software,99123,7,3,0,NO,NO,YES,NO,7
+889,slicot,henjo,https://github.com/henjo/slicot,Numpy wrapper of the control and systems library SLICOT,1153,7,1,0,NO,NO,NO,NO,7
+890,ioapi-3.2,cjcoats,https://github.com/cjcoats/ioapi-3.2,"I/O API Version 3.2:  new, beta",6038,7,4,1,NO,YES,YES,NO,7
+891,FriVolous,szaghi,https://github.com/szaghi/FriVolous,Finite Volume block-structured Fortran abstract class,20,7,2,0,NO,NO,NO,NO,7
+892,testgmres,hsitaram,https://github.com/hsitaram/testgmres,Matrix free gmres implementation with call back functions for matrix vector product and preconditioner.,49,7,3,0,NO,NO,NO,NO,7
+893,pyrrtm,tomflannaghan,https://github.com/tomflannaghan/pyrrtm,Python wrapper to the RRTM radiation code,2072,7,2,0,NO,YES,YES,NO,7
+894,fortran-server,lukeasrodgers,https://github.com/lukeasrodgers/fortran-server,"simple ""hello world"" tcp server in Fortran using POSIX APIs",34,7,1,0,NO,NO,YES,NO,7
+895,elmerfem,tehnick,https://github.com/tehnick/elmerfem,Unofficial git mirror of ElmerFEM + few temporary branches,89477,7,14,0,NO,NO,YES,NO,7
+896,ESEAS,libESEAS,https://github.com/libESEAS/ESEAS,A 1-3D shape function library composing the Exact Sequence for Elements of All Shapes,320,7,1,1,NO,NO,YES,NO,7
+897,superpy,andrewfowlie,https://github.com/andrewfowlie/superpy,Scan the CMSSM with (py)MultiNest and plot the results with a new plotting GUI.,173296,7,8,1,NO,NO,YES,NO,7
+898,vector_disp,bminchew,https://github.com/bminchew/vector_disp,"A simple routine to infer 3d (vector) displacements from unwrapped, geolocated InSAR data",25,7,6,1,NO,NO,NO,NO,7
+899,quad-trees,lewisfish,https://github.com/lewisfish/quad-trees,Pure Fortran implementation of quad trees for images,9628,7,0,0,NO,NO,NO,NO,7
+900,EigenRec,nikolakopoulos,https://github.com/nikolakopoulos/EigenRec,Implementations of the EigenRec algorithm,1646,7,2,1,NO,YES,YES,NO,7
+901,periodic-NBO,jrschmidt2,https://github.com/jrschmidt2/periodic-NBO,,172,7,5,1,NO,YES,NO,NO,7
+902,dmft-ed,aamaricci,https://github.com/aamaricci/dmft-ed,"A General Purpose solver for the Dynamical Mean-Field Theory based on the Lanczos method. This code solves the DMFT problem in the Normal (N_up,N_dw), Superconducting (S_z) and non-SU(2) symmetric (N) cases. ",5152,7,4,0,NO,YES,YES,NO,7
+903,exchanges,dkorotin,https://github.com/dkorotin/exchanges,Exchange parameters of Heisenberg model calculation via Green's function approach,6630,7,3,0,NO,NO,YES,NO,7
+904,en600.468,alopez,https://github.com/alopez/en600.468,Assignments for mt-class.org/jhu,16164,6,13,1,NO,YES,NO,NO,6
+905,UHS_Deagg,abrahamson,https://github.com/abrahamson/UHS_Deagg,,377,6,4,0,NO,YES,NO,NO,6
+906,sbf,peterspackman,https://github.com/peterspackman/sbf,"Simple binary format, designed to be a small dependency enabling quick ‘cross-platform’ transport between C, C++ and Fortran",129,6,0,0,NO,NO,YES,NO,6
+907,vmf90,pdebuyl,https://github.com/pdebuyl/vmf90,vmf90 - Vlasov solver for mean-field systems in Fortran 90,152,6,0,0,NO,NO,YES,NO,6
+908,ramsurf,quiet-oceans,https://github.com/quiet-oceans/ramsurf,RAM Parabolic Equation code with bottom loss,648,6,4,2,NO,YES,YES,NO,6
+909,ALFA,rwesson,https://github.com/rwesson/ALFA,Automated Line Fitting Algorithm,8505,6,2,12,YES,NO,YES,NO,6
+910,ocaml-odepack,Chris00,https://github.com/Chris00/ocaml-odepack,Binding to the ODEPACK FORTRAN library,692,6,0,0,NO,NO,YES,NO,6
+911,gpu-tips,dappelha,https://github.com/dappelha/gpu-tips,Fortran examples of CUDA and directives tips and tricks for IBM Power + Nvidia Systems,21,6,0,1,NO,NO,NO,NO,6
+912,Fortran-OpenPMD-File-Writers,UCLA-Plasma-Simulation-Group,https://github.com/UCLA-Plasma-Simulation-Group/Fortran-OpenPMD-File-Writers,Fortran 2003 Parallel HDF5 File Writers and Readers in OpenPMD Standard,12,6,3,0,NO,NO,NO,NO,6
+913,ffr-PWDFT,f-fathurrahman,https://github.com/f-fathurrahman/ffr-PWDFT,A poor man's density functional theory program,184,6,1,0,NO,NO,YES,NO,6
+914,json-fortran-example,tomedunn,https://github.com/tomedunn/json-fortran-example,An example program that shows how to use the json-fortran library along with a custom derived type.,128,6,0,0,NO,NO,NO,NO,6
+915,MOPAC,jeffhammond,https://github.com/jeffhammond/MOPAC,MOPAC version 7 (public domain),2460,6,5,0,NO,NO,NO,NO,6
+916,LES,wimvanderbauwhede,https://github.com/wimvanderbauwhede/LES,Large Eddy Simulator for Study of Urban Boundary-Layer Flows,103367,6,1,0,NO,NO,NO,NO,6
+917,Aqua,dprada,https://github.com/dprada/Aqua,Python library for the analysis of molecular dynamics,22802,6,2,2,NO,YES,YES,NO,6
+918,libWEPAJE,earroyo,https://github.com/earroyo/libWEPAJE,Pressure and Rate Transient Analysis for Oil & Gas - Solution of Diffusivity Equation for Single Phase Problems Using Laplace Transfor,2404,6,3,0,NO,NO,NO,NO,6
+919,BDpack,amir-saadat,https://github.com/amir-saadat/BDpack,A Brownian dynamics package for simulation of polymeric solutions,54324,6,3,2,NO,NO,YES,NO,6
+920,embarassingly-parallel-teams,rouson,https://github.com/rouson/embarassingly-parallel-teams,,2,6,1,0,NO,NO,NO,NO,6
+921,sexptran,berke,https://github.com/berke/sexptran,Fortran library for reading and writing S-expressions,37,6,0,0,NO,NO,NO,NO,6
+922,fover,zhouguidi,https://github.com/zhouguidi/fover,Semantic versioning library written in and for modern Fortran,25,6,1,4,NO,YES,YES,NO,6
+923,python-helmholtz,jschwab,https://github.com/jschwab/python-helmholtz,Python bindings for Frank Timmes' Helmholtz equation of state,22452,6,5,0,NO,NO,YES,NO,6
+924,mps,dc-fukuoka,https://github.com/dc-fukuoka/mps,mps - 3D fluid dynamics solver by using moving particle semi implicit(MPS) method with OpenMP. ,11463,6,3,0,NO,NO,YES,NO,6
+925,pyhelp,cgq-qgc,https://github.com/cgq-qgc/pyhelp,A Python library for the assessment of spatially distributed groundwater recharge and hydrological components with HELP,21971,6,3,11,YES,YES,YES,NO,6
+926,q-e_schrodinger,QEF,https://github.com/QEF/q-e_schrodinger,Quantum ESPRESSO package for integration into Schrödinger’s Materials Science Suite,401905,6,5,1,NO,YES,YES,YES,6
+927,autoderiv,s1291,https://github.com/s1291/autoderiv,Automatic differentiation example,19,6,1,0,NO,NO,NO,NO,6
+928,fv3atm,NOAA-EMC,https://github.com/NOAA-EMC/fv3atm,,6759,6,33,16,NO,YES,YES,YES,6
+929,segfit,yuhonglin,https://github.com/yuhonglin/segfit,The segFit algorithm written in C++ based on lbfgsb fortran routine,226,6,2,0,NO,NO,NO,NO,6
+930,pyflexwin,amaggi,https://github.com/amaggi/pyflexwin,Python port of the flexwin package for automatically selecting data windows for seismic tomography,1593,6,5,2,NO,NO,NO,NO,6
+931,RPMDrate,GreenGroup,https://github.com/GreenGroup/RPMDrate,Compute dynamic properties of chemical systems using ring polymer molecular dynamics simulations,867,6,4,0,NO,NO,YES,NO,6
+932,fishpack,jlokimlin,https://github.com/jlokimlin/fishpack,Implements the generalized Buneman algorithm to solve separable elliptic partial differential equations.,2200,6,4,5,NO,YES,YES,NO,6
+933,ESERK5,kleefeld80,https://github.com/kleefeld80/ESERK5,Extrapolated stabilized explicit Runge-Kutta method (fifth order) ,9566,6,1,0,NO,NO,NO,NO,6
+934,RXMD,USCCACS,https://github.com/USCCACS/RXMD,RXMD : Linear-Scaling Parallel Reactive Molecular Dynamics Simulation Engine,43183,6,5,23,YES,YES,YES,NO,6
+935,exotrending,oscaribv,https://github.com/oscaribv/exotrending,A fast and easy-to-use light curve detrending software for exoplanets,325,6,0,0,NO,NO,YES,NO,6
+936,weather-buoys,modern-fortran,https://github.com/modern-fortran/weather-buoys,Processing weather buoy data in parallel,12943,6,1,0,NO,YES,NO,NO,6
+937,pthread_fortran_interface,ljn917,https://github.com/ljn917/pthread_fortran_interface,pthread fortran interface,17,6,0,0,NO,NO,NO,NO,6
+938,lagrange,blackrim,https://github.com/blackrim/lagrange,the c++ version of lagrange,25871,6,5,0,NO,NO,YES,NO,6
+939,toronto-fortran-games,fortran-gaming,https://github.com/fortran-gaming/toronto-fortran-games,"Classic Fortran games, public domain",34,6,0,0,NO,NO,NO,NO,6
+940,lbfgs,jmbr,https://github.com/jmbr/lbfgs,L-BFGS Software for Large-scale Unconstrained Optimization by Jorge Nocedal,132,6,0,0,NO,NO,NO,NO,6
+941,sf_traffic,liljonnystyle,https://github.com/liljonnystyle/sf_traffic,data science project studying San Francisco traffic trends,25833,6,4,0,NO,NO,YES,NO,6
+942,DSM-Kernel,IPGP,https://github.com/IPGP/DSM-Kernel,3D waveform partial derivative calculation software for 1D Earth models,10696,6,4,0,NO,YES,YES,NO,6
+943,hazel,aasensio,https://github.com/aasensio/hazel,Hazel: synthesis and inversion of Stokes profiles,81703,6,4,8,NO,YES,YES,NO,6
+944,forget,szaghi,https://github.com/szaghi/forget,FORtran Git Template,30,6,0,4,NO,NO,NO,NO,6
+945,fortran-regex,dongli,https://github.com/dongli/fortran-regex,A regex implementation in pure Fortran.,3,6,1,0,NO,NO,NO,NO,6
+946,Molecular_symmetry,ElenaKusevska,https://github.com/ElenaKusevska/Molecular_symmetry,Program to determine the symmetry point group of a molecule (doesn't work with cubic groups).,334,6,4,0,NO,NO,NO,NO,6
+947,Standish-Ephemeris,CumuloEpsilon,https://github.com/CumuloEpsilon/Standish-Ephemeris,"Fortran90 Module - implemention of E.M. Standish's ""Keplerian Elements for Approximate Positions of the Major Planets"" ",485,6,0,1,NO,NO,NO,NO,6
+948,Scheduler,ncsa,https://github.com/ncsa/Scheduler,The aggregate job launcher of single-core or single-node applications on HPC sites,21,6,3,0,NO,YES,NO,NO,6
+949,quadrature-fortran,jacobwilliams,https://github.com/jacobwilliams/quadrature-fortran,Adaptive Gaussian Quadrature with Modern Fortran,20,6,0,0,NO,NO,NO,NO,7
+950,LESjet-Smagorinsky,kaushikb258,https://github.com/kaushikb258/LESjet-Smagorinsky,Large Eddy Simulation of supersonic jets using the dynamic Smagorinsky model,688,6,3,0,NO,NO,NO,NO,6
+951,caf-testsuite,uhhpctools,https://github.com/uhhpctools/caf-testsuite,Test Suite for Fortran 2008 Coarrays,1752,6,3,0,NO,NO,NO,NO,6
+952,OpenTBL,guillemborrell,https://github.com/guillemborrell/OpenTBL,Turbulent Boundary Layer DNS implementation able to run in millions of cores.,544,6,4,0,NO,NO,YES,NO,6
+953,pymc,matthew-brett,https://github.com/matthew-brett/pymc,http://pymc.googlecode.com/svn/trunk,12488,6,1,0,NO,NO,YES,NO,6
+954,CFR,gamaleldin,https://github.com/gamaleldin/CFR,"This code package is for the Corrected-Fisher-Randomization (CFR) method. This method generates random surrogate data that preserves a specified set of first and second order marginal moments of a data tensor, which makes it well equipped to test for the null hypothesis that a structure in data is an epiphenomenon of these specified set of primary features of the data tensor. The randomization procedure used in CFR is based on Fisher randomization (shuffling). However, the shuffling is accompanied by a correction step that retains the primary features specified in the null hypothesis. Hence, the name of this method.",325,6,0,0,NO,NO,YES,NO,6
+955,MPMD-with-Coarray-Fortran-TS-18508-Events-Example-Program,MichaelSiehl,https://github.com/MichaelSiehl/MPMD-with-Coarray-Fortran-TS-18508-Events-Example-Program,THIS REPOSITORY CONTAINS A FORTRAN (2015) COARRAY EXAMPLE PROGRAM THAT USES TS-18508 EVENTS,155,6,0,0,NO,NO,YES,NO,6
+956,stock-prices,modern-fortran,https://github.com/modern-fortran/stock-prices,Analyzing stock prices with Fortran arrays,1200,6,0,0,NO,NO,YES,NO,6
+957,BPA_EMTP,ahmadabdullah,https://github.com/ahmadabdullah/BPA_EMTP,Electromagnetic Transients Program (EMTP) of Bonneville Power Administration (BPA),54553,6,6,0,NO,NO,NO,NO,6
+958,rear,danielemelini,https://github.com/danielemelini/rear,Regional ElAstic Rebound calculator,4018,6,3,0,NO,NO,NO,NO,6
+959,spipp,ratnania,https://github.com/ratnania/spipp,"SPIPP is a 1D B-Splines library for evaluation, interpolation, approximation, assembling Finite Element matrices",440,6,0,0,NO,NO,YES,NO,6
+960,bgaPEST,mnfienen,https://github.com/mnfienen/bgaPEST,Bayesian Geostatistical Version of PEST,205749,6,1,0,NO,NO,YES,NO,6
+961,FortranMonads,tankefugl,https://github.com/tankefugl/FortranMonads,How far can we take monad(ish) abstractions in Fortran? Is it possible to make it into something useful?,112,6,0,1,NO,NO,NO,NO,6
+962,sceptic3D,plasmasim,https://github.com/plasmasim/sceptic3D,,85165,6,4,0,NO,YES,YES,NO,6
+963,UniMoVib,zorkzou,https://github.com/zorkzou/UniMoVib,a unified interface for molecular harmonic vibrational frequency calculations,7565,6,3,0,NO,NO,YES,NO,6
+964,paris-git,slitvinov,https://github.com/slitvinov/paris-git,PARIS Simulator Code (an unofficial git mirror),24334,6,3,0,NO,NO,YES,NO,6
+965,SHAKE16,ocrickard,https://github.com/ocrickard/SHAKE16,"An updated version of SHAKE91, Equivalent Linear Seismic Response Analysis of Horizontally Layered Soil Deposits",3255,6,2,3,NO,NO,YES,NO,6
+966,libaed2,AquaticEcoDynamics,https://github.com/AquaticEcoDynamics/libaed2,Code for the AED2 water quality / ecology library,913,6,6,11,YES,YES,YES,NO,6
+967,pyCONTIN,kanhua,https://github.com/kanhua/pyCONTIN,A python wrapper for CONTIN integral equation solver,7321,6,1,0,NO,NO,NO,NO,6
+968,SIMPLE3.0,hael,https://github.com/hael/SIMPLE3.0,A new repository(with deleted history) in preparation for release 3.0 of SIMPLE,451100,6,1,0,NO,YES,YES,YES,6
+969,EFISPEC3D,florentdemartin,https://github.com/florentdemartin/EFISPEC3D,EFISPEC3D is a free code programmed in FORTRAN95/MPI that solves the three-dimensional wave equations using a spectral-finite-element method.,3064,6,4,0,NO,NO,NO,NO,6
+970,DART,rsobash,https://github.com/rsobash/DART,Code for NCAR's Data Assimilation Research Testbed software package.,928,6,3,0,NO,NO,NO,NO,6
+971,tecplotwrite,liuzaigang,https://github.com/liuzaigang/tecplotwrite,Fortran module used to write tecplot binary or text format data file,23,6,2,0,NO,NO,NO,NO,6
+972,pyIRI2016,rilma,https://github.com/rilma/pyIRI2016,International Reference Ionosphere 2016 for Python,5114,6,4,4,NO,YES,YES,NO,6
+973,gibbs2,aoterodelaroza,https://github.com/aoterodelaroza/gibbs2,Thermodynamics of solids in the quasiharmonic approximation.,8845,6,2,0,NO,NO,YES,NO,6
+974,SPIDER,spider-em,https://github.com/spider-em/SPIDER,"SPIDER  (System for Processing Image Data from Electron microscopy and Related fields) is an image processing system for electron microscopy, especially usefull for single-particle reconstruction.",74394,6,2,0,NO,NO,YES,NO,6
+975,dumses-hybrid,marcjoos-phd,https://github.com/marcjoos-phd/dumses-hybrid,"CFD/MHD code for astrophysics applications; runs on 100,000+CPU & GPU.",24706,6,4,0,NO,NO,YES,NO,6
+976,legacy-code,amaggi,https://github.com/amaggi/legacy-code,Bits and pieces of legacy code that are lying around on my system and that it would be a pity to loose,6288,6,1,0,NO,NO,NO,NO,6
+977,xtb4stda,grimme-lab,https://github.com/grimme-lab/xtb4stda,sTDA-xTB Hamiltonian for ground state,1054,6,2,1,NO,YES,NO,NO,6
+978,generics,sourceryinstitute,https://github.com/sourceryinstitute/generics,,41,6,1,2,NO,YES,NO,NO,6
+979,xfvm,prapanchnair,https://github.com/prapanchnair/xfvm,Unstructured FVM euler equation solver in Fortran,376,6,3,0,NO,NO,NO,NO,6
+980,paragauss-gpl,alexei-matveev,https://github.com/alexei-matveev/paragauss-gpl,"ParaGauss GPL, V3.2.1+",9708,6,3,2,NO,NO,YES,NO,6
+981,TREX,muellsen,https://github.com/muellsen/TREX,Code for high-dimensional variable selection with the TREX,57554,6,1,0,NO,YES,YES,NO,6
+982,fates-release,NGEET,https://github.com/NGEET/fates-release,This read-only public repository holds release versions of the FATES model.,2929,6,8,1,NO,YES,YES,YES,6
+983,SMT-IBM-Models,tscheepers,https://github.com/tscheepers/SMT-IBM-Models,"Python implementation of IBM models 1 and 2, which can be used for finding word alignments and statistical machine translation.",19441,6,2,0,NO,NO,YES,NO,6
+984,advent,kristopherjohnson,https://github.com/kristopherjohnson/advent,Original PDP-10 Fortran source code for Will Crowther's Colossal Cave Adventure game,50,6,1,0,NO,NO,NO,NO,6
+985,infTRN_lassoStARS,emiraldi,https://github.com/emiraldi/infTRN_lassoStARS,Transcriptional regulatory network inference from gene expression and prior information with LASSO-StARS,1769236,6,3,0,NO,YES,YES,NO,6
+986,lilac,NCAR,https://github.com/NCAR/lilac,Old development repository for LILAC; this has been merged into:,7823,6,3,0,NO,YES,YES,NO,6
+987,Esh3D,Chunfang,https://github.com/Chunfang/Esh3D,"An analytical-numerical hybrid code for interactive Eshelby's inclusion problems in whole, half and finite spaces",225,6,0,0,NO,NO,YES,NO,6
+988,vsop87.js,gheja,https://github.com/gheja/vsop87.js,JavaScript library to calculate the position of the planets in the solar system using heliocentric ecliptic rectangular coordinates based on the VSOP87 C series.,8323,6,3,0,NO,NO,NO,NO,6
+989,libxphi,cdahnken,https://github.com/cdahnken/libxphi,libxphi adds easy offload capabilities for blas3 and more,180,6,2,0,NO,NO,NO,NO,6
+990,MoogStokes,soylentdeen,https://github.com/soylentdeen/MoogStokes,Artisanal Zeeman Radiative Transfer,17384,6,1,1,NO,NO,YES,NO,6
+991,gmsh-to-vtk-and-tecplot-Fortran-2003,truongd8593,https://github.com/truongd8593/gmsh-to-vtk-and-tecplot-Fortran-2003,Object-oriented Fortran 2003 version of my Fortran 95 code gmsh-to-vtk-and-tecplot,11,6,6,0,NO,NO,NO,NO,6
+992,Programs_For_Cell_Mapping,jqsun1,https://github.com/jqsun1/Programs_For_Cell_Mapping,Programs for cell mapping book by Springer,25619,6,5,0,NO,NO,NO,NO,6
+993,kokkos-fortran-interop,kokkos,https://github.com/kokkos/kokkos-fortran-interop,The Kokkos Fortran Interop repository contains tools and interfaces which help interactions between Fortran portions of an applications and C++ portions using Kokkos.,127,6,0,6,NO,YES,YES,NO,6
+994,cgenie,genie-model,https://github.com/genie-model/cgenie,cgenie Earth system model,59262,6,1,0,NO,YES,YES,NO,6
+995,fortran-submodule,scivision,https://github.com/scivision/fortran-submodule,Examples of modern Fortran 2008 submodule,72,6,2,1,NO,NO,YES,NO,7
+996,PadeOps,FPAL-Stanford-University,https://github.com/FPAL-Stanford-University/PadeOps,A DNS and LES box code,39330,6,5,2,NO,YES,YES,NO,6
+997,time-marching-adjoint,komahanb,https://github.com/komahanb/time-marching-adjoint,Implicit time marching for differential systems of any order with adjoint sensitivities,381,6,1,0,NO,NO,YES,NO,6
+998,FortranForm,lewisfish,https://github.com/lewisfish/FortranForm,Pure Fortran library for 2D Graphics,11,6,0,0,NO,NO,NO,NO,6
+999,Adventure,sabat,https://github.com/sabat/Adventure,"Original Adventure (the Colossal Cave, 350, Crowther & Woods) in Fortran",196,6,0,0,NO,NO,NO,NO,6
+1000,PolarDecomp,bminchew,https://github.com/bminchew/PolarDecomp,A collection of decomposition routines for polarimetric synthetic aperture radar (PolSAR) applications written in Fortran.,120,6,3,0,NO,NO,NO,NO,6
+1001,chimera,rmuscari,https://github.com/rmuscari/chimera,,82,6,3,1,NO,NO,NO,NO,6
+1002,IsogeometricBEM,lzhw1991,https://github.com/lzhw1991/IsogeometricBEM,The is an isogeometric boundary element method code for linear elastic problem based on fortran,23,6,3,0,NO,NO,NO,NO,6
+1003,lsbflow,cadieux,https://github.com/cadieux/lsbflow,Pseudo-spectral Navier-Stokes Solver for Laminar Separation Bubble Flows,12640,6,3,0,NO,NO,NO,NO,6
+1004,regridpack,jacobwilliams,https://github.com/jacobwilliams/regridpack,Modern Fortran Edition of REGRIDPACK,42,6,0,0,NO,NO,NO,NO,6
+1005,LAPACK_Examples,numericalalgorithmsgroup,https://github.com/numericalalgorithmsgroup/LAPACK_Examples,Example programs showing how to call LAPACK driver and computational routines (Fortran double precision),1121,6,5,0,NO,NO,YES,NO,6
+1006,IEA-10.0-198-RWT,IEAWindTask37,https://github.com/IEAWindTask37/IEA-10.0-198-RWT,,1870,6,1,0,NO,YES,YES,NO,6
+1007,foraytool,drewmccormack,https://github.com/drewmccormack/foraytool,Automatically exported from code.google.com/p/foraytool,196,6,2,3,NO,YES,YES,NO,6
+1008,FortranNetcdfObject,d7919,https://github.com/d7919/FortranNetcdfObject,A collection of routines to provide a simplified object orientated approach to creating and writing simple netcdf files.,228,6,2,0,NO,NO,NO,NO,6
+1009,F90GIO,cd10kfsu,https://github.com/cd10kfsu/F90GIO,"general I/O interface for NetCDF, HDF4, HDF5 of fortran90 language",308,6,1,0,NO,NO,YES,NO,6
+1010,libf95dplab,dplab,https://github.com/dplab/libf95dplab,"Utility routines for f95 including string handling, file unit numbers, and command processing.",174,6,0,0,NO,YES,YES,NO,6
+1011,geos2cmaq,barronh,https://github.com/barronh/geos2cmaq,GEOS2CMAQ maps GEOS-Chem outputs to CMAQ boundary conditions for any chemical mechanism.,232,6,1,0,NO,NO,YES,NO,6
+1012,gslib-alges,operedo,https://github.com/operedo/gslib-alges,Accelerated GSLIB using OpenMP and MPI,22627,6,7,1,NO,NO,NO,NO,6
+1013,libMvtnorm,zhanxw,https://github.com/zhanxw/libMvtnorm,Multivariate normal distribution (C++),172,6,6,0,NO,NO,NO,NO,6
+1014,fortran-datetime,dongli,https://github.com/dongli/fortran-datetime,Another Fortran datetime library,64,6,3,1,NO,YES,YES,NO,6
+1015,ntpl,ntpl,https://github.com/ntpl/ntpl,ntpl,163436,6,5,0,NO,YES,YES,NO,6
+1016,NEAT,rwesson,https://github.com/rwesson/NEAT,"Empirical analysis of ionised nebulae, with uncertainty propagation",20456,6,5,13,YES,YES,YES,NO,7
+1017,EFTCAMB,EFTCAMB,https://github.com/EFTCAMB/EFTCAMB,This is the official EFTCAMB developers git repository,142005,6,6,6,NO,YES,YES,NO,6
+1018,Atomic_Subroutines--How_the_Parallel_Codes_may_look_like--Part_1,MichaelSiehl,https://github.com/MichaelSiehl/Atomic_Subroutines--How_the_Parallel_Codes_may_look_like--Part_1,Fortran 2008 coarray programming with unordered execution segments (user-defined ordering) - Atomic Subroutines: How the parallel logic codes may look like - Part 1,40,6,0,0,NO,NO,YES,NO,6
+1019,Atomic_Subroutines--How_the_Parallel_Codes_may_look_like--Part_2,MichaelSiehl,https://github.com/MichaelSiehl/Atomic_Subroutines--How_the_Parallel_Codes_may_look_like--Part_2,Fortran 2008 coarray programming with unordered execution segments (user-defined ordering) - Atomic Subroutines: How the parallel logic codes may look like - Part 2,45,6,0,0,NO,NO,YES,NO,6
+1020,fluidity,FluidityProject,https://github.com/FluidityProject/fluidity,Fluidity,538234,192,78,33,YES,YES,YES,YES,192
+1021,fortranlib,astrofrog,https://github.com/astrofrog/fortranlib,Collection of personal scientific routines in Fortran :book:,237,188,64,2,NO,YES,YES,NO,0
+1022,libflame,flame,https://github.com/flame/libflame,High-performance object-based library for DLA computations,16143,166,59,5,NO,YES,YES,YES,0
+1023,nwchem,nwchemgit,https://github.com/nwchemgit/nwchem,NWChem: Open Source High-Performance Computational Chemistry,320572,150,78,35,YES,YES,YES,YES,0
+1024,cdat,CDAT,https://github.com/CDAT/cdat,Community Data Analysis Tools,313712,133,62,301,YES,YES,YES,YES,0
+1025,SHTOOLS,SHTOOLS,https://github.com/SHTOOLS/SHTOOLS,SHTOOLS - Spherical Harmonic Tools,247830,123,53,6,NO,YES,YES,NO,0
+1026,dftbplus,dftbplus,https://github.com/dftbplus/dftbplus,DFTB+ general package for performing fast atomistic simulations,10221,117,78,40,YES,YES,YES,YES,0
+1027,arpack-ng,opencollab,https://github.com/opencollab/arpack-ng,Collection of Fortran77 subroutines designed to solve large scale eigenvalue problems.,2261,117,58,27,YES,YES,YES,YES,0
+1028,NASTRAN-93,nasa,https://github.com/nasa/NASTRAN-93,"NASTRAN is the NASA Structural Analysis System, a finite element analysis program (FEA)",86429,114,63,0,NO,NO,NO,NO,0
+1029,netcdf-fortran,Unidata,https://github.com/Unidata/netcdf-fortran,"Official GitHub repository for netCDF-Fortran libraries, which depend on the netCDF C library.  Install the netCDF C library first. ",7410,110,54,47,YES,YES,YES,YES,0
+1030,pyeconomics,davidrpugh,https://github.com/davidrpugh/pyeconomics,Computational economics in Python,14606,107,62,0,NO,NO,YES,NO,0
+1031,pyclaw,clawpack,https://github.com/clawpack/pyclaw,"PyClaw is a Python-based interface to the algorithms of Clawpack and SharpClaw.  It also contains the PetClaw package, which adds parallelism through PETSc.",14106,107,71,68,YES,YES,YES,YES,0
+1032,examples,Allen-Tildesley,https://github.com/Allen-Tildesley/examples,"Fortran and Python examples to accompany the book ""Computer Simulation of Liquids"" by Michael P. Allen and Dominic J. Tildesley (2nd edition, Oxford University Press, 2017). Use the ""Clone or download"" button, or follow the ""...releases"" link below.",1895,99,50,0,NO,NO,YES,NO,0
+1033,wannier_tools,quanshengwu,https://github.com/quanshengwu/wannier_tools,WannierTools: An open-source software package for novel topological materials. Full documentation:,117295,97,71,24,YES,YES,YES,NO,0
+1034,CMAQ,USEPA,https://github.com/USEPA/CMAQ,Code base for the U.S. EPA’s Community Multiscale Air Quality Model (CMAQ). For additional background on CMAQ please visit: www.epa.gov/CMAQ,65760,95,81,2,NO,YES,YES,YES,0
+1035,QUIP,libAtoms,https://github.com/libAtoms/QUIP,libAtoms/QUIP molecular dynamics framework: http://www.libatoms.org,112691,93,52,29,YES,YES,YES,YES,0
+1036,cime,ESMCI,https://github.com/ESMCI/cime,Common Infrastructure for Modeling the Earth,88667,92,91,201,YES,YES,YES,YES,0
+1037,wannier90,wannier-developers,https://github.com/wannier-developers/wannier90,Official repository of the Wannier90 code,195381,88,69,29,YES,YES,YES,YES,0
+1038,pencil-code,pencil-code,https://github.com/pencil-code/pencil-code,A high-order finite-difference code for compressible hydrodynamic flows with magnetic fields and particles,97738,86,50,4,NO,YES,YES,YES,0
+1039,CAMB,cmbant,https://github.com/cmbant/CAMB,Code for Anisotropies in the Microwave Background,64541,77,65,2,NO,YES,YES,YES,0
+1040,MOM6,NOAA-GFDL,https://github.com/NOAA-GFDL/MOM6,Modular Ocean Model,51105,76,94,108,YES,YES,YES,YES,0
+1041,WPS,wrf-model,https://github.com/wrf-model/WPS,The official repository for the WRF Preprocessing System (WPS),2471,72,58,16,YES,YES,YES,YES,0
+1042,espa-surface-reflectance,USGS-EROS,https://github.com/USGS-EROS/espa-surface-reflectance,,3004,71,58,30,YES,YES,YES,NO,0
+1043,Isca,ExeClim,https://github.com/ExeClim/Isca,Idealized GCM from the University of Exeter,27619,65,59,18,YES,YES,YES,YES,0
+1044,MOM5,mom-ocean,https://github.com/mom-ocean/MOM5,The Modular Ocean Model,44427,59,76,57,YES,YES,YES,YES,0
+1045,cm,OpenCMISS,https://github.com/OpenCMISS/cm,,71014,56,95,5,NO,YES,YES,YES,0
+1046,wrf_hydro_nwm_public,NCAR,https://github.com/NCAR/wrf_hydro_nwm_public,WRF-Hydro model code,25991,53,66,73,YES,YES,YES,YES,0
+1047,summa,NCAR,https://github.com/NCAR/summa,Structure for Unifying Multiple Modeling Alternatives:,27416,47,54,44,YES,YES,YES,YES,0
+1048,specfem3d_globe,geodynamics,https://github.com/geodynamics/specfem3d_globe,SPECFEM3D_GLOBE simulates global and regional (continental-scale) seismic wave propagation.,2112167,42,56,10,NO,YES,YES,YES,0
+1049,ED2,EDmodel,https://github.com/EDmodel/ED2,Ecosystem Demography Model,204857,41,78,85,YES,YES,YES,YES,0
+1050,davitpy,vtsuperdarn,https://github.com/vtsuperdarn/davitpy,The DaViT Python project,70891,35,61,33,YES,YES,YES,YES,0
+1051,FMS,NOAA-GFDL,https://github.com/NOAA-GFDL/FMS,GFDL's Flexible Modeling System,17264,29,66,35,YES,YES,YES,YES,0
+1052,deprecated-quantum-espresso,maxhutch,https://github.com/maxhutch/deprecated-quantum-espresso,[DEPRECATED] Please use https://github.com/QEF/q-e instead,242120,29,52,4,NO,NO,YES,NO,0
+1053,riemann,clawpack,https://github.com/clawpack/riemann,One place for all Clawpack-style Riemann solvers,790,29,50,16,YES,YES,YES,YES,0
+1054,LISF,NASA-LIS,https://github.com/NASA-LIS/LISF,Land Information System Framework,12574,25,63,54,YES,YES,YES,YES,0
+1055,EN234_FEA,albower,https://github.com/albower/EN234_FEA,"FEA project for EN2340 Computational Methods in Structural and Solid Mechanics, Brown University",22727,11,73,1,NO,YES,YES,NO,0
+1056,iron,OpenCMISS,https://github.com/OpenCMISS/iron,Source code repository for OpenCMISS-Iron,80390,7,56,95,YES,YES,YES,YES,0
+1057,matmul-,cornell-cs5220-f15,https://github.com/cornell-cs5220-f15/matmul-,Matrix Multiple Framework for HW1,27832,3,55,31,YES,YES,YES,NO,0
+1058,simc_gfortran,JeffersonLab,https://github.com/JeffersonLab/simc_gfortran,SIMC - Physics Monte Carlo for Hall C and Hall A,18710,1,57,2,NO,YES,YES,NO,0
+1059,netlib-java,fommil,https://github.com/fommil/netlib-java,:rocket: High Performance Linear Algebra (low level),11018,621,118,13,YES,YES,YES,NO,0
+1060,elmerfem,ElmerCSC,https://github.com/ElmerCSC/elmerfem,Official git repository of Elmer FEM software,93210,359,139,17,YES,YES,YES,YES,0
+1061,q-e,QEF,https://github.com/QEF/q-e,Mirror of the Quantum ESPRESSO repository,494126,229,121,0,NO,YES,YES,YES,0
+1062,cp2k,cp2k,https://github.com/cp2k/cp2k,Quantum chemistry and solid state physics software package,188064,173,107,71,YES,YES,YES,YES,0
+1063,Nek5000,Nek5000,https://github.com/Nek5000/Nek5000,our classic,21085,169,149,38,YES,YES,YES,YES,0
+1064,NASTRAN-95,nasa,https://github.com/nasa/NASTRAN-95,,87810,157,122,10,NO,YES,NO,NO,0
+1065,specfem3d,geodynamics,https://github.com/geodynamics/specfem3d,"SPECFEM3D_Cartesian simulates acoustic (fluid), elastic (solid), coupled acoustic/elastic, poroelastic or seismic wave propagation in any type of conforming mesh of hexahedra (structured or not). It can for instance model seismic waves propagating in sedimentary basins or any other regional geological model following earthquakes. It can also be used for non destructive testing or for ocean acoustics.",571196,152,131,33,YES,YES,YES,YES,0
+1066,E3SM,E3SM-Project,https://github.com/E3SM-Project/E3SM,Energy Exascale Earth System Model source code.,181818,143,106,263,YES,YES,YES,YES,0
+1067,openfast,OpenFAST,https://github.com/OpenFAST/openfast,Main repository for the NREL-supported OpenFAST whole-turbine simulation code.  Further documentation is available at,147584,132,131,46,YES,YES,YES,YES,0
+1068,CFL3D,nasa,https://github.com/nasa/CFL3D,,2701,130,118,6,NO,YES,YES,NO,0
+1069,MITgcm,MITgcm,https://github.com/MITgcm/MITgcm,M.I.T General Circulation Model master code and documentation repository,341437,123,105,78,YES,YES,YES,YES,0
+1070,CTSM,ESCOMP,https://github.com/ESCOMP/CTSM,Community Terrestrial Systems Model (includes the Community Land Model of CESM),22495,103,110,326,YES,YES,YES,YES,0
+1071,build_and_test_examples,softwaresaved,https://github.com/softwaresaved/build_and_test_examples,"Examples of build scripts and unit test frameworks for various languages, and how these can be used with the Jenkins continuous integration server. Contact: @mikej888",405,97,148,3,NO,YES,YES,NO,0
+1072,WW3,NOAA-EMC,https://github.com/NOAA-EMC/WW3,WAVEWATCH III,58455,76,112,42,YES,YES,YES,YES,0
+1073,HOdebug-profile,wtpc,https://github.com/wtpc/HOdebug-profile,Hands-On de Debugging y Profiling,60,0,113,0,NO,NO,NO,NO,0
+1074,lapack,Reference-LAPACK,https://github.com/Reference-LAPACK/lapack,LAPACK development repository,22100,495,179,93,YES,YES,YES,YES,0
+1075,MPAS-Model,MPAS-Dev,https://github.com/MPAS-Dev/MPAS-Model,Repository for MPAS models and shared framework releases.,20539,112,179,74,YES,YES,YES,YES,0
+1076,pymc,pymc-devs,https://github.com/pymc-devs/pymc,PyMC: Bayesian Stochastic Modelling in Python (DEPRECATED: for PyMC3: https://github.com/pymc-devs/pymc3),27646,858,226,15,YES,YES,YES,YES,0
+1077,WRF,wrf-model,https://github.com/wrf-model/WRF,The official repository for the Weather Research and Forecasting (WRF) model,178100,351,208,86,YES,YES,YES,YES,0
+1078,fds,firemodels,https://github.com/firemodels/fds,Fire Dynamics Simulator,203458,286,330,38,YES,YES,YES,YES,0
+1079,OpenBLAS,xianyi,https://github.com/xianyi/OpenBLAS,OpenBLAS is an optimized BLAS library based on GotoBLAS2 1.13 BSD version. ,25971,3120,865,143,YES,YES,YES,YES,0
+Unnamed: 0,repo_name,repo_owner,project_url,description,size,watchers_count,forks_count,open_issues,issues > 8,pull_req > 0,commits > 20,contributors > 8,stars
+0,fortran-machine,mapmeld,https://github.com/mapmeld/fortran-machine,Finally a Fortran MVC web platform,1384,499,24,0,NO,YES,YES,NO,631
+1,functional-fortran,wavebitscientific,https://github.com/wavebitscientific/functional-fortran,Functional programming for modern Fortran,107,270,22,2,NO,YES,YES,NO,271
+2,Cmathtuts,Foadsf,https://github.com/Foadsf/Cmathtuts,"trying to collect all useful tutorials for famous C math and algebra libraries such as CBLAS, CLAPACK, GSL...",3863,207,28,3,NO,NO,YES,NO,210
+3,json-fortran,jacobwilliams,https://github.com/jacobwilliams/json-fortran,A Fortran 2008 JSON API,107323,185,44,18,YES,YES,YES,NO,186
+4,fortran2018-examples,scivision,https://github.com/scivision/fortran2018-examples,"Easy examples of scientific computing with modern, powerful, easy Fortran 2018 standard",1465,169,24,0,NO,NO,YES,NO,174
+5,wartonlegacy,daoudclarke,https://github.com/daoudclarke/wartonlegacy,Algorithms for factorisation of large numbers in Fortran and UBASIC,165024,150,9,1,NO,YES,NO,NO,150
+6,gtk-fortran,vmagnin,https://github.com/vmagnin/gtk-fortran,A GTK / Fortran binding,12427,148,33,13,NO,YES,YES,NO,148
+7,SHTOOLS,SHTOOLS,https://github.com/SHTOOLS/SHTOOLS,SHTOOLS - Spherical Harmonic Tools,247830,123,53,6,NO,YES,YES,NO,125
+8,fortran-utils,certik,https://github.com/certik/fortran-utils,Various utilities for Fortran programs,202,123,46,2,NO,YES,YES,NO,123
+9,OpenCoarrays,sourceryinstitute,https://github.com/sourceryinstitute/OpenCoarrays,A parallel application binary interface for Fortran 2018 compilers. ,8449,116,37,28,YES,YES,YES,YES,117
+10,neural-fortran,modern-fortran,https://github.com/modern-fortran/neural-fortran,A parallel neural net microframework,20197,114,22,10,NO,YES,YES,NO,114
+11,xtb,grimme-lab,https://github.com/grimme-lab/xtb,Semiempirical Extended Tight-Binding Program Package,1790,104,30,17,YES,YES,YES,NO,106
+12,Castro,AMReX-Astro,https://github.com/AMReX-Astro/Castro,"An adaptive mesh, astrophysical radiation hydrodynamics simulation code",82843,103,40,77,YES,YES,YES,YES,104
+13,examples,Allen-Tildesley,https://github.com/Allen-Tildesley/examples,"Fortran and Python examples to accompany the book ""Computer Simulation of Liquids"" by Michael P. Allen and Dominic J. Tildesley (2nd edition, Oxford University Press, 2017). Use the ""Clone or download"" button, or follow the ""...releases"" link below.",1895,99,50,0,NO,NO,YES,NO,99
+14,abinit,abinit,https://github.com/abinit/abinit,"The official github mirror of the Abinit repository. We welcome bug fixes and improvements. Note that most of the active developments are hosted on our https://gitlab.abinit.org/ server.  Before embarking on making significant changes, please contact the Abinit group.",157906,97,42,14,YES,YES,YES,YES,97
+15,WRFV3,NCAR,https://github.com/NCAR/WRFV3,This is the release repository for the Weather Research and Forecasting Model,117925,91,42,3,NO,YES,YES,YES,91
+16,climlab,brian-rose,https://github.com/brian-rose/climlab,Python package for process-oriented climate modeling,59663,88,37,19,YES,YES,YES,NO,94
+17,FLAP,szaghi,https://github.com/szaghi/FLAP,Fortran command Line Arguments Parser for poor people,14298,86,29,19,YES,YES,YES,NO,86
+18,pencil-code,pencil-code,https://github.com/pencil-code/pencil-code,A high-order finite-difference code for compressible hydrodynamic flows with magnetic fields and particles,97738,86,50,4,NO,YES,YES,YES,86
+19,bspline-fortran,jacobwilliams,https://github.com/jacobwilliams/bspline-fortran,Multidimensional B-Spline Interpolation of Data on a Regular Grid,11906,84,23,5,NO,YES,YES,NO,84
+20,forpy,ylikx,https://github.com/ylikx/forpy,Forpy - use Python from Fortran,1353,81,19,6,NO,YES,YES,NO,81
+21,FOODIE,Fortran-FOSS-Programmers,https://github.com/Fortran-FOSS-Programmers/FOODIE,"Fortran Object-Oriented Differential-equations Integration Environment, FOODIE",79999,80,25,14,YES,YES,YES,NO,80
+22,odespy,hplgit,https://github.com/hplgit/odespy,Easy access in Python to a large collection of ODE solvers ,12427,79,36,10,NO,YES,YES,NO,79
+23,OFF,szaghi,https://github.com/szaghi/OFF,"OFF, Open source Finite volume Fluid dynamics code",46049,77,47,7,NO,YES,YES,NO,77
+24,stdlib,fortran-lang,https://github.com/fortran-lang/stdlib,Fortran Standard Library,159,75,14,69,YES,YES,YES,YES,86
+25,VTKFortran,szaghi,https://github.com/szaghi/VTKFortran,pure Fortran VTK (XML) API,15924,73,27,10,NO,YES,YES,NO,73
+26,datetime-fortran,wavebitscientific,https://github.com/wavebitscientific/datetime-fortran,Date and time manipulation for modern Fortran,247,72,30,14,YES,YES,YES,NO,72
+27,node-fortran,IonicaBizau,https://github.com/IonicaBizau/node-fortran,:skull: Fortran bridge for Node.js which allows you to run Fortran code from Node.js.,26,70,7,1,NO,YES,YES,NO,70
+28,Fortran-Astrodynamics-Toolkit,jacobwilliams,https://github.com/jacobwilliams/Fortran-Astrodynamics-Toolkit,A Modern Fortran Library for Astrodynamics 🚀,1734,68,27,2,NO,YES,YES,NO,69
+29,opencalphad,sundmanbo,https://github.com/sundmanbo/opencalphad,"Open Calphad, thermodynamic calculation code",100711,67,41,1,NO,YES,YES,NO,68
+30,starlink,Starlink,https://github.com/Starlink/starlink,Starlink Software Collection,851956,67,24,19,YES,YES,YES,YES,67
+31,pyplot-fortran,jacobwilliams,https://github.com/jacobwilliams/pyplot-fortran,For generating plots from Fortran using Python's matplotlib.pyplot 📈,1302,66,28,2,NO,YES,YES,NO,66
+32,adversarial,tabacof,https://github.com/tabacof/adversarial,Exploring the Space of Adversarial Images,4200,65,21,1,NO,YES,YES,NO,65
+33,ulmBLAS,michael-lehn,https://github.com/michael-lehn/ulmBLAS,ulmBLAS,3988,65,26,1,NO,YES,YES,NO,65
+34,ogpf,kookma,https://github.com/kookma/ogpf,"ogpf is Object based interface to GnuPlot from Fortran 2003, 2008 and later",3783,64,16,2,NO,NO,YES,NO,64
+35,pFUnit,Goddard-Fortran-Ecosystem,https://github.com/Goddard-Fortran-Ecosystem/pFUnit,Parallel Fortran Unit Testing Framework,12186,64,11,16,YES,YES,YES,YES,65
+36,climt,CliMT,https://github.com/CliMT/climt,"The official home of climt, a Python based climate modelling toolkit.",69462,63,17,27,YES,YES,YES,NO,63
+37,pycles,pressel,https://github.com/pressel/pycles,A python based infrastructure for cloud large eddy simulation. ,6150,62,47,12,YES,YES,YES,NO,63
+38,ftl,SCM-NV,https://github.com/SCM-NV/ftl,The Fortran Template Library,1090,59,8,2,NO,NO,YES,NO,61
+39,tcp-client-server,modern-fortran,https://github.com/modern-fortran/tcp-client-server,A minimal Fortran TCP client and server,5,58,0,1,NO,NO,NO,NO,59
+40,PyHSPF,djlampert,https://github.com/djlampert/PyHSPF,"Python extensions to the Hydrological Simulation Program in Fortran (HSPF), including classes for gathering input data, building input files, performing simulations, postprocessing results, calibrating hydrology process parameters, and forecasting climate and land use change effects on water resources",69733,58,36,4,NO,YES,YES,NO,58
+41,fgsl,reinh-bader,https://github.com/reinh-bader/fgsl,Fortran interface to the GNU Scientific Library,8402,57,11,3,NO,YES,YES,NO,58
+42,BoxLib,BoxLib-Codes,https://github.com/BoxLib-Codes/BoxLib, Block-Structured AMR Framework,21810,57,38,4,NO,YES,YES,YES,57
+43,Illustrate,ccsb-scripps,https://github.com/ccsb-scripps/Illustrate,Biomolecular Illustration Tool,12594,56,11,1,NO,NO,YES,NO,56
+44,StringiFor,szaghi,https://github.com/szaghi/StringiFor,Strings Fortran Manipulator with steroids,15443,55,13,11,NO,YES,YES,NO,55
+45,flexi,flexi-framework,https://github.com/flexi-framework/flexi,Open Source High-Order Unstructured Discontinuous Galerkin Fluid Dynamics Solver,61772,55,36,0,NO,NO,YES,YES,55
+46,jburkardt-f,johannesgerer,https://github.com/johannesgerer/jburkardt-f,An official Git Mirror of John Burkardt's great collection of FORTRAN 90 Software,107155,55,35,1,NO,YES,NO,NO,56
+47,wavelets,chris-torrence,https://github.com/chris-torrence/wavelets,Torrence & Compo Wavelet Analysis Software,3091,55,37,4,NO,YES,NO,NO,55
+48,spacepy,spacepy,https://github.com/spacepy/spacepy,"Space Science library for Python - contains superposed epoch classes, drift shell tracing, access to magnetic field models, streamline tracing, bootstrap confidence limits, time and coordinate conversions, etc.",88896,54,25,56,YES,YES,YES,YES,56
+49,cp2k-svn,cp2k,https://github.com/cp2k/cp2k-svn,ABANDONED Git mirror of the old SVN repository at Sourceforge. Check link for more info!,181123,54,40,0,NO,YES,YES,NO,54
+50,fson,josephalevin,https://github.com/josephalevin/fson,Fortran 95 JSON Parser,177,54,19,6,NO,YES,YES,NO,54
+51,ABAQUS-US,jgomezc1,https://github.com/jgomezc1/ABAQUS-US,A variety of ABAQUS user element (UELs) and user material (UMATs) subroutines,407,53,45,0,NO,NO,NO,NO,54
+52,SciFortran,aamaricci,https://github.com/aamaricci/SciFortran,A library of fortran modules and routines for scientific calculations (*in a way* just like scipy for python),56046,52,18,0,NO,NO,YES,NO,52
+53,SISSO,rouyang2017,https://github.com/rouyang2017/SISSO,A data-driven method based on compressed-sensing for identifying descriptors for materials properties and functions,523,52,20,12,NO,NO,YES,NO,52
+54,seismic_cpml,geodynamics,https://github.com/geodynamics/seismic_cpml,"SEISMIC_CPML is a set of sixteen open-source Fortran90 programs to solve the two-dimensional or three-dimensional isotropic or anisotropic elastic, viscoelastic or poroelastic wave equation using a finite-difference method with Convolutional or Auxiliary Perfectly Matched Layer (C-PML or ADE-PML) conditions, developed by Dimitri Komatitsch and Roland Martin from CNRS, France.",1335,51,32,0,NO,YES,YES,NO,51
+55,LaGriT,lanl,https://github.com/lanl/LaGriT,"Los Alamos Grid Toolbox (LaGriT) is a library of user callable tools that provide mesh generation, mesh optimization and dynamic mesh maintenance in two and three dimensions.",1026029,51,28,90,YES,YES,YES,NO,52
+56,bandup,band-unfolding,https://github.com/band-unfolding/bandup,BandUP: Band Unfolding code for Plane-wave based calculations,23738,50,27,4,NO,YES,YES,NO,50
+57,chol-rev,imurray,https://github.com/imurray/chol-rev,Backpropagate derivatives through the Cholesky decomposition,39,49,9,0,NO,NO,NO,NO,49
+58,atomistica,Atomistica,https://github.com/Atomistica/atomistica,Atomistica is a library of interatomic potentials that is compatible with ASE and LAMMPS,4665,49,14,6,NO,YES,YES,NO,49
+59,pypropack,jakevdp,https://github.com/jakevdp/pypropack,A python wrapper for the PROPACK library,201,48,15,0,NO,YES,YES,NO,48
+60,NJOY2016,njoy,https://github.com/njoy/NJOY2016,Nuclear data processing with legacy NJOY,245803,47,36,33,YES,YES,YES,NO,47
+61,pyglow,timduly4,https://github.com/timduly4/pyglow,Upper atmosphere climatological models in Python,15953,47,29,24,YES,YES,YES,NO,47
+62,clfortran,cass-support,https://github.com/cass-support/clfortran,Open source implementation of a Fortran interface to Khronos OpenCL API,38,46,9,1,NO,NO,NO,NO,46
+63,CaNS,p-costa,https://github.com/p-costa/CaNS,"A code for fast, massively-parallel direct numerical simulations (DNS) of canonical flows",370,46,21,0,NO,YES,YES,NO,47
+64,geos-chem,geoschem,https://github.com/geoschem/geos-chem,Source code repository for the GEOS-Chem model of atmospheric chemistry and composition.,66098,46,44,41,YES,YES,YES,YES,46
+65,how-to-optimize-gemm,tpoisonooo,https://github.com/tpoisonooo/how-to-optimize-gemm,ARM RowMajor sgemm optimization,10064,46,10,0,NO,YES,YES,NO,46
+66,Incompact3d,xcompact3d,https://github.com/xcompact3d/Incompact3d,New version of our solver for the incompressible Navier-Stokes equations,149117,45,28,10,NO,YES,YES,YES,45
+67,fox,andreww,https://github.com/andreww/fox,A Fortran XML library,10306,45,43,29,YES,YES,YES,NO,45
+68,ktransit,mrtommyb,https://github.com/mrtommyb/ktransit,A simple exoplanet transit modeling tool in python,345,45,21,5,NO,YES,YES,NO,45
+69,lesgo,lesgo-jhu,https://github.com/lesgo-jhu/lesgo,The Large-Eddy Simulation framework from the Turbulence Research Group at Johns Hopkins University,16158,45,31,2,NO,YES,YES,NO,49
+70,q-e_old,QEF,https://github.com/QEF/q-e_old,Official mirror of Quantum ESPRESSO,365548,45,45,0,NO,YES,YES,YES,45
+71,hande,hande-qmc,https://github.com/hande-qmc/hande,Open source stochastic quantum chemistry,99391,44,14,2,NO,YES,YES,YES,44
+72,FEconv,victorsndvg,https://github.com/victorsndvg/FEconv,"Program feconv is an utility to convert between several mesh and FE field formats, like ANSYS mesh files (.msh), MD Nastran input files (.bdf), I-Deas Universal (.unv), VTK files (.vtk), etc. If you use a Modulef format to store an intermediate mesh (.mfm).  It can transform the FE type of a mesh composed of trangles or tetrahedra, to Lagrange P1 or P2, Raviart-Thomas (face) or Whitney (edge) finite elements.  It also uses third-party code to perform bandwidth optimization (CutlHill-McKee optimization).",59547,44,16,3,NO,NO,YES,NO,44
+73,tsunami,modern-fortran,https://github.com/modern-fortran/tsunami,A parallel shallow water equations solver,127,43,9,1,NO,YES,YES,NO,43
+74,fates,NGEET,https://github.com/NGEET/fates,repository for the Functionally Assembled Terrestrial Ecosystem Simulator (FATES),42721,43,31,154,YES,YES,YES,YES,43
+75,fv3gfs,NOAA-EMC,https://github.com/NOAA-EMC/fv3gfs,The public home of NOAA EMC's FV3GFS Modeling System.,33771,43,32,1,NO,YES,NO,NO,43
+76,FortranPatterns,farhanjk,https://github.com/farhanjk/FortranPatterns,Popular design patterns implemented in Fortran.,316,43,15,0,NO,YES,YES,NO,43
+77,qe-gpu,fspiga,https://github.com/fspiga/qe-gpu,GPU-accelerated Quantum ESPRESSO using CUDA FORTRAN,170454,43,16,7,NO,YES,YES,NO,43
+78,python-nufft,dfm,https://github.com/dfm/python-nufft,Python bindings to a subset of the NUFFT algorithm,113,42,8,3,NO,YES,YES,NO,42
+79,atomsk,pierrehirel,https://github.com/pierrehirel/atomsk,Atomsk: A Tool For Manipulating And Converting Atomic Data Files - ,3321,42,28,2,NO,YES,YES,NO,42
+80,coretran,leonfoks,https://github.com/leonfoks/coretran,"An easy to follow library to make Fortran easier in general with wrapped interfaces, sorting routines, kD-Trees, and other algorithms to handle scientific data and concepts. The library contains core fortran routines and object-oriented classes.",5139,41,3,6,NO,YES,YES,NO,41
+81,CFD,liruipengyu,https://github.com/liruipengyu/CFD,Basic Computational Fluid Dynamics (CFD) schemes implemented in FORTRAN using Finite-Volume and Finite-Difference Methods. Sample simulations and figures are provided.,7947,41,25,0,NO,NO,YES,NO,41
+82,rapid,c-h-david,https://github.com/c-h-david/rapid,Routing Application for Parallel computatIon of Discharge (RAPID),685,41,15,0,NO,YES,YES,NO,41
+83,Slycot,python-control,https://github.com/python-control/Slycot,Python wrapper for the Subroutine Library in Systems and Control Theory (SLICOT),2077,41,24,15,YES,YES,YES,YES,42
+84,modflow6,MODFLOW-USGS,https://github.com/MODFLOW-USGS/modflow6,MODFLOW 6 Repository,6695,41,28,23,YES,YES,YES,NO,41
+85,GPSPACE,CGS-GIS,https://github.com/CGS-GIS/GPSPACE,NRCan-CGS GPSPACE software / Logiciel GPSPACE de LGC-RNCan,510,40,30,0,NO,NO,NO,NO,40
+86,aoslib,PyAOS,https://github.com/PyAOS/aoslib,A collection of standard atmospheric and oceanic sciences routines.,284,40,29,7,NO,YES,YES,NO,40
+87,lbfgsb-matlab,pcarbo,https://github.com/pcarbo/lbfgsb-matlab,A MATLAB interface for L-BFGS-B,177,39,22,4,NO,YES,YES,NO,39
+88,QuickPIC-OpenSource,UCLA-Plasma-Simulation-Group,https://github.com/UCLA-Plasma-Simulation-Group/QuickPIC-OpenSource,Open source repository for QuickPIC,3938,39,20,3,NO,YES,YES,NO,39
+89,Tinker,TinkerTools,https://github.com/TinkerTools/Tinker,Tinker: Software Tools for Molecular Design,79134,39,33,6,NO,YES,YES,NO,39
+90,PIC-skeleton-codes,UCLA-Plasma-Simulation-Group,https://github.com/UCLA-Plasma-Simulation-Group/PIC-skeleton-codes,"A fully-functional but succinct Particle-In-Cell Plasma Simulation codebase with several parallel implementations (MPI, OpenMP, SSE, CUDA). This code is meant to highlight the core PIC algorithms, especially issues around parallelization, by implementing a minimal number of features in favor of clarity, ease of use, and extensibility.",19943,39,22,1,NO,YES,YES,NO,39
+91,icar,NCAR,https://github.com/NCAR/icar,The Intermediate Complexity Atmospheric Research model (ICAR),13613,39,35,9,NO,YES,YES,YES,39
+92,packmol,mcubeg,https://github.com/mcubeg/packmol,Packmol,7033,39,20,2,NO,YES,YES,NO,39
+93,fdict,zerothi,https://github.com/zerothi/fdict,Fortran type-free variable and type-free dictionary,1629,39,10,3,NO,YES,YES,NO,39
+94,tennessee-eastman-profBraatz,camaramm,https://github.com/camaramm/tennessee-eastman-profBraatz,"The Fortran 77 codes for the open-loop  and the closed-loop simulations for the Tennessee Eastman process (TEP) as well as the training and testing data files used for evaluating the data-driven methods (PCA, PLS, FDA, and CVA).",4497,38,25,1,NO,NO,NO,NO,38
+95,kmos,mhoffman,https://github.com/mhoffman/kmos,kMC on steroids: A vigorous attempt to make lattice kinetic Monte Carlo modelling easier,16446,38,28,21,YES,YES,YES,NO,38
+96,pytmatrix,jleinonen,https://github.com/jleinonen/pytmatrix,Python code for T-matrix scattering calculations,168,38,27,4,NO,YES,YES,NO,38
+97,bspline,NCAR,https://github.com/NCAR/bspline,Cubic B-Spline implementation in C++ templates,1396,38,3,0,NO,NO,YES,NO,39
+98,IAMR,AMReX-Codes,https://github.com/AMReX-Codes/IAMR,"A parallel, adaptive mesh refinement (AMR) code that solves the variable-density incompressible Navier-Stokes equations.",31393,37,18,6,NO,YES,YES,YES,37
+99,critic2,aoterodelaroza,https://github.com/aoterodelaroza/critic2,Analysis of quantum chemical interactions in molecules and solids.,245807,37,15,5,NO,YES,YES,NO,37
+100,numerical-methods-fortran,planelles20,https://github.com/planelles20/numerical-methods-fortran,"Solving linear, nonlinear equations, ordinary differential equations, ... using numerical methods in fortran",207,36,6,0,NO,NO,YES,NO,45
+101,adflow,mdolab,https://github.com/mdolab/adflow,ADflow is a finite volume RANS solver tailored for gradient-based aerodynamic design optimization.,23554,35,35,7,NO,YES,YES,YES,35
+102,HOS-ocean,LHEEA,https://github.com/LHEEA/HOS-ocean,High-Order Spectral method for oceanic simulations,346,35,17,4,NO,YES,YES,NO,36
+103,MPM3D-F90,xzhang66,https://github.com/xzhang66/MPM3D-F90,"An open source MPM code companion to the book ""X Zhang, Z Chen, Y Liu. The Material Point Method - A Continuum-Based Particle Method for Extreme Loading Cases. Academic Press, 2016""",5549,35,22,0,NO,NO,NO,NO,36
+104,Nyx,AMReX-Astro,https://github.com/AMReX-Astro/Nyx,"An adaptive mesh, N-body hydro cosmological simulation code",272969,34,20,5,NO,YES,YES,YES,34
+105,mercury,4xxi,https://github.com/4xxi/mercury,N-body fortran integrator,176,34,14,1,NO,YES,NO,NO,35
+106,fortran_tools,arktools,https://github.com/arktools/fortran_tools,Tools for updating old Fortran programs (written in Python),173,34,20,3,NO,NO,NO,NO,34
+107,pyOpt,madebr,https://github.com/madebr/pyOpt,Fork of http://www.pyopt.org/ (python3 compatible),972,34,22,5,NO,NO,YES,NO,34
+108,magic,magic-sph,https://github.com/magic-sph/magic,MagIC is a high-performance code that solves the magneto-hydrodynamics equations in rotating spherical shells,73432,34,9,1,NO,YES,YES,NO,34
+109,spral,ralna,https://github.com/ralna/spral,Sparse Parallel Robust Algorithms Library,3603,34,10,17,YES,YES,YES,NO,34
+110,cfast,firemodels,https://github.com/firemodels/cfast,Consolidated Model of Fire and Smoke Transport,642701,33,45,5,NO,YES,YES,YES,33
+111,PoisFFT,LadaF,https://github.com/LadaF/PoisFFT,Free parallel fast Poisson solver. Requires FFTW3 and optionally PFFT.,203,33,10,3,NO,YES,YES,NO,33
+112,PolyChordLite,PolyChord,https://github.com/PolyChord/PolyChordLite,Public version of PolyChord: See polychord.co.uk for PolyChordPro,1364,33,8,9,NO,YES,YES,NO,35
+113,aenet,atomisticnet,https://github.com/atomisticnet/aenet,Atomic interaction potentials based on artificial neural networks,28769,33,20,3,NO,YES,YES,NO,33
+114,MachUp,usuaero,https://github.com/usuaero/MachUp,Numerical Lifting-Line Algorithm,1888,33,14,5,NO,YES,YES,NO,33
+115,sigma,danshapero,https://github.com/danshapero/sigma,Fortran 2003 library for sparse matrix algebra,4914,33,9,2,NO,NO,YES,NO,33
+116,dbcsr,cp2k,https://github.com/cp2k/dbcsr,DBCSR: Distributed Block Compressed Sparse Row matrix library,20140,33,15,54,YES,YES,YES,YES,33
+117,h5fortran,scivision,https://github.com/scivision/h5fortran,"Easy, thin, robust HDF5 polymorphic Fortran: h5write() h5read()",1500,32,7,0,NO,NO,YES,NO,34
+118,GALAHAD,ralna,https://github.com/ralna/GALAHAD,A library of modern Fortran modules for nonlinear optimization,29758,32,4,0,NO,NO,YES,NO,33
+119,node.fortran,IonicaBizau,https://github.com/IonicaBizau/node.fortran,:rocket: Execute Node.js in your Fortran programs.,15,32,2,0,NO,YES,YES,NO,32
+120,VASPsol,henniggroup,https://github.com/henniggroup/VASPsol,Solvation model for the plane wave DFT code VASP http://vaspsol.mse.ufl.edu/,2259,32,35,7,NO,YES,YES,NO,32
+121,dreamt,alopez,https://github.com/alopez/dreamt,A series of challenge problems for students learning about machine translation,26877,32,22,0,NO,NO,NO,NO,32
+122,GFR,nasa,https://github.com/nasa/GFR,GFR (Glenn Flux Reconstruction) software (LEW-19709-1) has been approved for an open source release,6038,31,25,1,NO,YES,YES,NO,31
+123,Slycot,avventi,https://github.com/avventi/Slycot,"Python wrapper for selected SLICOT routines, notably including solvers for Riccati, Lyapunov and Sylvester equations.",2348,31,22,4,NO,YES,YES,NO,0
+124,OpenSWPC,tktmyd,https://github.com/tktmyd/OpenSWPC,A Seismic Wave Propagation Code by Parallel Finite Difference Method,50060,31,17,0,NO,YES,YES,NO,0
+125,tracmass,TRACMASS,https://github.com/TRACMASS/tracmass,Lagrangian particle tracking code.,114073,31,27,12,YES,YES,YES,NO,0
+126,glmnet-python,dwf,https://github.com/dwf/glmnet-python,"Wrappers of Jerome Friedman's coordinate-descent Fortran implementation of lasso/elastic net regression from the R ""glmnet"" package.",139,31,27,8,NO,YES,YES,NO,0
+127,PyDAS,jwallen,https://github.com/jwallen/PyDAS,"A Python wrapper for the DASSL, DASPK, and DASKR differential algebraic system solvers",783,31,6,9,NO,YES,YES,NO,0
+128,DSurfTomo,HongjianFang,https://github.com/HongjianFang/DSurfTomo,Direct inversion of surface dispersion data based on ray tracing,2565,31,26,1,NO,YES,YES,NO,0
+129,Rayleigh,geodynamics,https://github.com/geodynamics/Rayleigh,Rayleigh: Pseudo-spectral MHD,25930,31,25,9,NO,YES,YES,YES,0
+130,kdtree2,jmhodges,https://github.com/jmhodges/kdtree2,A kd-tree implementation in C++ (and Fortran) by Matthew B. Kennel,1391,31,28,0,NO,YES,NO,NO,0
+131,FLUSI,pseudospectators,https://github.com/pseudospectators/FLUSI,Fluid-Structure-Interaction / MHD Research Code. Relies on Fourier transforms for derivatives and the volume penalization method to include obstacles.,85227,31,21,9,NO,YES,YES,NO,0
+132,fortran-csv-module,jacobwilliams,https://github.com/jacobwilliams/fortran-csv-module,Read and Write CSV Files Using Modern Fortran,39,31,8,5,NO,YES,YES,NO,0
+133,i-CodeCNES,lequal,https://github.com/lequal/i-CodeCNES,i-Code CNES is a static code analysis tool to help developpers write code compliant with CNES coding rules.,35228,30,8,43,YES,YES,YES,NO,0
+134,phasta,PHASTA,https://github.com/PHASTA/phasta,Parallel Hierarchic Adaptive Stabilized Transient Analysis of compressible and incompressible Navier Stokes equations ,2745,30,28,15,YES,YES,YES,NO,0
+135,CompDam_DGD,nasa,https://github.com/nasa/CompDam_DGD,,787,30,36,4,NO,YES,YES,NO,0
+136,yambo,yambo-code,https://github.com/yambo-code/yambo,This is the official GPL repository of the yambo code,7229,30,12,13,YES,YES,YES,NO,0
+137,Ferret,NOAA-PMEL,https://github.com/NOAA-PMEL/Ferret,The Ferret program from NOAA/PMEL,120789,30,10,575,YES,YES,YES,NO,0
+138,Mohid,Mohid-Water-Modelling-System,https://github.com/Mohid-Water-Modelling-System/Mohid,Official MOHID Water Modelling System repository,525825,30,31,9,NO,YES,YES,YES,0
+139,roms,kshedstrom,https://github.com/kshedstrom/roms,Regional Ocean Modeling System (with ice),63535,30,23,1,NO,YES,YES,NO,0
+140,PSNM,openmichigan,https://github.com/openmichigan/PSNM,"The book, ""Parallel Spectral Numerical Methods"", including example programs, etc.",743,30,31,0,NO,YES,YES,NO,0
+141,float,wrathematics,https://github.com/wrathematics/float,Single precision (float) matrices for R.,1335,30,6,7,NO,YES,YES,NO,0
+142,slsqp,jacobwilliams,https://github.com/jacobwilliams/slsqp,Modern Fortran Edition of the SLSQP Optimizer,3997,30,6,1,NO,YES,YES,NO,0
+143,lbfgsb_wrapper,mkobos,https://github.com/mkobos/lbfgsb_wrapper,Java wrapper for the Fortran L-BFGS-B algorithm,90,29,13,1,NO,YES,YES,NO,0
+144,truchas-release,truchas,https://github.com/truchas/truchas-release,Repository for public releases of Truchas mirrored from https://gitlab.com/truchas,151081,29,8,0,NO,YES,YES,YES,0
+145,freeCappuccino,nikola-m,https://github.com/nikola-m/freeCappuccino,A three-dimensional unstructured finite volume code for fluid flow simulations.,28876,29,17,3,NO,NO,YES,NO,0
+146,coarray-examples,ljdursi,https://github.com/ljdursi/coarray-examples,Simple coarray examples for teaching,152,29,4,1,NO,NO,NO,NO,0
+147,SNAP,lanl,https://github.com/lanl/SNAP,SN Application Proxy,26076,29,21,3,NO,YES,YES,NO,0
+148,FrontISTR,FrontISTR,https://github.com/FrontISTR/FrontISTR,Open-Source Large-Scale Parallel FEM Program for Nonlinear Structural Analysis(オープンソース大規模並列FEM非線形構造解析プログラム): FrontISTR,238768,29,18,1,NO,YES,YES,YES,0
+149,Eigensolver_gpu,NVIDIA,https://github.com/NVIDIA/Eigensolver_gpu,GPU Eigensolver for symmetric/hermitian matrices.,70,29,10,0,NO,YES,YES,NO,0
+150,riemann,clawpack,https://github.com/clawpack/riemann,One place for all Clawpack-style Riemann solvers,790,29,50,16,YES,YES,YES,YES,0
+151,RefactorF4Acc,wimvanderbauwhede,https://github.com/wimvanderbauwhede/RefactorF4Acc,An Automated Fortran Code Refactoring Tool to Facilitate Acceleration of Numerical Simulations,67844,29,4,3,NO,YES,YES,NO,0
+152,exciting,exciting,https://github.com/exciting/exciting,The EXCiT!NG code is a powerful open-source DFT package targeted to scientific developers and users that need a modern and adaptable platform for their research,54443,29,19,3,NO,YES,YES,YES,0
+153,flogging,cmacmackin,https://github.com/cmacmackin/flogging,Fortran logging library,565,28,1,1,NO,NO,YES,NO,0
+154,HAZ,abrahamson,https://github.com/abrahamson/HAZ,PSHA Code,7378,28,15,10,NO,YES,YES,NO,0
+155,CUTEst,ralna,https://github.com/ralna/CUTEst,The Constrained and Unconstrained Testing Environment with safe threads (CUTEst) for optimization software,1877,28,10,0,NO,YES,YES,NO,0
+156,pyranda,LLNL,https://github.com/LLNL/pyranda,"A Python driven, Fortran powered Finite Difference solver for arbitrary hyperbolic PDE systems.  This is the mini-app for the Miranda code.",1992,28,8,3,NO,YES,YES,NO,0
+157,FIAT,Fortran-FOSS-Programmers,https://github.com/Fortran-FOSS-Programmers/FIAT,Fortran Implementation of Abstract Types,1079,28,7,4,NO,YES,YES,NO,0
+158,finterp,jacobwilliams,https://github.com/jacobwilliams/finterp,Multidimensional Linear Interpolation with Modern Fortran,641,27,3,0,NO,YES,NO,NO,0
+159,wrf-fire,openwfm,https://github.com/openwfm/wrf-fire,A coupled weather-fire forecasting model built on top of Weather Research and Forecasting (WRF).,112051,27,15,3,NO,YES,YES,YES,0
+160,oo_hdf,rjgtorres,https://github.com/rjgtorres/oo_hdf,Object oriented fortran HDF5 module,68,27,4,1,NO,NO,YES,NO,0
+161,NumDiff,jacobwilliams,https://github.com/jacobwilliams/NumDiff,Modern Fortran Numerical Differentiation Library,364,27,2,1,NO,YES,YES,NO,0
+162,fac,flexible-atomic-code,https://github.com/flexible-atomic-code/fac,FAC - Flexible Atomic Code by Ming Feng Gu,24656,27,25,15,YES,YES,YES,NO,0
+163,UCNS3D,ucns3d-team,https://github.com/ucns3d-team/UCNS3D,Unstructured compressible CFD code ,31850,27,14,0,NO,NO,YES,NO,0
+164,AFiD,PhysicsofFluids,https://github.com/PhysicsofFluids/AFiD,A highly parallel application for Rayleigh-Benard and Taylor-Couette flows,2657,27,19,1,NO,YES,YES,NO,0
+165,quantum_package,LCPQ,https://github.com/LCPQ/quantum_package,Set of quantum chemistry programs and libraries,40575,27,37,0,NO,YES,YES,YES,0
+166,ChiDG,nwukie,https://github.com/nwukie/ChiDG,"A Chimera-based, discontinuous Galerkin solver",22295,26,21,11,YES,NO,YES,NO,0
+167,fortran-list,LadaF,https://github.com/LadaF/fortran-list,Generic list implementation in Fortran 2003. Uses unlimited polymorphics or parametric polymorphism.,128,26,4,0,NO,NO,NO,NO,0
+168,EnergyPlusRelease,NREL,https://github.com/NREL/EnergyPlusRelease,,14496,26,12,0,NO,YES,NO,NO,0
+169,PeleC,AMReX-Combustion,https://github.com/AMReX-Combustion/PeleC,An AMR code for compressible reacting flow simulations,10082,26,14,1,NO,YES,YES,YES,0
+170,Computational-Fluid-Dynamics,xuaoxiqi,https://github.com/xuaoxiqi/Computational-Fluid-Dynamics,Sample codes for Computational Fluid Dynamics,6176,26,16,0,NO,NO,YES,NO,0
+171,fortran-yaml,BoldingBruggeman,https://github.com/BoldingBruggeman/fortran-yaml,Lightweight YAML parser written in object-oriented Fortran,167,26,3,1,NO,NO,YES,NO,0
+172,WenOOF,Fortran-FOSS-Programmers,https://github.com/Fortran-FOSS-Programmers/WenOOF,WENO interpolation Object Oriented Fortran library,2809,25,13,11,YES,YES,YES,NO,0
+173,complex_bessel,joeydumont,https://github.com/joeydumont/complex_bessel,A C++ library to evaluate Bessel functions of all kinds.,467,25,13,1,NO,YES,YES,NO,0
+174,MAESTRO,AMReX-Astro,https://github.com/AMReX-Astro/MAESTRO,A low Mach number stellar hydrodynamics code,100249,25,16,14,YES,YES,YES,YES,0
+175,petaca,nncarlson,https://github.com/nncarlson/petaca,Petaca: A collection of foundational Fortran modules,1899,25,2,12,NO,NO,YES,NO,0
+176,glmnet,cran,https://github.com/cran/glmnet,:exclamation: This is a read-only mirror of the CRAN R package repository.  glmnet — Lasso and Elastic-Net Regularized Generalized Linear Models. Homepage: http://www.jstatsoft.org/v33/i01/.  ,7676,25,43,1,NO,YES,YES,NO,0
+177,py-ncepbufr,JCSDA,https://github.com/JCSDA/py-ncepbufr,python interface to NCEP bufr library,56042,25,23,2,NO,YES,YES,NO,0
+178,listings,modern-fortran,https://github.com/modern-fortran/listings,Code listings for Modern Fortran: Building Efficient Parallel Applications,47,25,3,0,NO,YES,YES,NO,0
+179,okada_wrapper,tbenthompson,https://github.com/tbenthompson/okada_wrapper,MATLAB and Python wrappers of the Okada Green's functions.,376,25,18,0,NO,NO,YES,NO,0
+180,FortranParser,jacopo-chevallard,https://github.com/jacopo-chevallard/FortranParser,"Fortran 2008 parser of mathematical expressions, based on Roland Schmehl ""fparser""",26,25,4,5,NO,YES,YES,NO,0
+181,Scientific-Software-Design,sourceryinstitute,https://github.com/sourceryinstitute/Scientific-Software-Design,"Code examples from Rouson, Xia & Xu (Cambridge University Press, 2011)",550,25,3,0,NO,YES,YES,NO,0
+182,PENF,szaghi,https://github.com/szaghi/PENF,Portability Environment for Fortran poor people,3740,24,13,3,NO,YES,YES,NO,0
+183,Molden2AIM,zorkzou,https://github.com/zorkzou/Molden2AIM,"Molden2AIM is a utility program which can be used to create AIM-WFN, AIM-WFX, and NBO-47 files from a Molden file.",9678,24,5,6,NO,NO,YES,NO,0
+184,VecFor,szaghi,https://github.com/szaghi/VecFor,Vector algebra class for Fortran poor people,2087,24,6,1,NO,YES,YES,NO,0
+185,flist,jacobwilliams,https://github.com/jacobwilliams/flist,Modern Fortran Linked List,23,24,4,0,NO,YES,NO,NO,0
+186,RegESM,uturuncoglu,https://github.com/uturuncoglu/RegESM,Regional Earth System Model,14862,24,14,3,NO,NO,YES,NO,0
+187,FiNeR,szaghi,https://github.com/szaghi/FiNeR,Fortran INI ParseR and generator,5027,24,3,7,NO,YES,YES,NO,0
+188,REAL,Dal-mzhang,https://github.com/Dal-mzhang/REAL,Rapid Earthquake Association and Location,11510,24,9,0,NO,NO,YES,NO,0
+189,PyFerret,NOAA-PMEL,https://github.com/NOAA-PMEL/PyFerret,The PyFerret program and Python module from NOAA/PMEL,219855,24,10,38,YES,YES,YES,NO,0
+190,SixTrack,SixTrack,https://github.com/SixTrack/SixTrack,SixTrack – 6D Tracking Code,648254,24,39,101,YES,YES,YES,YES,0
+191,OptimizedModernFortran,afanfa,https://github.com/afanfa/OptimizedModernFortran,Collection of optimization techniques used in Modern Fortran,2198,24,1,2,NO,YES,YES,NO,0
+192,qdyn,ydluo,https://github.com/ydluo/qdyn,A Quasi-DYNamic earthquake simulator,38063,24,10,2,NO,YES,YES,NO,0
+193,PeleLM,AMReX-Combustion,https://github.com/AMReX-Combustion/PeleLM,An adaptive mesh hydrodynamics simulation code for low Mach number reacting flows,98413,24,16,3,NO,YES,YES,YES,0
+194,pyslalib,scottransom,https://github.com/scottransom/pyslalib,f2py and numpy wrappers of the fortran version of the astro library SLALIB,408,23,15,0,NO,YES,YES,NO,0
+195,MultiNest,farhanferoz,https://github.com/farhanferoz/MultiNest,MultiNest is a Bayesian inference tool which calculates the evidence and explores the parameter space which may contain multiple posterior modes and pronounced (curving) degeneracies in moderately high dimensions. ,274,23,4,3,NO,YES,NO,NO,0
+196,dftd4,dftd4,https://github.com/dftd4/dftd4,A Generally Applicable Atomic-Charge Dependent London Dispersion Correction ,643,23,15,4,NO,YES,YES,NO,0
+197,T-Flows,DelNov,https://github.com/DelNov/T-Flows,Program for Simulation of Turbulent Flows,85458,23,15,21,YES,YES,YES,NO,0
+198,BLAS-Tester,xianyi,https://github.com/xianyi/BLAS-Tester,a tester for BLAS libraries including OpenBLAS and Intel MKL. This project is based on ATLAS BLAS Tester,285,23,8,3,NO,YES,NO,NO,0
+199,fabm,fabm-model,https://github.com/fabm-model/fabm,The Framework for Aquatic Biogeochemical Models (FABM): a Fortran 2003 programming framework for biogeochemical models of marine and freshwater systems.,17106,23,20,4,NO,YES,YES,NO,0
+200,Fortran,annefou,https://github.com/annefou/Fortran,Fortran materials,27556,23,6,0,NO,NO,YES,NO,0
+201,FPL,victorsndvg,https://github.com/victorsndvg/FPL,Fortran Parameter List. A fortran dictionary where to put the parameters of your application.,6144,23,9,5,NO,YES,YES,NO,0
+202,FisherExact,maclandrol,https://github.com/maclandrol/FisherExact,Fisher exact test for mxn contingency table in python,198,23,9,4,NO,NO,YES,NO,0
+203,MAESTROeX,AMReX-Astro,https://github.com/AMReX-Astro/MAESTROeX,A C++/F90 low Mach number stellar hydrodynamics code,60150,23,11,23,YES,YES,YES,YES,0
+204,wignerSymbols,joeydumont,https://github.com/joeydumont/wignerSymbols,A C++ library to compute the Wigner 3j- and 6j- symbols (with FORTRAN backend).,79,23,9,2,NO,YES,YES,NO,0
+205,psblas3,sfilippone,https://github.com/sfilippone/psblas3,,28270,23,7,2,NO,YES,YES,NO,0
+206,fortran-compiler-tests,nncarlson,https://github.com/nncarlson/fortran-compiler-tests,A collection of Fortran compiler bug examples and tests,205,22,4,2,NO,YES,YES,NO,0
+207,EMsoft,EMsoft-org,https://github.com/EMsoft-org/EMsoft,Public EMsoft repository,145814,22,31,9,NO,YES,YES,YES,0
+208,go-lbfgsb,afbarnard,https://github.com/afbarnard/go-lbfgsb,"L-BFGS-B optimization for Go, C, Fortran 2003",159,22,5,3,NO,YES,YES,NO,0
+209,modern-fortran,dvalters,https://github.com/dvalters/modern-fortran,Notes and code from the Fortran Modernisation workshop ,3586,22,3,0,NO,NO,YES,NO,0
+210,fortrangis,dcesari,https://github.com/dcesari/fortrangis,A collection of Fortran interfaces to the most common Open Source GIS libraries.,221,22,8,1,NO,YES,YES,NO,0
+211,molgw,bruneval,https://github.com/bruneval/molgw,Accurate many-body perturbation theory calculations of the electronic structure of molecules,7190,22,14,3,NO,YES,YES,NO,0
+212,fmetis,ivan-pi,https://github.com/ivan-pi/fmetis,A modern Fortran interface to the METIS graph partitioning library,999,22,4,2,NO,YES,YES,NO,0
+213,eddypro-engine,LI-COR,https://github.com/LI-COR/eddypro-engine,EddyPro Engine,18157,22,10,1,NO,YES,YES,NO,0
+214,openspecfun,JuliaMath,https://github.com/JuliaMath/openspecfun,A collection of special mathematical functions,203,21,12,6,NO,YES,YES,YES,0
+215,ABAQUS,WeilinDeng,https://github.com/WeilinDeng/ABAQUS,ABAQUS subroutines,332,21,23,0,NO,NO,YES,NO,0
+216,axisem,geodynamics,https://github.com/geodynamics/axisem,"AxiSEM is a parallel spectral-element method to solve 3D wave propagation in a sphere with axisymmetric or spherically symmetric visco-elastic, acoustic, anisotropic structures.",69042,21,23,25,YES,YES,YES,NO,0
+217,fem-basic,nqomorita,https://github.com/nqomorita/fem-basic,,30,21,1,0,NO,NO,NO,NO,0
+218,OceanWave3D-Fortran90,apengsigkarup,https://github.com/apengsigkarup/OceanWave3D-Fortran90,OceanWave3D - a very efficient coastal engineering research tool used worldwide for simulation of nonlinear and dispersive free surface waves in varying batheymetries from very deep to shallow water. Learn more about the model: ,29812,21,16,2,NO,YES,YES,NO,0
+219,CliMT-legacy,rodrigo-caballero,https://github.com/rodrigo-caballero/CliMT-legacy,Climate modelling and diagnostics toolkit,24156,21,9,3,NO,YES,NO,NO,0
+220,pikaia,jacobwilliams,https://github.com/jacobwilliams/pikaia,Modern Fortran Edition of the Pikaia Genetic Algorithm ,890,21,7,3,NO,YES,YES,NO,0
+221,letkf,takemasa-miyoshi,https://github.com/takemasa-miyoshi/letkf,Automatically exported from code.google.com/p/miyoshi,13038,21,17,0,NO,YES,YES,NO,0
+222,HORSES2D,horsescfd,https://github.com/horsescfd/HORSES2D,Two dimensional high-order spectral element method fluid dynamics solver,1228,21,9,0,NO,NO,YES,NO,0
+223,hrldas-release,NCAR,https://github.com/NCAR/hrldas-release,HRLDAS (High Resolution Land Data Assimilation System) containing the Noah-MP Land Surface Model,1947,21,28,9,NO,YES,YES,NO,0
+224,ALaDyn,ALaDyn,https://github.com/ALaDyn/ALaDyn,A High-Accuracy PIC Code for the Maxwell-Vlasov Equations,5629,21,13,5,NO,YES,YES,NO,0
+225,FACE,szaghi,https://github.com/szaghi/FACE,Fortran Ansi Colors (and Styles) Environment,763,21,9,0,NO,YES,YES,NO,0
+226,LATTE,lanl,https://github.com/lanl/LATTE,Developer repository for the LATTE code,8959,21,15,17,YES,YES,YES,YES,0
+227,mumps,scivision,https://github.com/scivision/mumps,MUMPS solver built with CMake or Meson,18484,21,2,0,NO,YES,YES,NO,0
+228,nwchem-git-svn-deprecated,jeffhammond,https://github.com/jeffhammond/nwchem-git-svn-deprecated,This is obsolete.  Use this:,304897,21,7,5,NO,YES,YES,NO,0
+229,ExactPack,lanl,https://github.com/lanl/ExactPack,ExactPack: An Open-Source Software Package for Code Verification,748,20,6,0,NO,YES,YES,NO,0
+230,MAD-X,MethodicalAcceleratorDesign,https://github.com/MethodicalAcceleratorDesign/MAD-X,Legacy MAD-X repository,157619,20,22,32,YES,YES,YES,YES,0
+231,minpack,certik,https://github.com/certik/minpack,Library for solving nonlinear equations and nonlinear least squares problems,267,20,5,0,NO,NO,YES,NO,0
+232,forbear,szaghi,https://github.com/szaghi/forbear,Fortran (progress) B(e)ar envinronment,1558,20,2,2,NO,YES,YES,NO,0
+233,amrclaw,clawpack,https://github.com/clawpack/amrclaw,AMR version of Clawpack,4937,20,40,52,YES,YES,YES,YES,0
+234,kiwi,emolch,https://github.com/emolch/kiwi,Kinematic Waveform Inversion Toolkit,753,20,9,8,NO,NO,YES,NO,0
+235,TLNS3D,nasa,https://github.com/nasa/TLNS3D,,8067,20,18,0,NO,NO,NO,NO,0
+236,CICE,CICE-Consortium,https://github.com/CICE-Consortium/CICE,Development repository for the CICE sea-ice model,58635,20,46,47,YES,YES,YES,YES,0
+237,bayesR,syntheke,https://github.com/syntheke/bayesR,Bayesian hierarchical model for complex trait analysis,9613,20,18,0,NO,YES,YES,NO,0
+238,SPHERA,AndreaAmicarelliRSE,https://github.com/AndreaAmicarelliRSE/SPHERA,"SPHERA (RSE SpA): Smoothed Particle Hydrodynamics Computational Fluid Dynamics research code. Applications: floods (with transport of solid bodies, bed-load transport, damage on electrical substations, flood-control works); fast landslides (in rocks and soils) and wave motion; hydroelectric plants; fuel sloshing tanks.",82733,20,30,0,NO,YES,YES,NO,0
+239,pynucastro,pynucastro,https://github.com/pynucastro/pynucastro,python interfaces to the nuclear reaction rate databases,20231,20,9,38,YES,YES,YES,NO,0
+240,FSM,RichardEssery,https://github.com/RichardEssery/FSM,Factorial Snow Model - a multi-physics energy balance model of accumulation and melt of snow on the ground,868,20,6,2,NO,NO,YES,NO,0
+241,MCT,MCSclimate,https://github.com/MCSclimate/MCT,Model Coupling Tookit,2446,20,8,27,YES,YES,YES,YES,0
+242,olcao,UMKC-CPG,https://github.com/UMKC-CPG/olcao,The Orthogonalized Linear Combination of Atomic Orbitals package.,24368,20,14,0,NO,YES,YES,NO,0
+243,imf_ess,dchirila,https://github.com/dchirila/imf_ess,"Source-code for book ""Introduction to Modern Fortran for the Earth System Sciences""",62528,20,13,0,NO,NO,NO,NO,0
+244,lotsofcoresbook1code,ryancoleman,https://github.com/ryancoleman/lotsofcoresbook1code,"Code repo for lotsofcores.com book 1, here since dropbox doesn't work for everyone",67149,20,10,0,NO,NO,NO,NO,0
+245,akima,andrewning,https://github.com/andrewning/akima,1D Akima spline interpolation with derivatives,176,20,6,1,NO,NO,NO,NO,0
+246,HOS-NWT,LHEEA,https://github.com/LHEEA/HOS-NWT,Numerical Wave Tank based on High-Order Spectral method,503,20,12,4,NO,YES,YES,NO,0
+247,w2dynamics,w2dynamics,https://github.com/w2dynamics/w2dynamics,A continuous-time hybridization-expansion Monte Carlo code for calculating n-particle Green's functions of the Anderson impurity model and within dynamical mean-field theory.,464,20,10,3,NO,YES,YES,NO,0
+248,GeoMACH,hwangjt,https://github.com/hwangjt/GeoMACH,,47635,20,26,1,NO,YES,YES,NO,0
+249,code,gotm-model,https://github.com/gotm-model/code,Source code for the General Ocean Turbulence Model,8693,20,14,2,NO,YES,YES,NO,0
+250,cubep3m,jharno,https://github.com/jharno/cubep3m,cosmological n-body code,12977,20,6,0,NO,YES,YES,NO,0
+251,fortpy,rosenbrockc,https://github.com/rosenbrockc/fortpy,Python Emacs Intellisense and Unit Testing Support for Fortran,1856,20,5,39,YES,YES,YES,NO,0
+252,amrvac,amrvac,https://github.com/amrvac/amrvac,MPI-AMRVAC: A Parallel Adaptive Mesh Refinement Framework,61797,19,12,8,NO,YES,YES,YES,0
+253,UppASD,UppASD,https://github.com/UppASD/UppASD,The UppASD package is a simulation tool for atomistic spin dynamics and Monte Carlo simulations of Heisenberg spin systems. ,11603,19,8,3,NO,NO,NO,NO,0
+254,SMOKE,CEMPD,https://github.com/CEMPD/SMOKE,Create emissions inputs for multiple air quality modeling systems with unmatched speed and flexibility,21070,19,11,5,NO,YES,YES,NO,0
+255,xfoil-python,DARcorporation,https://github.com/DARcorporation/xfoil-python,Stripped down version of XFOIL as compiled python module,4894,19,10,4,NO,YES,YES,NO,0
+256,arrayfire-fortran,arrayfire,https://github.com/arrayfire/arrayfire-fortran,Fortran wrapper for ArrayFire,33,19,5,4,NO,NO,YES,NO,0
+257,rng_fortran,jannisteunissen,https://github.com/jannisteunissen/rng_fortran,"Pseudo random number generator in Fortran, internally using xoroshiro128+",22,19,1,0,NO,NO,NO,NO,0
+258,DiffuseCode,tproffen,https://github.com/tproffen/DiffuseCode,Suite of programs to simulate disordered and nanomaterials,60082,19,13,2,NO,YES,YES,NO,0
+259,benchmark-leapfrog,marblestation,https://github.com/marblestation/benchmark-leapfrog,,32,19,12,1,NO,YES,YES,NO,0
+260,Nbody6ppGPU,nbodyx,https://github.com/nbodyx/Nbody6ppGPU,Nbody6++GPU,5295,19,10,0,NO,YES,YES,NO,0
+261,TAL_SH,DmitryLyakh,https://github.com/DmitryLyakh/TAL_SH,Tensor Algebra Library Routines for Shared Memory Systems,2060,19,9,0,NO,YES,YES,NO,0
+262,SWAT,WatershedModels,https://github.com/WatershedModels/SWAT,Compile SWAT model from FORTRAN source code using CMAKE,5680,19,8,0,NO,YES,YES,NO,0
+263,CxxPolyFit,LLNL,https://github.com/LLNL/CxxPolyFit,A simple library for producing multidimensional polynomial fits for C++,2203,19,6,0,NO,NO,NO,NO,0
+264,regex-fortran,sage-git,https://github.com/sage-git/regex-fortran,Fortran wrapper for regex.h,5,19,1,0,NO,NO,NO,NO,0
+265,Futility,CASL,https://github.com/CASL/Futility,VERA Fortran Utilities,33785,19,12,13,YES,YES,YES,YES,0
+266,nshmp-haz-fortran,usgs,https://github.com/usgs/nshmp-haz-fortran,National Seismic Hazard Mapping Project (NSHMP) Legacy Fortran Code,40723,18,11,0,NO,YES,YES,NO,0
+267,jburkardt-f77,johannesgerer,https://github.com/johannesgerer/jburkardt-f77,An official Git Mirror of John Burkardt's great collection of FORTRAN 77 Software,23184,18,12,0,NO,NO,NO,NO,0
+268,qp2,QuantumPackage,https://github.com/QuantumPackage/qp2,Quantum Package : a programming environment for wave function methods,18493,18,9,1,NO,YES,YES,NO,0
+269,Rocstar-legacy,IllinoisRocstar,https://github.com/IllinoisRocstar/Rocstar-legacy,Rocstar multiphysics simulation application,4999297,18,13,6,NO,YES,YES,NO,0
